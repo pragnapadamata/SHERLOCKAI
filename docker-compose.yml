@@ -12,7 +12,7 @@ services:
       - ./backend/.env
     environment:
       # Override ALLOWED_ORIGINS to allow access from local docker frontend
-      - ALLOWED_ORIGINS=["http://localhost:3000","http://localhost:3001","https://tata-steel-sherlock.vercel.app"]
+      - ALLOWED_ORIGINS=["http://localhost:3000","http://localhost:3001"]
     restart: always
 
   frontend:
