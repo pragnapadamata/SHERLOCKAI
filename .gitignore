@@ -1,0 +1,26 @@
+# ── Dependencies ──────────────────────────────
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# ── Build / cache ─────────────────────────────
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# ── Secrets / environment ─────────────────────
+.env
+.env.local
+.env*.local
+# keep .env.example committed as a template
+
+# ── OS / editor cruft ─────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,521 @@
+date,plant_id,unit_id,maintenance_type,component,cost_usd,duration_hours,status,technician_id,confidence_score
+2024-02-27,Plant-B,Rolling-Mill,Preventive,Motor,5909.29,66,Completed,Tech-585,0.695
+2024-03-18,Plant-D,Rolling-Mill,Emergency,Bearing,59780.59,33,Completed,Tech-581,0.72
+2024-06-18,Plant-C,Sinter-Plant,Preventive,Compressor,2268.67,46,Scheduled,Tech-928,0.905
+2024-02-15,Plant-B,Coke-Oven,Predictive,Valve,51171.77,34,Completed,Tech-640,0.904
+2024-04-25,Plant-D,Rolling-Mill,Emergency,Bearing,72876.54,11,Overdue,Tech-381,0.93
+2024-03-19,Plant-D,Rolling-Mill,Scheduled,Bearing,54779.61,69,Scheduled,Tech-698,0.712
+2024-01-21,Plant-C,Sinter-Plant,Preventive,Heat Exchanger,84083.26,57,Scheduled,Tech-645,0.808
+2024-02-13,Plant-D,BOF-Converter,Preventive,Conveyor Belt,32445.03,66,Completed,Tech-288,0.608
+2024-03-18,Plant-C,Rolling-Mill,Corrective,Motor,13792.0,17,Completed,Tech-615,0.827
+2024-06-04,Plant-A,Blast-Furnace-1,Corrective,Heat Exchanger,37119.78,33,In Progress,Tech-124,0.624
+2024-01-24,Plant-B,BOF-Converter,Scheduled,Sensor,54544.2,16,Completed,Tech-941,0.628
+2024-03-26,Plant-B,Blast-Furnace-2,Corrective,Compressor,63369.92,61,Scheduled,Tech-180,0.639
+2024-01-25,Plant-B,Blast-Furnace-1,Predictive,Conveyor Belt,48006.94,3,Completed,Tech-575,0.729
+2024-06-15,Plant-B,Sinter-Plant,Emergency,Heat Exchanger,72306.12,8,Completed,Tech-903,0.735
+2024-03-06,Plant-A,BOF-Converter,Preventive,Sensor,28887.87,12,Scheduled,Tech-278,0.609
+2024-01-19,Plant-A,Blast-Furnace-1,Scheduled,Motor,37660.24,33,In Progress,Tech-439,0.729
+2024-04-28,Plant-D,Blast-Furnace-1,Corrective,Valve,18095.34,64,Scheduled,Tech-245,0.983
+2024-01-01,Plant-C,Rolling-Mill,Preventive,Compressor,12365.59,50,Completed,Tech-527,0.675
+2024-03-27,Plant-B,Sinter-Plant,Preventive,Valve,7183.37,32,In Progress,Tech-426,0.787
+2024-03-10,Plant-C,Blast-Furnace-1,Emergency,Pump,2454.85,67,Completed,Tech-703,0.731
+2024-06-24,Plant-C,Coke-Oven,Predictive,Conveyor Belt,73300.52,13,Completed,Tech-229,0.748
+2024-03-04,Plant-D,Rolling-Mill,Emergency,Compressor,36725.04,70,Completed,Tech-815,0.833
+2024-04-22,Plant-A,Rolling-Mill,Preventive,Compressor,20401.91,59,Completed,Tech-710,0.927
+2024-06-18,Plant-D,Blast-Furnace-1,Predictive,Conveyor Belt,20799.2,28,Completed,Tech-813,0.836
+2024-06-02,Plant-B,Rolling-Mill,Scheduled,Conveyor Belt,79987.61,7,Scheduled,Tech-604,0.77
+2024-06-24,Plant-C,Coke-Oven,Predictive,Sensor,21622.3,18,Completed,Tech-363,0.782
+2024-06-13,Plant-D,Blast-Furnace-2,Scheduled,Bearing,32456.86,5,Completed,Tech-385,0.963
+2024-02-24,Plant-D,Rolling-Mill,Predictive,Sensor,50527.63,38,Overdue,Tech-602,0.629
+2024-04-21,Plant-B,Rolling-Mill,Emergency,Heat Exchanger,58641.19,58,Completed,Tech-674,0.985
+2024-04-18,Plant-B,Sinter-Plant,Emergency,Valve,50394.32,52,In Progress,Tech-400,0.656
+2024-06-28,Plant-B,Sinter-Plant,Scheduled,Bearing,80417.07,24,Completed,Tech-937,0.738
+2024-03-06,Plant-C,Blast-Furnace-2,Predictive,Bearing,46272.22,69,Scheduled,Tech-982,0.679
+2024-06-01,Plant-D,Rolling-Mill,Preventive,Compressor,57088.09,12,Completed,Tech-513,0.771
+2024-03-30,Plant-A,Sinter-Plant,Predictive,Heat Exchanger,55162.92,68,Scheduled,Tech-344,0.709
+2024-05-24,Plant-C,Coke-Oven,Emergency,Conveyor Belt,36318.63,12,Completed,Tech-171,0.952
+2024-01-06,Plant-C,BOF-Converter,Predictive,Heat Exchanger,25306.55,11,Scheduled,Tech-353,0.94
+2024-02-13,Plant-D,BOF-Converter,Predictive,Valve,32355.71,16,Completed,Tech-661,0.787
+2024-02-12,Plant-C,BOF-Converter,Corrective,Motor,68275.53,27,Scheduled,Tech-262,0.989
+2024-04-29,Plant-A,Coke-Oven,Corrective,Motor,24242.84,20,In Progress,Tech-562,0.897
+2024-06-23,Plant-D,Rolling-Mill,Scheduled,Compressor,7487.83,8,Completed,Tech-517,0.941
+2024-02-08,Plant-C,Sinter-Plant,Predictive,Compressor,35851.12,2,Completed,Tech-458,0.837
+2024-02-22,Plant-D,Blast-Furnace-1,Preventive,Heat Exchanger,48225.2,5,Completed,Tech-366,0.775
+2024-01-15,Plant-A,Sinter-Plant,Scheduled,Heat Exchanger,34191.42,57,Overdue,Tech-785,0.951
+2024-04-23,Plant-B,Rolling-Mill,Scheduled,Valve,55102.15,72,Completed,Tech-100,0.671
+2024-05-24,Plant-C,Coke-Oven,Corrective,Sensor,31242.03,15,Completed,Tech-609,0.833
+2024-01-30,Plant-B,BOF-Converter,Scheduled,Compressor,46444.8,2,Completed,Tech-524,0.711
+2024-01-03,Plant-B,Rolling-Mill,Corrective,Heat Exchanger,47120.2,33,In Progress,Tech-272,0.971
+2024-03-08,Plant-A,Rolling-Mill,Scheduled,Pump,42211.46,67,Completed,Tech-165,0.687
+2024-03-13,Plant-D,Rolling-Mill,Scheduled,Heat Exchanger,76629.69,12,Completed,Tech-560,0.584
+2024-02-25,Plant-B,BOF-Converter,Corrective,Bearing,28158.02,49,Overdue,Tech-632,0.821
+2024-03-25,Plant-D,Rolling-Mill,Predictive,Pump,30312.44,55,In Progress,Tech-452,0.692
+2024-05-27,Plant-D,Coke-Oven,Corrective,Motor,57708.87,27,Completed,Tech-106,0.962
+2024-06-24,Plant-C,Rolling-Mill,Corrective,Valve,28057.53,54,Scheduled,Tech-332,0.557
+2024-05-18,Plant-B,Blast-Furnace-1,Scheduled,Pump,33431.21,20,Scheduled,Tech-163,0.754
+2024-04-14,Plant-D,Rolling-Mill,Corrective,Heat Exchanger,2795.7,34,Completed,Tech-438,0.828
+2024-02-09,Plant-C,BOF-Converter,Corrective,Valve,10649.07,69,Scheduled,Tech-758,0.866
+2024-04-16,Plant-A,BOF-Converter,Predictive,Heat Exchanger,54847.91,71,Completed,Tech-836,0.825
+2024-03-16,Plant-C,Blast-Furnace-2,Preventive,Motor,32242.72,60,Completed,Tech-739,0.903
+2024-05-07,Plant-C,BOF-Converter,Predictive,Bearing,56031.74,42,In Progress,Tech-466,0.808
+2024-01-08,Plant-C,Blast-Furnace-2,Preventive,Compressor,74779.62,3,Completed,Tech-808,0.745
+2024-06-17,Plant-B,BOF-Converter,Preventive,Conveyor Belt,49372.37,16,Completed,Tech-277,0.954
+2024-04-13,Plant-A,Rolling-Mill,Corrective,Compressor,53170.99,22,Completed,Tech-754,0.718
+2024-02-17,Plant-D,Rolling-Mill,Preventive,Motor,20660.65,55,Scheduled,Tech-605,0.819
+2024-06-19,Plant-D,BOF-Converter,Scheduled,Conveyor Belt,47020.83,12,Completed,Tech-289,0.854
+2024-03-31,Plant-D,BOF-Converter,Emergency,Compressor,19602.49,47,Overdue,Tech-156,0.738
+2024-02-17,Plant-D,Coke-Oven,Scheduled,Motor,67421.4,48,Completed,Tech-676,0.987
+2024-02-19,Plant-C,BOF-Converter,Scheduled,Conveyor Belt,58307.12,15,Completed,Tech-844,0.633
+2024-03-01,Plant-A,Blast-Furnace-1,Preventive,Heat Exchanger,25425.98,13,Completed,Tech-815,0.564
+2024-04-12,Plant-B,Coke-Oven,Emergency,Pump,45797.26,25,Scheduled,Tech-607,0.859
+2024-06-27,Plant-B,Sinter-Plant,Emergency,Conveyor Belt,44128.89,70,In Progress,Tech-432,0.892
+2024-04-09,Plant-A,Coke-Oven,Corrective,Conveyor Belt,25960.7,5,Overdue,Tech-315,0.929
+2024-06-06,Plant-A,Rolling-Mill,Predictive,Conveyor Belt,34123.7,60,Completed,Tech-735,0.859
+2024-02-14,Plant-D,Blast-Furnace-1,Corrective,Motor,67052.47,65,Overdue,Tech-370,0.569
+2024-02-06,Plant-C,Blast-Furnace-1,Corrective,Valve,63810.6,40,In Progress,Tech-750,0.768
+2024-02-18,Plant-C,Rolling-Mill,Predictive,Conveyor Belt,52133.15,22,Completed,Tech-823,0.901
+2024-01-16,Plant-A,Coke-Oven,Emergency,Sensor,7737.34,16,In Progress,Tech-629,0.867
+2024-03-05,Plant-B,Blast-Furnace-2,Predictive,Motor,47938.18,7,Overdue,Tech-710,0.905
+2024-02-06,Plant-D,Blast-Furnace-2,Emergency,Heat Exchanger,73076.86,62,In Progress,Tech-634,0.929
+2024-05-10,Plant-D,Blast-Furnace-2,Emergency,Pump,25985.91,9,Completed,Tech-914,0.587
+2024-05-16,Plant-C,BOF-Converter,Corrective,Valve,78148.64,61,Completed,Tech-595,0.853
+2024-01-10,Plant-A,Blast-Furnace-1,Predictive,Bearing,23751.78,24,Completed,Tech-113,0.891
+2024-01-15,Plant-A,Blast-Furnace-2,Preventive,Heat Exchanger,29193.57,39,Completed,Tech-162,0.578
+2024-06-15,Plant-D,Coke-Oven,Corrective,Valve,15481.81,46,Completed,Tech-633,0.86
+2024-06-01,Plant-A,BOF-Converter,Preventive,Sensor,34212.13,30,Scheduled,Tech-922,0.829
+2024-02-05,Plant-A,Rolling-Mill,Scheduled,Compressor,71093.68,35,Completed,Tech-420,0.818
+2024-02-10,Plant-C,Sinter-Plant,Emergency,Conveyor Belt,24863.66,12,Overdue,Tech-469,0.982
+2024-04-19,Plant-A,Sinter-Plant,Emergency,Bearing,70065.14,4,Completed,Tech-543,0.872
+2024-02-13,Plant-A,Coke-Oven,Predictive,Motor,33693.82,69,Scheduled,Tech-186,0.553
+2024-02-02,Plant-D,Rolling-Mill,Predictive,Valve,20513.27,48,Overdue,Tech-773,0.749
+2024-01-16,Plant-D,Rolling-Mill,Predictive,Bearing,4478.42,58,In Progress,Tech-122,0.853
+2024-04-04,Plant-B,Rolling-Mill,Scheduled,Conveyor Belt,76678.68,54,Completed,Tech-683,0.884
+2024-03-19,Plant-C,BOF-Converter,Predictive,Bearing,17865.03,33,Scheduled,Tech-466,0.661
+2024-04-18,Plant-A,Blast-Furnace-2,Preventive,Bearing,75867.57,44,Completed,Tech-337,0.792
+2024-02-03,Plant-D,Blast-Furnace-2,Preventive,Valve,34377.13,27,Scheduled,Tech-171,0.918
+2024-02-09,Plant-D,BOF-Converter,Corrective,Heat Exchanger,12054.99,51,Scheduled,Tech-323,0.951
+2024-05-20,Plant-A,Coke-Oven,Scheduled,Conveyor Belt,19818.81,14,Scheduled,Tech-954,0.825
+2024-01-05,Plant-D,BOF-Converter,Predictive,Motor,31592.8,34,Completed,Tech-423,0.822
+2024-05-26,Plant-B,Sinter-Plant,Preventive,Heat Exchanger,7978.3,52,Scheduled,Tech-926,0.971
+2024-04-15,Plant-C,BOF-Converter,Corrective,Valve,15652.65,58,Completed,Tech-301,0.755
+2024-02-09,Plant-D,Blast-Furnace-1,Emergency,Pump,20754.34,2,Completed,Tech-687,0.623
+2024-04-15,Plant-A,Rolling-Mill,Corrective,Compressor,40562.42,56,Scheduled,Tech-616,0.888
+2024-03-21,Plant-C,Rolling-Mill,Scheduled,Sensor,79417.84,18,Overdue,Tech-317,0.848
+2024-04-11,Plant-A,Blast-Furnace-2,Scheduled,Bearing,62158.35,60,Completed,Tech-223,0.768
+2024-03-18,Plant-A,Blast-Furnace-1,Scheduled,Bearing,27114.14,17,Completed,Tech-700,0.903
+2024-01-21,Plant-B,BOF-Converter,Scheduled,Conveyor Belt,76268.55,45,Scheduled,Tech-621,0.711
+2024-02-19,Plant-C,Blast-Furnace-2,Corrective,Sensor,28134.17,56,Completed,Tech-765,0.6
+2024-04-23,Plant-C,BOF-Converter,Emergency,Sensor,21669.15,71,Completed,Tech-615,0.666
+2024-01-14,Plant-D,Blast-Furnace-1,Corrective,Motor,10164.94,44,In Progress,Tech-656,0.976
+2024-01-07,Plant-A,Coke-Oven,Preventive,Compressor,43397.06,60,Completed,Tech-123,0.853
+2024-01-15,Plant-B,Coke-Oven,Emergency,Pump,52223.05,53,Completed,Tech-477,0.635
+2024-04-23,Plant-D,Rolling-Mill,Emergency,Motor,64058.68,23,Completed,Tech-408,0.843
+2024-01-11,Plant-C,Blast-Furnace-2,Predictive,Conveyor Belt,41159.83,13,Overdue,Tech-811,0.783
+2024-02-20,Plant-B,Blast-Furnace-1,Scheduled,Sensor,26367.52,66,Scheduled,Tech-441,0.789
+2024-02-13,Plant-D,Blast-Furnace-2,Emergency,Motor,40363.14,68,In Progress,Tech-109,0.553
+2024-03-21,Plant-B,Blast-Furnace-1,Predictive,Compressor,4870.26,31,Completed,Tech-630,0.796
+2024-01-05,Plant-C,Blast-Furnace-1,Emergency,Motor,39386.35,66,Completed,Tech-805,0.69
+2024-04-22,Plant-B,Blast-Furnace-2,Predictive,Heat Exchanger,11484.28,31,Completed,Tech-991,0.662
+2024-05-05,Plant-C,BOF-Converter,Predictive,Heat Exchanger,66258.25,39,Completed,Tech-617,0.856
+2024-02-17,Plant-A,Blast-Furnace-1,Corrective,Pump,6845.94,55,Completed,Tech-597,0.711
+2024-05-28,Plant-A,BOF-Converter,Predictive,Sensor,66726.53,35,Scheduled,Tech-178,0.805
+2024-04-12,Plant-C,Coke-Oven,Emergency,Compressor,56913.26,61,Completed,Tech-696,0.972
+2024-06-04,Plant-B,Rolling-Mill,Preventive,Valve,83656.79,34,Completed,Tech-721,0.78
+2024-02-21,Plant-D,BOF-Converter,Predictive,Compressor,74075.58,12,In Progress,Tech-411,0.845
+2024-06-15,Plant-B,Sinter-Plant,Scheduled,Sensor,80614.38,33,Completed,Tech-891,0.843
+2024-06-12,Plant-D,Blast-Furnace-2,Corrective,Pump,22062.66,56,Scheduled,Tech-746,0.875
+2024-04-23,Plant-C,Rolling-Mill,Preventive,Compressor,48697.42,18,Scheduled,Tech-629,0.767
+2024-03-13,Plant-C,Blast-Furnace-2,Scheduled,Bearing,68407.44,60,Scheduled,Tech-906,0.962
+2024-04-07,Plant-B,Rolling-Mill,Corrective,Valve,80926.03,33,Scheduled,Tech-892,0.831
+2024-05-22,Plant-A,Rolling-Mill,Scheduled,Conveyor Belt,7421.47,35,Scheduled,Tech-711,0.791
+2024-06-14,Plant-D,Blast-Furnace-1,Preventive,Compressor,63136.69,65,Scheduled,Tech-769,0.609
+2024-05-30,Plant-D,Coke-Oven,Corrective,Sensor,80428.25,53,Completed,Tech-137,0.869
+2024-03-14,Plant-C,Blast-Furnace-1,Emergency,Motor,65621.4,15,Overdue,Tech-553,0.905
+2024-05-13,Plant-B,Blast-Furnace-1,Predictive,Conveyor Belt,69927.16,39,Overdue,Tech-429,0.832
+2024-01-06,Plant-C,Sinter-Plant,Corrective,Bearing,21789.24,10,In Progress,Tech-102,0.958
+2024-06-29,Plant-D,BOF-Converter,Corrective,Sensor,19917.38,70,Completed,Tech-729,0.684
+2024-02-13,Plant-B,Sinter-Plant,Predictive,Compressor,58855.94,58,Completed,Tech-263,0.608
+2024-01-02,Plant-A,Blast-Furnace-2,Predictive,Compressor,41605.23,50,Completed,Tech-321,0.809
+2024-01-11,Plant-C,BOF-Converter,Emergency,Pump,32712.78,42,In Progress,Tech-656,0.779
+2024-04-15,Plant-D,BOF-Converter,Preventive,Sensor,47217.62,68,Completed,Tech-220,0.606
+2024-06-16,Plant-C,Sinter-Plant,Scheduled,Compressor,60079.9,41,Completed,Tech-622,0.86
+2024-01-05,Plant-D,Blast-Furnace-1,Preventive,Compressor,25743.05,71,Completed,Tech-515,0.94
+2024-04-25,Plant-A,Sinter-Plant,Emergency,Motor,12984.57,69,Scheduled,Tech-850,0.608
+2024-06-27,Plant-B,BOF-Converter,Emergency,Motor,47133.88,68,Completed,Tech-211,0.928
+2024-02-10,Plant-C,Blast-Furnace-1,Emergency,Valve,24464.77,60,Overdue,Tech-727,0.832
+2024-01-01,Plant-A,BOF-Converter,Predictive,Valve,69717.7,12,Completed,Tech-127,0.961
+2024-06-27,Plant-B,Blast-Furnace-1,Scheduled,Valve,46972.44,36,Completed,Tech-720,0.739
+2024-04-30,Plant-B,Blast-Furnace-1,Scheduled,Bearing,84529.31,60,Overdue,Tech-652,0.752
+2024-05-28,Plant-A,Coke-Oven,Scheduled,Pump,60506.99,16,Completed,Tech-604,0.933
+2024-03-29,Plant-B,Sinter-Plant,Corrective,Motor,77082.86,6,Scheduled,Tech-649,0.651
+2024-05-07,Plant-A,Sinter-Plant,Emergency,Motor,81542.85,3,Scheduled,Tech-641,0.966
+2024-04-15,Plant-C,Blast-Furnace-2,Preventive,Sensor,55009.55,18,Scheduled,Tech-393,0.592
+2024-05-19,Plant-C,BOF-Converter,Emergency,Bearing,66801.95,66,Completed,Tech-589,0.972
+2024-01-20,Plant-C,BOF-Converter,Preventive,Bearing,1504.46,32,Scheduled,Tech-926,0.753
+2024-04-20,Plant-A,BOF-Converter,Emergency,Heat Exchanger,44610.74,44,Overdue,Tech-614,0.859
+2024-06-14,Plant-A,Blast-Furnace-2,Scheduled,Sensor,8938.55,22,Completed,Tech-611,0.936
+2024-02-05,Plant-D,Blast-Furnace-2,Preventive,Compressor,60632.01,71,Completed,Tech-259,0.914
+2024-05-11,Plant-C,Blast-Furnace-1,Emergency,Heat Exchanger,46959.09,68,Scheduled,Tech-278,0.633
+2024-05-15,Plant-A,Coke-Oven,Predictive,Bearing,70175.2,64,Scheduled,Tech-398,0.593
+2024-02-03,Plant-C,Sinter-Plant,Predictive,Valve,41514.89,20,Completed,Tech-699,0.689
+2024-02-27,Plant-A,Blast-Furnace-1,Preventive,Compressor,47298.48,43,Completed,Tech-520,0.946
+2024-02-25,Plant-C,Blast-Furnace-1,Scheduled,Valve,33898.88,5,Completed,Tech-960,0.733
+2024-04-03,Plant-B,Rolling-Mill,Scheduled,Compressor,82415.95,59,Completed,Tech-920,0.626
+2024-04-07,Plant-B,BOF-Converter,Scheduled,Motor,38539.0,18,Completed,Tech-555,0.721
+2024-01-29,Plant-C,Blast-Furnace-2,Corrective,Pump,40406.58,15,In Progress,Tech-793,0.669
+2024-04-23,Plant-D,BOF-Converter,Corrective,Bearing,45547.28,25,Scheduled,Tech-929,0.899
+2024-06-17,Plant-C,Coke-Oven,Emergency,Pump,31985.99,37,Overdue,Tech-846,0.691
+2024-02-08,Plant-A,Blast-Furnace-1,Preventive,Bearing,44296.28,38,Scheduled,Tech-280,0.553
+2024-06-05,Plant-A,Rolling-Mill,Preventive,Valve,12897.25,22,Completed,Tech-662,0.664
+2024-03-01,Plant-D,Sinter-Plant,Preventive,Heat Exchanger,29405.53,40,Completed,Tech-343,0.769
+2024-04-02,Plant-D,Blast-Furnace-1,Emergency,Heat Exchanger,7224.6,41,Completed,Tech-468,0.581
+2024-04-24,Plant-A,BOF-Converter,Scheduled,Sensor,55371.44,3,Scheduled,Tech-757,0.936
+2024-06-17,Plant-A,Coke-Oven,Predictive,Sensor,71925.36,47,In Progress,Tech-662,0.71
+2024-05-06,Plant-C,Blast-Furnace-1,Emergency,Conveyor Belt,75298.39,35,Completed,Tech-785,0.901
+2024-04-15,Plant-D,Coke-Oven,Predictive,Pump,38835.12,38,Completed,Tech-390,0.836
+2024-05-13,Plant-B,Rolling-Mill,Emergency,Motor,40819.83,15,Completed,Tech-993,0.833
+2024-04-14,Plant-A,BOF-Converter,Corrective,Motor,48011.32,56,Completed,Tech-121,0.806
+2024-03-12,Plant-B,Blast-Furnace-2,Emergency,Compressor,48018.42,71,Completed,Tech-464,0.969
+2024-02-26,Plant-B,BOF-Converter,Emergency,Motor,76542.22,65,Overdue,Tech-148,0.658
+2024-04-25,Plant-C,Coke-Oven,Preventive,Sensor,17558.59,32,Completed,Tech-128,0.851
+2024-02-08,Plant-A,BOF-Converter,Emergency,Valve,43504.4,70,In Progress,Tech-801,0.798
+2024-05-26,Plant-D,Rolling-Mill,Scheduled,Conveyor Belt,27929.24,10,In Progress,Tech-500,0.599
+2024-01-13,Plant-A,Rolling-Mill,Preventive,Bearing,77601.34,19,Completed,Tech-979,0.972
+2024-03-02,Plant-C,Rolling-Mill,Preventive,Conveyor Belt,40030.14,24,Completed,Tech-321,0.566
+2024-01-26,Plant-B,Rolling-Mill,Emergency,Heat Exchanger,37336.27,63,Completed,Tech-343,0.679
+2024-04-02,Plant-C,Rolling-Mill,Predictive,Valve,29494.15,28,Completed,Tech-639,0.976
+2024-03-14,Plant-D,Sinter-Plant,Scheduled,Valve,29831.67,33,In Progress,Tech-821,0.87
+2024-04-04,Plant-B,Sinter-Plant,Preventive,Compressor,19186.43,41,Completed,Tech-786,0.567
+2024-02-09,Plant-D,BOF-Converter,Corrective,Conveyor Belt,36116.67,68,Completed,Tech-114,0.685
+2024-06-05,Plant-A,Coke-Oven,Preventive,Pump,53844.33,35,Scheduled,Tech-960,0.659
+2024-05-07,Plant-D,Rolling-Mill,Scheduled,Heat Exchanger,12036.64,16,Scheduled,Tech-932,0.68
+2024-04-21,Plant-C,Sinter-Plant,Corrective,Conveyor Belt,65206.94,50,Completed,Tech-645,0.644
+2024-03-12,Plant-A,Blast-Furnace-2,Scheduled,Sensor,26980.6,51,In Progress,Tech-901,0.974
+2024-03-11,Plant-A,Sinter-Plant,Corrective,Bearing,1476.26,16,Completed,Tech-195,0.68
+2024-05-15,Plant-D,BOF-Converter,Corrective,Sensor,46109.6,8,Completed,Tech-326,0.953
+2024-06-15,Plant-B,BOF-Converter,Predictive,Pump,17567.94,7,Scheduled,Tech-283,0.769
+2024-03-29,Plant-C,Sinter-Plant,Emergency,Compressor,40155.1,20,Completed,Tech-839,0.831
+2024-02-06,Plant-B,Blast-Furnace-1,Emergency,Heat Exchanger,61621.73,33,Completed,Tech-944,0.642
+2024-05-17,Plant-D,Coke-Oven,Corrective,Conveyor Belt,61457.16,50,In Progress,Tech-640,0.747
+2024-04-29,Plant-D,Blast-Furnace-2,Emergency,Conveyor Belt,52780.24,35,Completed,Tech-952,0.64
+2024-06-10,Plant-A,Coke-Oven,Corrective,Compressor,63789.56,20,Completed,Tech-136,0.981
+2024-06-09,Plant-C,Blast-Furnace-2,Predictive,Bearing,52924.37,4,Completed,Tech-352,0.831
+2024-04-19,Plant-A,Sinter-Plant,Predictive,Conveyor Belt,17553.67,6,In Progress,Tech-855,0.604
+2024-03-05,Plant-A,Rolling-Mill,Emergency,Valve,78340.58,47,Completed,Tech-130,0.917
+2024-03-23,Plant-A,Blast-Furnace-1,Corrective,Compressor,84496.27,23,In Progress,Tech-221,0.762
+2024-05-18,Plant-D,Blast-Furnace-1,Preventive,Heat Exchanger,66125.51,71,Scheduled,Tech-247,0.744
+2024-02-11,Plant-A,Sinter-Plant,Corrective,Pump,29750.59,59,Overdue,Tech-285,0.643
+2024-04-23,Plant-C,Rolling-Mill,Corrective,Pump,80469.12,4,Scheduled,Tech-836,0.716
+2024-01-17,Plant-C,Blast-Furnace-2,Predictive,Bearing,28386.36,47,Scheduled,Tech-998,0.782
+2024-06-25,Plant-D,Blast-Furnace-2,Scheduled,Sensor,77072.27,29,Overdue,Tech-550,0.871
+2024-05-11,Plant-A,Blast-Furnace-2,Scheduled,Heat Exchanger,74197.76,50,Completed,Tech-442,0.839
+2024-05-16,Plant-D,Sinter-Plant,Preventive,Compressor,49802.39,38,In Progress,Tech-614,0.913
+2024-06-16,Plant-B,BOF-Converter,Predictive,Heat Exchanger,56946.84,24,Completed,Tech-425,0.902
+2024-06-17,Plant-B,BOF-Converter,Corrective,Compressor,18290.2,12,Overdue,Tech-546,0.7
+2024-01-06,Plant-D,Coke-Oven,Corrective,Pump,9067.23,25,Scheduled,Tech-940,0.836
+2024-04-26,Plant-B,Blast-Furnace-1,Scheduled,Bearing,83322.1,21,Completed,Tech-371,0.664
+2024-04-17,Plant-A,Rolling-Mill,Predictive,Compressor,18926.19,57,Completed,Tech-562,0.874
+2024-05-23,Plant-A,Coke-Oven,Emergency,Pump,2310.06,69,Completed,Tech-422,0.587
+2024-02-25,Plant-C,Rolling-Mill,Preventive,Valve,78186.39,69,In Progress,Tech-822,0.571
+2024-02-16,Plant-B,Rolling-Mill,Predictive,Bearing,37742.95,35,Completed,Tech-425,0.781
+2024-02-21,Plant-B,BOF-Converter,Predictive,Bearing,882.08,16,Completed,Tech-529,0.646
+2024-02-17,Plant-D,BOF-Converter,Scheduled,Compressor,44057.98,64,Completed,Tech-230,0.815
+2024-06-16,Plant-B,Blast-Furnace-2,Emergency,Pump,71036.23,61,Completed,Tech-240,0.579
+2024-03-20,Plant-A,Blast-Furnace-1,Preventive,Bearing,62675.89,47,Completed,Tech-698,0.625
+2024-02-05,Plant-B,Blast-Furnace-1,Scheduled,Conveyor Belt,38629.77,67,Completed,Tech-882,0.62
+2024-06-27,Plant-D,Coke-Oven,Emergency,Motor,41349.41,56,Scheduled,Tech-582,0.861
+2024-02-27,Plant-C,Sinter-Plant,Predictive,Motor,53191.64,54,Scheduled,Tech-402,0.838
+2024-02-13,Plant-A,Rolling-Mill,Scheduled,Valve,38704.06,48,Completed,Tech-462,0.768
+2024-06-20,Plant-D,Sinter-Plant,Scheduled,Motor,5925.41,40,In Progress,Tech-974,0.97
+2024-05-08,Plant-C,Blast-Furnace-2,Preventive,Pump,61446.85,44,Scheduled,Tech-535,0.96
+2024-01-07,Plant-A,Blast-Furnace-2,Emergency,Pump,66430.94,65,Overdue,Tech-536,0.711
+2024-01-26,Plant-A,Coke-Oven,Emergency,Compressor,37810.51,8,Completed,Tech-130,0.899
+2024-06-05,Plant-D,Coke-Oven,Preventive,Motor,70669.62,70,Completed,Tech-588,0.61
+2024-01-29,Plant-D,Blast-Furnace-2,Scheduled,Sensor,68271.01,62,Scheduled,Tech-216,0.852
+2024-05-21,Plant-D,Blast-Furnace-1,Predictive,Conveyor Belt,5820.17,41,Completed,Tech-737,0.61
+2024-04-13,Plant-D,BOF-Converter,Corrective,Motor,9450.3,52,Completed,Tech-594,0.884
+2024-03-10,Plant-C,Sinter-Plant,Preventive,Motor,54341.09,62,Scheduled,Tech-306,0.554
+2024-01-10,Plant-A,Rolling-Mill,Preventive,Conveyor Belt,57285.59,3,Scheduled,Tech-447,0.747
+2024-02-19,Plant-C,BOF-Converter,Predictive,Pump,39311.92,14,Completed,Tech-205,0.621
+2024-01-21,Plant-D,BOF-Converter,Predictive,Heat Exchanger,32676.47,2,Overdue,Tech-704,0.763
+2024-02-25,Plant-C,Blast-Furnace-2,Corrective,Pump,44326.04,39,Completed,Tech-556,0.692
+2024-03-25,Plant-B,Blast-Furnace-2,Predictive,Conveyor Belt,16010.71,55,Completed,Tech-607,0.935
+2024-03-12,Plant-B,Blast-Furnace-2,Corrective,Motor,68379.7,34,Completed,Tech-660,0.856
+2024-06-23,Plant-D,Blast-Furnace-1,Preventive,Conveyor Belt,3718.6,57,Scheduled,Tech-855,0.937
+2024-05-31,Plant-A,Blast-Furnace-2,Emergency,Pump,56604.28,39,Completed,Tech-371,0.552
+2024-03-24,Plant-D,Blast-Furnace-2,Predictive,Heat Exchanger,27997.34,45,Completed,Tech-307,0.94
+2024-03-07,Plant-B,Sinter-Plant,Corrective,Conveyor Belt,6179.66,50,Completed,Tech-616,0.561
+2024-04-05,Plant-C,BOF-Converter,Predictive,Pump,50800.59,42,Completed,Tech-755,0.922
+2024-03-17,Plant-C,Rolling-Mill,Preventive,Valve,75276.68,55,Overdue,Tech-120,0.83
+2024-01-12,Plant-B,BOF-Converter,Predictive,Valve,40638.54,33,In Progress,Tech-588,0.568
+2024-04-24,Plant-C,Blast-Furnace-1,Preventive,Bearing,75148.44,47,Completed,Tech-691,0.559
+2024-01-31,Plant-D,Blast-Furnace-2,Scheduled,Compressor,78429.71,15,Scheduled,Tech-903,0.617
+2024-05-26,Plant-B,BOF-Converter,Corrective,Valve,3780.89,56,Completed,Tech-890,0.765
+2024-01-06,Plant-D,Coke-Oven,Predictive,Compressor,24732.65,52,Completed,Tech-705,0.955
+2024-04-04,Plant-D,BOF-Converter,Preventive,Compressor,46753.13,47,Completed,Tech-511,0.875
+2024-04-21,Plant-A,Blast-Furnace-1,Emergency,Bearing,82247.69,63,Completed,Tech-212,0.771
+2024-04-02,Plant-D,BOF-Converter,Corrective,Motor,75993.75,69,Completed,Tech-522,0.611
+2024-02-03,Plant-B,Sinter-Plant,Scheduled,Bearing,48824.13,34,In Progress,Tech-690,0.907
+2024-04-09,Plant-B,Sinter-Plant,Scheduled,Bearing,71036.04,60,Scheduled,Tech-711,0.962
+2024-02-21,Plant-D,Rolling-Mill,Scheduled,Pump,66873.27,26,Scheduled,Tech-120,0.579
+2024-03-07,Plant-B,Blast-Furnace-1,Scheduled,Valve,51964.58,7,Scheduled,Tech-814,0.8
+2024-05-30,Plant-D,Blast-Furnace-2,Preventive,Heat Exchanger,33288.82,23,Completed,Tech-552,0.821
+2024-05-23,Plant-A,Blast-Furnace-2,Corrective,Conveyor Belt,41716.65,64,Completed,Tech-771,0.956
+2024-01-13,Plant-A,Rolling-Mill,Scheduled,Compressor,15730.52,3,Scheduled,Tech-868,0.738
+2024-06-06,Plant-C,BOF-Converter,Scheduled,Valve,78546.18,32,Completed,Tech-554,0.775
+2024-05-15,Plant-C,BOF-Converter,Emergency,Pump,80446.44,29,Scheduled,Tech-294,0.81
+2024-03-28,Plant-B,Sinter-Plant,Corrective,Sensor,59253.4,70,In Progress,Tech-833,0.84
+2024-03-09,Plant-B,Blast-Furnace-1,Scheduled,Compressor,68171.77,53,Completed,Tech-507,0.838
+2024-04-07,Plant-C,Blast-Furnace-1,Scheduled,Motor,33831.25,57,Overdue,Tech-396,0.882
+2024-05-03,Plant-D,Blast-Furnace-2,Preventive,Compressor,68062.61,45,Completed,Tech-544,0.771
+2024-06-04,Plant-B,Blast-Furnace-1,Preventive,Compressor,43358.31,39,In Progress,Tech-599,0.744
+2024-03-08,Plant-C,Coke-Oven,Corrective,Pump,63588.92,7,Completed,Tech-892,0.591
+2024-03-13,Plant-C,Sinter-Plant,Scheduled,Compressor,67218.2,54,Scheduled,Tech-747,0.956
+2024-01-21,Plant-C,BOF-Converter,Scheduled,Bearing,50867.72,37,Completed,Tech-241,0.979
+2024-05-01,Plant-C,Rolling-Mill,Emergency,Compressor,12320.03,57,Completed,Tech-981,0.968
+2024-01-03,Plant-B,Sinter-Plant,Emergency,Conveyor Belt,22747.1,45,Scheduled,Tech-653,0.645
+2024-06-19,Plant-B,Coke-Oven,Predictive,Pump,33654.03,47,Completed,Tech-825,0.647
+2024-02-18,Plant-B,Blast-Furnace-1,Emergency,Conveyor Belt,12439.87,34,Overdue,Tech-570,0.949
+2024-04-22,Plant-A,Rolling-Mill,Predictive,Sensor,42428.09,62,Completed,Tech-131,0.956
+2024-06-13,Plant-C,Sinter-Plant,Emergency,Compressor,35704.69,63,Completed,Tech-656,0.553
+2024-04-04,Plant-B,Blast-Furnace-1,Predictive,Compressor,36670.6,21,Overdue,Tech-507,0.79
+2024-06-06,Plant-D,Coke-Oven,Scheduled,Pump,59669.42,3,Completed,Tech-542,0.889
+2024-05-20,Plant-A,Blast-Furnace-2,Emergency,Bearing,68871.03,70,In Progress,Tech-654,0.66
+2024-06-25,Plant-C,Blast-Furnace-1,Emergency,Valve,20325.59,62,In Progress,Tech-574,0.873
+2024-01-21,Plant-B,Blast-Furnace-1,Predictive,Heat Exchanger,36629.89,8,Completed,Tech-631,0.653
+2024-03-15,Plant-D,Sinter-Plant,Corrective,Pump,14059.94,62,In Progress,Tech-686,0.874
+2024-02-22,Plant-B,Rolling-Mill,Scheduled,Valve,81281.84,13,Scheduled,Tech-870,0.89
+2024-05-26,Plant-A,Coke-Oven,Preventive,Conveyor Belt,71925.82,48,Completed,Tech-736,0.817
+2024-06-01,Plant-A,Rolling-Mill,Scheduled,Sensor,79829.24,26,Completed,Tech-814,0.822
+2024-02-24,Plant-A,Rolling-Mill,Preventive,Valve,72278.06,17,Completed,Tech-799,0.781
+2024-02-02,Plant-D,Blast-Furnace-2,Scheduled,Bearing,59354.0,20,Scheduled,Tech-181,0.699
+2024-02-13,Plant-B,Blast-Furnace-2,Predictive,Compressor,14697.15,16,Scheduled,Tech-786,0.638
+2024-01-15,Plant-A,Rolling-Mill,Preventive,Motor,24419.87,13,In Progress,Tech-243,0.596
+2024-03-16,Plant-B,Blast-Furnace-1,Predictive,Sensor,61929.91,17,Completed,Tech-780,0.708
+2024-05-13,Plant-B,Sinter-Plant,Scheduled,Valve,5262.63,52,Completed,Tech-355,0.686
+2024-04-03,Plant-B,Blast-Furnace-2,Preventive,Bearing,36062.64,43,Scheduled,Tech-730,0.727
+2024-06-07,Plant-A,Blast-Furnace-2,Predictive,Valve,80052.44,39,Completed,Tech-595,0.615
+2024-02-17,Plant-D,Rolling-Mill,Corrective,Compressor,36300.36,31,In Progress,Tech-259,0.566
+2024-02-22,Plant-B,Rolling-Mill,Predictive,Bearing,14762.27,39,Completed,Tech-513,0.585
+2024-02-16,Plant-B,Blast-Furnace-1,Preventive,Bearing,6330.47,43,Overdue,Tech-663,0.836
+2024-05-16,Plant-A,Blast-Furnace-2,Preventive,Motor,3065.26,47,Completed,Tech-429,0.918
+2024-01-22,Plant-D,Coke-Oven,Emergency,Sensor,75912.49,9,Completed,Tech-493,0.787
+2024-04-22,Plant-C,Sinter-Plant,Corrective,Sensor,16883.95,16,Completed,Tech-815,0.567
+2024-04-11,Plant-C,Rolling-Mill,Predictive,Conveyor Belt,16365.4,70,In Progress,Tech-179,0.867
+2024-02-22,Plant-C,Blast-Furnace-1,Emergency,Compressor,3422.77,61,Scheduled,Tech-248,0.895
+2024-06-29,Plant-D,Blast-Furnace-1,Preventive,Valve,41178.28,53,Completed,Tech-924,0.867
+2024-02-04,Plant-C,Blast-Furnace-2,Scheduled,Motor,71645.73,62,Scheduled,Tech-261,0.649
+2024-03-05,Plant-A,Blast-Furnace-1,Preventive,Compressor,34719.37,46,Completed,Tech-233,0.651
+2024-01-24,Plant-B,Coke-Oven,Corrective,Pump,55398.63,36,Scheduled,Tech-367,0.788
+2024-05-22,Plant-B,Rolling-Mill,Emergency,Pump,79204.33,31,Overdue,Tech-786,0.689
+2024-05-04,Plant-D,Sinter-Plant,Predictive,Sensor,1515.43,40,Completed,Tech-608,0.883
+2024-05-13,Plant-A,Sinter-Plant,Corrective,Conveyor Belt,23018.57,63,Scheduled,Tech-678,0.801
+2024-01-04,Plant-C,Coke-Oven,Corrective,Valve,70753.4,33,Scheduled,Tech-362,0.825
+2024-05-12,Plant-C,Blast-Furnace-2,Corrective,Conveyor Belt,42096.64,50,In Progress,Tech-138,0.894
+2024-04-26,Plant-D,Blast-Furnace-2,Preventive,Conveyor Belt,43211.89,23,Completed,Tech-969,0.945
+2024-05-07,Plant-C,Rolling-Mill,Corrective,Heat Exchanger,79759.32,7,Completed,Tech-623,0.836
+2024-06-23,Plant-B,Sinter-Plant,Corrective,Motor,18642.06,51,In Progress,Tech-510,0.935
+2024-05-12,Plant-B,Blast-Furnace-1,Corrective,Compressor,58821.19,69,Completed,Tech-346,0.986
+2024-05-01,Plant-B,Rolling-Mill,Corrective,Sensor,7435.67,31,Completed,Tech-528,0.878
+2024-04-02,Plant-C,Blast-Furnace-2,Predictive,Sensor,28488.92,5,Completed,Tech-526,0.562
+2024-05-28,Plant-B,Rolling-Mill,Scheduled,Conveyor Belt,48671.66,48,In Progress,Tech-704,0.777
+2024-04-08,Plant-A,Blast-Furnace-2,Emergency,Sensor,75572.8,64,In Progress,Tech-774,0.965
+2024-01-01,Plant-A,Blast-Furnace-1,Predictive,Motor,20270.87,13,In Progress,Tech-852,0.822
+2024-02-21,Plant-D,BOF-Converter,Predictive,Motor,24964.19,36,Completed,Tech-669,0.742
+2024-05-24,Plant-C,BOF-Converter,Preventive,Compressor,82877.66,44,Completed,Tech-271,0.751
+2024-04-01,Plant-C,Rolling-Mill,Corrective,Conveyor Belt,73024.26,11,Completed,Tech-618,0.888
+2024-06-07,Plant-C,Blast-Furnace-2,Predictive,Motor,24497.43,38,Overdue,Tech-335,0.564
+2024-03-23,Plant-C,Rolling-Mill,Emergency,Bearing,8132.11,47,Completed,Tech-505,0.912
+2024-04-20,Plant-C,BOF-Converter,Scheduled,Heat Exchanger,73935.87,6,Completed,Tech-552,0.903
+2024-02-10,Plant-A,Sinter-Plant,Predictive,Bearing,29973.6,11,Completed,Tech-306,0.631
+2024-04-30,Plant-A,Coke-Oven,Corrective,Compressor,48859.95,55,Scheduled,Tech-806,0.766
+2024-01-11,Plant-D,Rolling-Mill,Preventive,Motor,62476.86,4,In Progress,Tech-459,0.882
+2024-01-03,Plant-D,Blast-Furnace-2,Emergency,Sensor,38498.18,11,Completed,Tech-872,0.68
+2024-03-26,Plant-B,Rolling-Mill,Corrective,Conveyor Belt,37956.03,25,In Progress,Tech-619,0.894
+2024-03-20,Plant-D,BOF-Converter,Preventive,Motor,81664.83,34,Completed,Tech-233,0.79
+2024-04-08,Plant-D,Rolling-Mill,Emergency,Sensor,77997.48,70,Scheduled,Tech-782,0.816
+2024-02-25,Plant-B,Rolling-Mill,Corrective,Conveyor Belt,14474.14,22,Completed,Tech-844,0.884
+2024-06-29,Plant-A,Sinter-Plant,Corrective,Bearing,59041.63,17,Completed,Tech-167,0.712
+2024-01-23,Plant-C,Blast-Furnace-2,Corrective,Motor,51635.37,25,Completed,Tech-658,0.813
+2024-02-07,Plant-A,Coke-Oven,Emergency,Compressor,18877.01,7,Completed,Tech-273,0.634
+2024-04-26,Plant-C,Rolling-Mill,Emergency,Conveyor Belt,60830.44,18,In Progress,Tech-663,0.654
+2024-05-28,Plant-B,Sinter-Plant,Corrective,Sensor,82229.9,41,Completed,Tech-533,0.741
+2024-01-10,Plant-D,Blast-Furnace-1,Preventive,Motor,34038.72,29,Scheduled,Tech-480,0.578
+2024-01-24,Plant-D,Blast-Furnace-1,Predictive,Compressor,56124.01,13,Scheduled,Tech-919,0.795
+2024-06-29,Plant-C,Coke-Oven,Emergency,Compressor,53533.56,60,Scheduled,Tech-475,0.654
+2024-04-28,Plant-C,Sinter-Plant,Preventive,Pump,1364.52,45,Completed,Tech-537,0.678
+2024-02-26,Plant-C,Blast-Furnace-1,Emergency,Sensor,41875.78,59,Scheduled,Tech-420,0.918
+2024-04-25,Plant-A,Blast-Furnace-2,Scheduled,Sensor,1468.98,50,Completed,Tech-233,0.716
+2024-03-08,Plant-D,Rolling-Mill,Corrective,Motor,23182.45,59,Completed,Tech-548,0.81
+2024-06-10,Plant-A,BOF-Converter,Predictive,Conveyor Belt,83519.24,42,Scheduled,Tech-646,0.73
+2024-04-06,Plant-C,Coke-Oven,Corrective,Bearing,51148.07,45,Completed,Tech-351,0.666
+2024-02-12,Plant-D,BOF-Converter,Emergency,Compressor,32665.72,30,Scheduled,Tech-836,0.833
+2024-06-15,Plant-B,BOF-Converter,Preventive,Conveyor Belt,73224.04,37,Completed,Tech-580,0.839
+2024-05-02,Plant-C,Coke-Oven,Scheduled,Motor,48382.16,17,Completed,Tech-533,0.638
+2024-01-20,Plant-D,BOF-Converter,Preventive,Compressor,12713.5,51,Completed,Tech-876,0.804
+2024-05-04,Plant-C,Sinter-Plant,Predictive,Motor,75405.96,59,Completed,Tech-293,0.716
+2024-01-04,Plant-B,Sinter-Plant,Scheduled,Pump,25280.64,60,Scheduled,Tech-319,0.671
+2024-05-08,Plant-D,Rolling-Mill,Scheduled,Valve,68879.07,13,Scheduled,Tech-388,0.941
+2024-06-17,Plant-A,Blast-Furnace-1,Preventive,Bearing,6736.05,55,Scheduled,Tech-345,0.913
+2024-05-14,Plant-C,BOF-Converter,Emergency,Motor,61400.41,7,Completed,Tech-726,0.982
+2024-04-01,Plant-C,BOF-Converter,Preventive,Compressor,32789.92,70,Scheduled,Tech-376,0.953
+2024-02-10,Plant-B,Blast-Furnace-1,Corrective,Bearing,48502.91,21,Completed,Tech-538,0.893
+2024-06-19,Plant-B,Sinter-Plant,Corrective,Motor,13883.75,2,Completed,Tech-683,0.925
+2024-04-14,Plant-C,Rolling-Mill,Preventive,Heat Exchanger,809.83,47,Scheduled,Tech-108,0.572
+2024-02-26,Plant-A,Blast-Furnace-2,Emergency,Bearing,79336.19,52,Completed,Tech-857,0.765
+2024-06-16,Plant-C,Rolling-Mill,Preventive,Bearing,50710.09,15,Completed,Tech-169,0.744
+2024-05-20,Plant-B,Coke-Oven,Scheduled,Compressor,71894.41,12,Completed,Tech-593,0.653
+2024-02-05,Plant-B,Sinter-Plant,Preventive,Conveyor Belt,80421.85,4,Completed,Tech-984,0.955
+2024-05-21,Plant-B,Sinter-Plant,Preventive,Compressor,9888.91,50,Completed,Tech-787,0.814
+2024-06-22,Plant-C,Sinter-Plant,Predictive,Sensor,29202.71,7,Completed,Tech-459,0.718
+2024-04-27,Plant-B,Blast-Furnace-1,Scheduled,Compressor,6127.46,1,Completed,Tech-930,0.85
+2024-03-14,Plant-B,Blast-Furnace-1,Preventive,Bearing,25271.98,37,Completed,Tech-569,0.635
+2024-05-13,Plant-C,Sinter-Plant,Preventive,Conveyor Belt,66113.67,66,Scheduled,Tech-614,0.78
+2024-05-23,Plant-B,Blast-Furnace-1,Preventive,Pump,65051.11,12,In Progress,Tech-124,0.852
+2024-06-27,Plant-B,BOF-Converter,Corrective,Valve,50967.86,12,Scheduled,Tech-482,0.768
+2024-01-19,Plant-A,BOF-Converter,Predictive,Sensor,70664.42,57,Scheduled,Tech-283,0.872
+2024-06-27,Plant-D,Sinter-Plant,Preventive,Heat Exchanger,18241.09,27,Completed,Tech-282,0.893
+2024-02-18,Plant-D,Blast-Furnace-2,Emergency,Sensor,82359.3,69,Completed,Tech-792,0.587
+2024-03-29,Plant-A,BOF-Converter,Preventive,Conveyor Belt,34466.34,35,Completed,Tech-673,0.738
+2024-03-30,Plant-A,Rolling-Mill,Corrective,Bearing,71528.07,39,Completed,Tech-196,0.787
+2024-02-21,Plant-D,BOF-Converter,Corrective,Conveyor Belt,19774.49,24,Scheduled,Tech-763,0.63
+2024-04-16,Plant-D,Rolling-Mill,Scheduled,Valve,52694.28,46,In Progress,Tech-425,0.889
+2024-06-03,Plant-A,Blast-Furnace-1,Predictive,Sensor,81436.45,54,Overdue,Tech-332,0.846
+2024-06-22,Plant-B,Rolling-Mill,Scheduled,Conveyor Belt,2307.91,4,Completed,Tech-736,0.876
+2024-05-23,Plant-C,Blast-Furnace-2,Emergency,Motor,53735.27,19,Completed,Tech-589,0.628
+2024-01-15,Plant-D,BOF-Converter,Scheduled,Heat Exchanger,48020.13,3,Completed,Tech-453,0.907
+2024-02-09,Plant-D,BOF-Converter,Predictive,Motor,64824.42,53,Completed,Tech-215,0.806
+2024-06-06,Plant-A,BOF-Converter,Corrective,Pump,42713.42,34,Overdue,Tech-326,0.779
+2024-05-20,Plant-B,Blast-Furnace-2,Emergency,Sensor,55789.36,60,Completed,Tech-144,0.606
+2024-04-19,Plant-B,Blast-Furnace-1,Preventive,Pump,58225.89,61,Scheduled,Tech-828,0.883
+2024-01-09,Plant-C,Sinter-Plant,Corrective,Valve,1618.09,67,Scheduled,Tech-983,0.741
+2024-03-07,Plant-A,Coke-Oven,Predictive,Compressor,71618.13,21,Completed,Tech-833,0.924
+2024-02-24,Plant-A,Sinter-Plant,Scheduled,Compressor,25809.59,43,Completed,Tech-307,0.594
+2024-03-01,Plant-B,Coke-Oven,Emergency,Compressor,47718.94,1,Completed,Tech-725,0.784
+2024-02-26,Plant-B,BOF-Converter,Scheduled,Valve,29971.45,7,Completed,Tech-985,0.711
+2024-01-11,Plant-C,Blast-Furnace-1,Emergency,Pump,11573.66,19,Completed,Tech-685,0.811
+2024-03-29,Plant-D,Sinter-Plant,Predictive,Conveyor Belt,13597.22,24,In Progress,Tech-574,0.862
+2024-02-27,Plant-B,Blast-Furnace-1,Emergency,Valve,40561.53,53,Completed,Tech-229,0.631
+2024-01-24,Plant-D,Rolling-Mill,Scheduled,Bearing,32994.68,55,In Progress,Tech-673,0.644
+2024-04-09,Plant-B,Blast-Furnace-2,Emergency,Conveyor Belt,31071.89,48,Completed,Tech-816,0.572
+2024-05-22,Plant-D,Blast-Furnace-2,Corrective,Pump,79009.86,15,In Progress,Tech-149,0.7
+2024-02-17,Plant-C,Blast-Furnace-1,Scheduled,Bearing,31756.72,36,Completed,Tech-353,0.555
+2024-05-15,Plant-C,Sinter-Plant,Predictive,Conveyor Belt,26735.44,25,In Progress,Tech-130,0.914
+2024-06-22,Plant-D,BOF-Converter,Corrective,Heat Exchanger,53360.08,67,Completed,Tech-952,0.746
+2024-05-07,Plant-A,BOF-Converter,Preventive,Heat Exchanger,58356.66,57,Completed,Tech-749,0.666
+2024-02-29,Plant-B,BOF-Converter,Emergency,Valve,46770.67,68,Scheduled,Tech-156,0.673
+2024-06-23,Plant-D,BOF-Converter,Predictive,Sensor,39524.84,56,Completed,Tech-692,0.814
+2024-01-25,Plant-B,Blast-Furnace-1,Preventive,Conveyor Belt,65455.77,48,Completed,Tech-787,0.699
+2024-03-16,Plant-D,Sinter-Plant,Emergency,Sensor,67992.07,4,Completed,Tech-369,0.848
+2024-06-15,Plant-B,Sinter-Plant,Preventive,Compressor,3389.71,42,Completed,Tech-425,0.741
+2024-03-15,Plant-A,Blast-Furnace-1,Emergency,Sensor,48127.75,27,Scheduled,Tech-441,0.648
+2024-06-20,Plant-C,Coke-Oven,Preventive,Motor,55845.24,38,In Progress,Tech-395,0.803
+2024-02-18,Plant-B,Sinter-Plant,Emergency,Sensor,72368.83,43,Scheduled,Tech-767,0.807
+2024-04-07,Plant-D,Sinter-Plant,Corrective,Conveyor Belt,59574.67,14,Completed,Tech-175,0.811
+2024-06-13,Plant-D,Blast-Furnace-1,Corrective,Heat Exchanger,19093.32,32,Completed,Tech-906,0.924
+2024-04-27,Plant-C,Sinter-Plant,Scheduled,Bearing,22204.76,30,In Progress,Tech-960,0.582
+2024-01-10,Plant-D,BOF-Converter,Preventive,Compressor,66655.28,43,Scheduled,Tech-330,0.901
+2024-04-28,Plant-A,Blast-Furnace-1,Scheduled,Valve,29194.9,49,Scheduled,Tech-181,0.655
+2024-05-30,Plant-C,Blast-Furnace-2,Emergency,Valve,43009.71,52,Completed,Tech-364,0.763
+2024-01-25,Plant-B,Blast-Furnace-2,Scheduled,Motor,28841.07,72,Completed,Tech-510,0.63
+2024-04-18,Plant-C,Blast-Furnace-1,Predictive,Pump,38833.93,26,Scheduled,Tech-979,0.874
+2024-03-10,Plant-B,Coke-Oven,Corrective,Valve,30542.65,70,Scheduled,Tech-817,0.942
+2024-03-13,Plant-C,Blast-Furnace-1,Corrective,Heat Exchanger,42688.05,60,Scheduled,Tech-953,0.587
+2024-04-04,Plant-D,BOF-Converter,Preventive,Motor,42039.76,34,Completed,Tech-767,0.97
+2024-03-10,Plant-A,Blast-Furnace-1,Predictive,Valve,6274.27,27,Scheduled,Tech-762,0.937
+2024-02-11,Plant-A,Sinter-Plant,Emergency,Heat Exchanger,22699.91,53,Completed,Tech-851,0.953
+2024-03-12,Plant-A,Blast-Furnace-2,Predictive,Conveyor Belt,7604.82,69,In Progress,Tech-194,0.705
+2024-06-21,Plant-B,BOF-Converter,Emergency,Valve,46138.51,2,Overdue,Tech-288,0.597
+2024-04-12,Plant-D,BOF-Converter,Emergency,Motor,77430.51,68,Completed,Tech-578,0.648
+2024-02-15,Plant-A,Blast-Furnace-2,Corrective,Motor,66667.36,2,Completed,Tech-852,0.573
+2024-06-07,Plant-D,BOF-Converter,Preventive,Valve,37836.99,42,In Progress,Tech-595,0.976
+2024-04-04,Plant-D,BOF-Converter,Predictive,Pump,78105.12,44,Completed,Tech-691,0.929
+2024-03-10,Plant-B,Blast-Furnace-1,Preventive,Motor,21782.41,55,Overdue,Tech-420,0.58
+2024-06-22,Plant-A,Rolling-Mill,Predictive,Sensor,54002.83,71,Scheduled,Tech-251,0.6
+2024-06-23,Plant-D,Coke-Oven,Corrective,Bearing,5727.54,4,Completed,Tech-472,0.985
+2024-06-07,Plant-D,Blast-Furnace-1,Scheduled,Compressor,65352.68,31,Completed,Tech-171,0.975
+2024-05-27,Plant-C,BOF-Converter,Corrective,Heat Exchanger,66806.84,30,In Progress,Tech-141,0.62
+2024-02-26,Plant-A,Rolling-Mill,Emergency,Motor,55003.81,70,In Progress,Tech-181,0.596
+2024-06-04,Plant-D,Blast-Furnace-1,Preventive,Compressor,42396.44,7,Completed,Tech-442,0.624
+2024-04-18,Plant-B,Sinter-Plant,Emergency,Motor,73270.09,66,In Progress,Tech-336,0.981
+2024-03-11,Plant-D,Blast-Furnace-1,Emergency,Valve,20681.96,14,Completed,Tech-667,0.591
+2024-01-11,Plant-D,Blast-Furnace-1,Emergency,Sensor,54040.61,51,Completed,Tech-586,0.985
+2024-06-01,Plant-B,Blast-Furnace-2,Scheduled,Bearing,52286.78,55,Scheduled,Tech-409,0.751
+2024-06-04,Plant-D,Sinter-Plant,Corrective,Valve,37790.21,70,Completed,Tech-589,0.902
+2024-04-24,Plant-D,BOF-Converter,Preventive,Heat Exchanger,55155.53,61,Scheduled,Tech-122,0.779
+2024-01-02,Plant-B,Blast-Furnace-2,Scheduled,Heat Exchanger,68511.32,60,Scheduled,Tech-297,0.7
+2024-06-13,Plant-A,Blast-Furnace-1,Preventive,Pump,29035.52,60,Completed,Tech-459,0.875
+2024-06-29,Plant-A,Coke-Oven,Corrective,Heat Exchanger,76581.9,69,Scheduled,Tech-570,0.83
+2024-01-30,Plant-C,BOF-Converter,Emergency,Sensor,38776.08,35,Scheduled,Tech-489,0.823
+2024-03-12,Plant-B,BOF-Converter,Predictive,Compressor,12116.99,36,Overdue,Tech-524,0.762
+2024-02-22,Plant-D,Blast-Furnace-2,Corrective,Valve,66910.08,13,In Progress,Tech-854,0.579
+2024-05-25,Plant-C,Sinter-Plant,Predictive,Pump,52948.19,62,In Progress,Tech-647,0.686
+2024-05-10,Plant-A,Coke-Oven,Scheduled,Bearing,33232.37,27,Completed,Tech-103,0.86
+2024-02-12,Plant-A,BOF-Converter,Scheduled,Conveyor Belt,57824.46,55,Completed,Tech-674,0.929
+2024-05-14,Plant-B,Blast-Furnace-2,Predictive,Valve,79263.08,14,Completed,Tech-497,0.659
+2024-04-13,Plant-C,Rolling-Mill,Scheduled,Conveyor Belt,33649.32,26,Overdue,Tech-887,0.808
+2024-05-23,Plant-B,Rolling-Mill,Scheduled,Sensor,27533.88,64,Scheduled,Tech-265,0.897
+2024-02-13,Plant-B,Coke-Oven,Predictive,Bearing,56976.56,66,Overdue,Tech-711,0.86
+2024-05-01,Plant-C,Rolling-Mill,Emergency,Heat Exchanger,39999.14,49,Scheduled,Tech-773,0.893
+2024-02-11,Plant-C,Coke-Oven,Preventive,Conveyor Belt,20773.31,32,In Progress,Tech-619,0.774
+2024-04-24,Plant-B,Sinter-Plant,Predictive,Sensor,40140.95,53,In Progress,Tech-527,0.658
+2024-02-13,Plant-C,Blast-Furnace-2,Predictive,Motor,74571.86,52,Completed,Tech-411,0.983
+2024-06-22,Plant-C,Rolling-Mill,Emergency,Sensor,36033.13,26,Scheduled,Tech-198,0.834
+2024-03-12,Plant-D,Coke-Oven,Scheduled,Pump,39086.28,42,In Progress,Tech-559,0.899
+2024-04-27,Plant-C,Blast-Furnace-2,Predictive,Conveyor Belt,23868.0,2,Overdue,Tech-901,0.571
+2024-06-27,Plant-B,Sinter-Plant,Preventive,Bearing,82011.05,71,Completed,Tech-519,0.663
+2024-04-15,Plant-D,Blast-Furnace-1,Emergency,Motor,29001.34,9,Overdue,Tech-437,0.618
+2024-03-27,Plant-C,Coke-Oven,Predictive,Heat Exchanger,65922.32,35,Completed,Tech-430,0.569
+2024-05-12,Plant-C,Coke-Oven,Predictive,Motor,49854.75,27,Scheduled,Tech-286,0.835
+2024-06-08,Plant-A,Coke-Oven,Emergency,Pump,38888.21,12,In Progress,Tech-609,0.985
+2024-04-19,Plant-A,Sinter-Plant,Preventive,Conveyor Belt,9730.66,48,Completed,Tech-486,0.911
+2024-06-19,Plant-B,Rolling-Mill,Corrective,Compressor,61702.91,33,Completed,Tech-438,0.766
+2024-01-14,Plant-D,Blast-Furnace-2,Emergency,Heat Exchanger,54460.61,36,Completed,Tech-414,0.589
+2024-01-11,Plant-D,Rolling-Mill,Corrective,Conveyor Belt,62521.23,71,Completed,Tech-869,0.658
+2024-01-13,Plant-B,BOF-Converter,Predictive,Heat Exchanger,20120.49,34,Completed,Tech-614,0.67
+2024-01-01,Plant-B,Blast-Furnace-1,Scheduled,Pump,78557.26,5,Completed,Tech-714,0.919
+2024-02-17,Plant-A,BOF-Converter,Emergency,Conveyor Belt,19685.6,59,Completed,Tech-677,0.942
+2024-05-07,Plant-D,Blast-Furnace-1,Preventive,Sensor,78541.48,4,Completed,Tech-942,0.863
+2024-02-05,Plant-B,Blast-Furnace-2,Emergency,Bearing,81403.09,38,Scheduled,Tech-499,0.609
+2024-05-18,Plant-B,Blast-Furnace-2,Emergency,Motor,62356.37,45,Completed,Tech-629,0.758
+2024-06-05,Plant-C,Blast-Furnace-1,Corrective,Valve,11591.53,59,Overdue,Tech-762,0.763
+2024-03-02,Plant-C,Coke-Oven,Emergency,Motor,69021.02,63,Overdue,Tech-443,0.863
+2024-05-02,Plant-C,Blast-Furnace-1,Predictive,Conveyor Belt,38132.96,28,Completed,Tech-565,0.69
+2024-01-25,Plant-A,BOF-Converter,Preventive,Compressor,38096.1,40,Scheduled,Tech-465,0.822
+2024-04-03,Plant-D,Rolling-Mill,Predictive,Pump,11274.99,10,Completed,Tech-863,0.788
+2024-04-24,Plant-B,Rolling-Mill,Predictive,Pump,35643.65,71,Scheduled,Tech-681,0.668
+2024-06-25,Plant-B,Rolling-Mill,Emergency,Sensor,2090.13,41,Overdue,Tech-217,0.878
+2024-04-08,Plant-C,Coke-Oven,Preventive,Heat Exchanger,76780.61,28,Completed,Tech-959,0.677
+2024-04-05,Plant-D,Rolling-Mill,Preventive,Valve,71692.3,69,Scheduled,Tech-433,0.909
+2024-05-27,Plant-B,Blast-Furnace-1,Preventive,Sensor,69848.87,1,Completed,Tech-448,0.677
+2024-06-24,Plant-C,BOF-Converter,Corrective,Bearing,49256.99,4,Scheduled,Tech-326,0.665
+2024-01-28,Plant-A,Blast-Furnace-1,Preventive,Bearing,7375.31,10,Overdue,Tech-319,0.767
+2024-02-16,Plant-B,Blast-Furnace-1,Preventive,Pump,63654.58,69,Overdue,Tech-816,0.759
+2024-03-15,Plant-A,Rolling-Mill,Preventive,Pump,60601.49,29,Completed,Tech-952,0.721
+2024-03-21,Plant-B,Coke-Oven,Emergency,Conveyor Belt,32260.76,44,Completed,Tech-769,0.576
+2024-03-02,Plant-A,Sinter-Plant,Preventive,Compressor,58170.4,50,Completed,Tech-576,0.904
+2024-02-07,Plant-C,Blast-Furnace-1,Emergency,Heat Exchanger,70531.4,22,Completed,Tech-810,0.689
+2024-06-05,Plant-D,Blast-Furnace-2,Corrective,Compressor,82714.75,26,Completed,Tech-757,0.721
+2024-05-26,Plant-D,Blast-Furnace-2,Predictive,Compressor,18425.16,46,Overdue,Tech-739,0.795
+2024-05-10,Plant-C,BOF-Converter,Predictive,Valve,73689.56,42,Scheduled,Tech-292,0.948
+2024-03-16,Plant-B,BOF-Converter,Predictive,Pump,41644.05,7,Completed,Tech-895,0.617
+2024-03-16,Plant-A,Sinter-Plant,Emergency,Heat Exchanger,29810.95,5,Completed,Tech-945,0.556
+2024-01-01,Plant-D,Blast-Furnace-2,Scheduled,Valve,55323.51,39,In Progress,Tech-357,0.58
+2024-01-30,Plant-C,Coke-Oven,Emergency,Compressor,83967.32,7,In Progress,Tech-677,0.817
+2024-03-19,Plant-A,Rolling-Mill,Preventive,Sensor,5292.0,4,Completed,Tech-179,0.839
+2024-03-24,Plant-B,Sinter-Plant,Emergency,Conveyor Belt,15232.63,60,Completed,Tech-185,0.858
+2024-05-24,Plant-B,Blast-Furnace-1,Preventive,Compressor,17491.47,9,Scheduled,Tech-872,0.858
+2024-06-03,Plant-A,Sinter-Plant,Corrective,Conveyor Belt,53311.58,25,Overdue,Tech-139,0.835
+2024-04-20,Plant-D,Sinter-Plant,Preventive,Sensor,71615.25,54,Scheduled,Tech-532,0.604
+2024-04-22,Plant-C,BOF-Converter,Emergency,Sensor,51291.09,41,Completed,Tech-327,0.762
+2024-03-13,Plant-C,Blast-Furnace-2,Corrective,Compressor,16708.93,58,Completed,Tech-124,0.691
+2024-03-21,Plant-A,BOF-Converter,Preventive,Heat Exchanger,33865.45,22,Completed,Tech-289,0.583
+2024-04-21,Plant-A,Blast-Furnace-2,Predictive,Bearing,39316.03,23,Completed,Tech-583,0.658
+2024-01-29,Plant-A,BOF-Converter,Preventive,Bearing,2318.47,51,Overdue,Tech-119,0.706
+2024-05-31,Plant-C,Sinter-Plant,Corrective,Conveyor Belt,22834.0,16,Completed,Tech-919,0.943
+2024-02-12,Plant-C,Blast-Furnace-1,Corrective,Pump,63350.95,35,Completed,Tech-454,0.923
+2024-03-21,Plant-B,Sinter-Plant,Predictive,Heat Exchanger,82556.07,27,Completed,Tech-579,0.868
+2024-04-02,Plant-B,Blast-Furnace-2,Predictive,Bearing,72371.38,21,Scheduled,Tech-661,0.678
+2024-03-10,Plant-C,BOF-Converter,Predictive,Bearing,34517.2,29,Completed,Tech-198,0.928
+2024-05-02,Plant-B,Coke-Oven,Corrective,Compressor,60016.05,18,In Progress,Tech-322,0.94
+2024-03-11,Plant-A,Rolling-Mill,Corrective,Pump,74699.58,14,Completed,Tech-697,0.847

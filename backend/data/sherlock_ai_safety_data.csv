@@ -1,0 +1,551 @@
+timestamp,plant_id,unit_id,severity,incident_type,risk_score,resolved,response_time_minutes
+2024-01-01 00:00,Plant-D,Blast-Furnace-2,LOW,Electrical Fault,0.09,1,125
+2024-01-01 04:00,Plant-A,BOF-Converter,MEDIUM,Electrical Fault,0.275,1,110
+2024-01-01 08:00,Plant-A,Blast-Furnace-2,LOW,Personnel Injury,0.122,1,28
+2024-01-01 09:00,Plant-C,Blast-Furnace-2,CRITICAL,Near Miss,0.946,1,30
+2024-01-01 12:00,Plant-A,BOF-Converter,LOW,Electrical Fault,0.063,0,43
+2024-01-01 15:00,Plant-D,Rolling-Mill,MEDIUM,Personnel Injury,0.474,1,38
+2024-01-01 20:00,Plant-A,Blast-Furnace-2,LOW,Chemical Spill,0.214,1,116
+2024-01-01 21:00,Plant-B,BOF-Converter,CRITICAL,Personnel Injury,0.803,1,200
+2024-01-02 00:00,Plant-C,BOF-Converter,CRITICAL,Equipment Failure,0.884,0,175
+2024-01-02 04:00,Plant-D,Sinter-Plant,LOW,Personnel Injury,0.078,1,113
+2024-01-02 07:00,Plant-A,Blast-Furnace-2,MEDIUM,Structural,0.462,1,76
+2024-01-02 10:00,Plant-C,Blast-Furnace-2,MEDIUM,Equipment Failure,0.277,0,207
+2024-01-02 14:00,Plant-D,Rolling-Mill,LOW,Fire Hazard,0.186,1,198
+2024-01-02 17:00,Plant-A,Blast-Furnace-2,LOW,Structural,0.089,1,232
+2024-01-02 19:00,Plant-C,Sinter-Plant,MEDIUM,Electrical Fault,0.34,1,146
+2024-01-02 22:00,Plant-B,Blast-Furnace-2,HIGH,Electrical Fault,0.695,0,144
+2024-01-03 00:00,Plant-D,Blast-Furnace-1,HIGH,Electrical Fault,0.793,1,233
+2024-01-03 03:00,Plant-D,Blast-Furnace-2,HIGH,Near Miss,0.657,1,154
+2024-01-03 08:00,Plant-D,Rolling-Mill,LOW,Gas Leak,0.224,1,112
+2024-01-03 10:00,Plant-B,Rolling-Mill,MEDIUM,Electrical Fault,0.277,1,57
+2024-01-03 14:00,Plant-A,Sinter-Plant,MEDIUM,Personnel Injury,0.544,1,85
+2024-01-03 16:00,Plant-D,BOF-Converter,LOW,Gas Leak,0.135,1,53
+2024-01-03 18:00,Plant-B,Blast-Furnace-2,MEDIUM,Fire Hazard,0.371,0,188
+2024-01-03 23:00,Plant-A,Coke-Oven,LOW,Near Miss,0.224,0,240
+2024-01-04 02:00,Plant-B,Sinter-Plant,LOW,Structural,0.105,1,186
+2024-01-04 05:00,Plant-A,Rolling-Mill,MEDIUM,Fire Hazard,0.4,1,106
+2024-01-04 08:00,Plant-C,Rolling-Mill,HIGH,Personnel Injury,0.721,1,215
+2024-01-04 11:00,Plant-D,Sinter-Plant,LOW,Chemical Spill,0.05,1,151
+2024-01-04 12:00,Plant-B,Coke-Oven,HIGH,Electrical Fault,0.633,0,191
+2024-01-04 16:00,Plant-C,Blast-Furnace-1,LOW,Personnel Injury,0.074,1,77
+2024-01-04 19:00,Plant-B,Coke-Oven,CRITICAL,Fire Hazard,0.85,1,128
+2024-01-04 22:00,Plant-A,Blast-Furnace-2,LOW,Gas Leak,0.235,1,93
+2024-01-05 02:00,Plant-A,Blast-Furnace-2,LOW,Equipment Failure,0.194,1,119
+2024-01-05 03:00,Plant-A,Blast-Furnace-1,CRITICAL,Gas Leak,0.959,0,125
+2024-01-05 06:00,Plant-C,Blast-Furnace-2,MEDIUM,Chemical Spill,0.472,1,156
+2024-01-05 10:00,Plant-B,BOF-Converter,LOW,Near Miss,0.089,1,167
+2024-01-05 12:00,Plant-D,Rolling-Mill,MEDIUM,Structural,0.334,1,205
+2024-01-05 15:00,Plant-C,Sinter-Plant,MEDIUM,Fire Hazard,0.289,1,110
+2024-01-05 19:00,Plant-B,Blast-Furnace-1,MEDIUM,Personnel Injury,0.368,1,176
+2024-01-05 21:00,Plant-A,BOF-Converter,HIGH,Fire Hazard,0.55,1,228
+2024-01-06 02:00,Plant-D,BOF-Converter,MEDIUM,Fire Hazard,0.4,1,55
+2024-01-06 04:00,Plant-B,Rolling-Mill,LOW,Electrical Fault,0.189,0,238
+2024-01-06 06:00,Plant-C,BOF-Converter,MEDIUM,Fire Hazard,0.386,1,107
+2024-01-06 09:00,Plant-D,Coke-Oven,MEDIUM,Equipment Failure,0.253,1,202
+2024-01-06 14:00,Plant-D,Coke-Oven,MEDIUM,Structural,0.412,1,179
+2024-01-06 17:00,Plant-A,BOF-Converter,LOW,Equipment Failure,0.051,1,168
+2024-01-06 19:00,Plant-C,BOF-Converter,MEDIUM,Near Miss,0.423,0,89
+2024-01-06 21:00,Plant-C,BOF-Converter,LOW,Near Miss,0.145,0,88
+2024-01-07 01:00,Plant-C,Coke-Oven,HIGH,Equipment Failure,0.645,0,53
+2024-01-07 05:00,Plant-A,Blast-Furnace-1,LOW,Fire Hazard,0.24,1,180
+2024-01-07 07:00,Plant-C,Blast-Furnace-2,LOW,Near Miss,0.245,1,150
+2024-01-07 11:00,Plant-C,BOF-Converter,MEDIUM,Chemical Spill,0.523,1,60
+2024-01-07 14:00,Plant-B,BOF-Converter,LOW,Electrical Fault,0.206,0,229
+2024-01-07 17:00,Plant-D,Coke-Oven,LOW,Electrical Fault,0.212,1,89
+2024-01-07 19:00,Plant-C,Sinter-Plant,HIGH,Equipment Failure,0.773,1,197
+2024-01-07 23:00,Plant-D,Coke-Oven,HIGH,Near Miss,0.596,1,174
+2024-01-08 01:00,Plant-A,Sinter-Plant,MEDIUM,Chemical Spill,0.347,1,174
+2024-01-08 03:00,Plant-B,Blast-Furnace-2,LOW,Equipment Failure,0.168,1,132
+2024-01-08 07:00,Plant-A,Blast-Furnace-2,LOW,Near Miss,0.137,1,177
+2024-01-08 09:00,Plant-C,BOF-Converter,MEDIUM,Structural,0.469,1,19
+2024-01-08 13:00,Plant-D,Sinter-Plant,HIGH,Personnel Injury,0.586,1,31
+2024-01-08 17:00,Plant-A,Blast-Furnace-1,LOW,Near Miss,0.13,0,9
+2024-01-08 19:00,Plant-C,BOF-Converter,MEDIUM,Equipment Failure,0.461,0,93
+2024-01-08 21:00,Plant-D,Sinter-Plant,LOW,Gas Leak,0.126,1,210
+2024-01-09 02:00,Plant-C,Rolling-Mill,HIGH,Equipment Failure,0.759,1,153
+2024-01-09 04:00,Plant-A,Coke-Oven,HIGH,Fire Hazard,0.694,1,156
+2024-01-09 06:00,Plant-B,Rolling-Mill,CRITICAL,Equipment Failure,0.929,0,210
+2024-01-09 09:00,Plant-B,Blast-Furnace-1,CRITICAL,Personnel Injury,0.849,1,224
+2024-01-09 14:00,Plant-C,BOF-Converter,MEDIUM,Equipment Failure,0.497,1,208
+2024-01-09 16:00,Plant-C,Rolling-Mill,HIGH,Chemical Spill,0.687,1,83
+2024-01-09 18:00,Plant-D,Sinter-Plant,HIGH,Personnel Injury,0.621,1,22
+2024-01-09 21:00,Plant-B,Blast-Furnace-1,LOW,Personnel Injury,0.125,1,21
+2024-01-10 00:00,Plant-D,Blast-Furnace-1,HIGH,Chemical Spill,0.752,1,168
+2024-01-10 03:00,Plant-D,Coke-Oven,HIGH,Equipment Failure,0.628,1,14
+2024-01-10 07:00,Plant-C,Sinter-Plant,MEDIUM,Equipment Failure,0.463,1,220
+2024-01-10 09:00,Plant-B,Sinter-Plant,LOW,Near Miss,0.082,1,29
+2024-01-10 13:00,Plant-B,Sinter-Plant,HIGH,Electrical Fault,0.68,1,145
+2024-01-10 17:00,Plant-A,Blast-Furnace-1,LOW,Structural,0.218,1,93
+2024-01-10 18:00,Plant-C,BOF-Converter,HIGH,Personnel Injury,0.591,1,58
+2024-01-10 21:00,Plant-C,Blast-Furnace-1,LOW,Structural,0.246,1,25
+2024-01-11 01:00,Plant-C,Blast-Furnace-2,MEDIUM,Structural,0.454,1,167
+2024-01-11 04:00,Plant-B,Coke-Oven,LOW,Chemical Spill,0.176,1,17
+2024-01-11 07:00,Plant-A,Coke-Oven,LOW,Near Miss,0.086,1,125
+2024-01-11 10:00,Plant-C,Coke-Oven,LOW,Personnel Injury,0.216,1,129
+2024-01-11 12:00,Plant-A,Blast-Furnace-2,HIGH,Chemical Spill,0.744,1,51
+2024-01-11 16:00,Plant-D,Blast-Furnace-1,LOW,Chemical Spill,0.077,1,161
+2024-01-11 20:00,Plant-B,Sinter-Plant,MEDIUM,Gas Leak,0.346,1,36
+2024-01-11 22:00,Plant-D,Blast-Furnace-1,LOW,Gas Leak,0.206,1,155
+2024-01-12 00:00,Plant-B,Coke-Oven,MEDIUM,Gas Leak,0.407,1,80
+2024-01-12 04:00,Plant-D,BOF-Converter,LOW,Fire Hazard,0.164,1,108
+2024-01-12 08:00,Plant-A,Rolling-Mill,LOW,Equipment Failure,0.157,1,40
+2024-01-12 10:00,Plant-C,Blast-Furnace-1,LOW,Fire Hazard,0.211,1,162
+2024-01-12 14:00,Plant-B,Coke-Oven,MEDIUM,Gas Leak,0.486,0,83
+2024-01-12 16:00,Plant-C,BOF-Converter,HIGH,Fire Hazard,0.568,1,16
+2024-01-12 19:00,Plant-B,Coke-Oven,MEDIUM,Gas Leak,0.255,1,34
+2024-01-12 21:00,Plant-A,Rolling-Mill,LOW,Personnel Injury,0.138,1,34
+2024-01-13 01:00,Plant-D,Blast-Furnace-2,LOW,Structural,0.104,1,237
+2024-01-13 05:00,Plant-D,Blast-Furnace-1,LOW,Electrical Fault,0.145,1,7
+2024-01-13 07:00,Plant-A,Blast-Furnace-1,LOW,Equipment Failure,0.212,1,230
+2024-01-13 10:00,Plant-C,Sinter-Plant,LOW,Equipment Failure,0.081,1,174
+2024-01-13 12:00,Plant-B,BOF-Converter,LOW,Gas Leak,0.071,1,127
+2024-01-13 16:00,Plant-B,BOF-Converter,MEDIUM,Gas Leak,0.452,1,186
+2024-01-13 19:00,Plant-C,Blast-Furnace-1,LOW,Personnel Injury,0.069,1,59
+2024-01-13 23:00,Plant-C,Blast-Furnace-1,LOW,Near Miss,0.214,1,58
+2024-01-14 01:00,Plant-C,Coke-Oven,MEDIUM,Chemical Spill,0.286,0,169
+2024-01-14 05:00,Plant-D,BOF-Converter,LOW,Structural,0.166,1,189
+2024-01-14 08:00,Plant-C,Rolling-Mill,MEDIUM,Structural,0.457,1,237
+2024-01-14 09:00,Plant-D,Blast-Furnace-1,LOW,Structural,0.087,1,195
+2024-01-14 12:00,Plant-C,Blast-Furnace-1,LOW,Gas Leak,0.134,1,195
+2024-01-14 15:00,Plant-B,Rolling-Mill,HIGH,Gas Leak,0.581,1,176
+2024-01-14 19:00,Plant-C,Coke-Oven,MEDIUM,Fire Hazard,0.5,1,30
+2024-01-14 21:00,Plant-A,Coke-Oven,MEDIUM,Fire Hazard,0.416,1,136
+2024-01-15 01:00,Plant-B,Blast-Furnace-1,CRITICAL,Near Miss,0.802,1,239
+2024-01-15 04:00,Plant-A,Rolling-Mill,LOW,Equipment Failure,0.09,1,110
+2024-01-15 08:00,Plant-C,Rolling-Mill,HIGH,Near Miss,0.712,1,211
+2024-01-15 11:00,Plant-B,Coke-Oven,MEDIUM,Structural,0.521,0,45
+2024-01-15 12:00,Plant-A,BOF-Converter,LOW,Fire Hazard,0.133,1,183
+2024-01-15 17:00,Plant-C,BOF-Converter,MEDIUM,Chemical Spill,0.454,1,9
+2024-01-15 19:00,Plant-C,Blast-Furnace-1,LOW,Personnel Injury,0.12,1,198
+2024-01-15 23:00,Plant-C,Coke-Oven,MEDIUM,Electrical Fault,0.425,1,219
+2024-01-16 02:00,Plant-D,Blast-Furnace-1,LOW,Electrical Fault,0.148,1,7
+2024-01-16 05:00,Plant-B,Blast-Furnace-2,LOW,Near Miss,0.123,1,149
+2024-01-16 07:00,Plant-B,BOF-Converter,MEDIUM,Personnel Injury,0.367,0,78
+2024-01-16 10:00,Plant-A,BOF-Converter,MEDIUM,Equipment Failure,0.369,1,109
+2024-01-16 12:00,Plant-C,Blast-Furnace-1,LOW,Electrical Fault,0.098,0,212
+2024-01-16 16:00,Plant-B,Coke-Oven,HIGH,Personnel Injury,0.56,0,187
+2024-01-16 18:00,Plant-B,BOF-Converter,LOW,Near Miss,0.211,1,27
+2024-01-16 21:00,Plant-C,Rolling-Mill,CRITICAL,Fire Hazard,0.93,1,221
+2024-01-17 00:00,Plant-B,Blast-Furnace-1,HIGH,Near Miss,0.757,1,125
+2024-01-17 03:00,Plant-B,Blast-Furnace-1,MEDIUM,Fire Hazard,0.344,1,41
+2024-01-17 08:00,Plant-D,BOF-Converter,LOW,Equipment Failure,0.118,1,108
+2024-01-17 11:00,Plant-C,Blast-Furnace-1,LOW,Equipment Failure,0.175,1,106
+2024-01-17 13:00,Plant-B,Sinter-Plant,HIGH,Chemical Spill,0.715,0,63
+2024-01-17 17:00,Plant-D,Blast-Furnace-2,MEDIUM,Structural,0.471,0,80
+2024-01-17 20:00,Plant-D,Blast-Furnace-1,MEDIUM,Chemical Spill,0.42,0,115
+2024-01-17 22:00,Plant-D,Coke-Oven,LOW,Chemical Spill,0.161,1,141
+2024-01-18 02:00,Plant-D,Sinter-Plant,HIGH,Chemical Spill,0.662,1,60
+2024-01-18 04:00,Plant-A,Blast-Furnace-2,MEDIUM,Structural,0.54,1,180
+2024-01-18 08:00,Plant-C,BOF-Converter,LOW,Structural,0.243,1,189
+2024-01-18 10:00,Plant-B,BOF-Converter,LOW,Gas Leak,0.071,0,168
+2024-01-18 13:00,Plant-C,Blast-Furnace-2,LOW,Personnel Injury,0.22,1,53
+2024-01-18 16:00,Plant-C,BOF-Converter,LOW,Chemical Spill,0.154,1,193
+2024-01-18 18:00,Plant-D,BOF-Converter,MEDIUM,Gas Leak,0.354,1,101
+2024-01-18 23:00,Plant-C,Sinter-Plant,LOW,Fire Hazard,0.104,1,210
+2024-01-19 02:00,Plant-D,Rolling-Mill,CRITICAL,Electrical Fault,0.858,0,234
+2024-01-19 04:00,Plant-A,Rolling-Mill,HIGH,Structural,0.697,0,218
+2024-01-19 07:00,Plant-D,Sinter-Plant,HIGH,Chemical Spill,0.78,1,237
+2024-01-19 09:00,Plant-D,Sinter-Plant,MEDIUM,Fire Hazard,0.471,1,109
+2024-01-19 12:00,Plant-A,Coke-Oven,MEDIUM,Structural,0.517,1,197
+2024-01-19 16:00,Plant-A,Blast-Furnace-2,CRITICAL,Fire Hazard,0.933,1,149
+2024-01-19 18:00,Plant-C,BOF-Converter,LOW,Structural,0.073,1,187
+2024-01-19 22:00,Plant-A,Blast-Furnace-1,MEDIUM,Chemical Spill,0.463,1,155
+2024-01-20 00:00,Plant-A,Coke-Oven,HIGH,Structural,0.583,1,20
+2024-01-20 03:00,Plant-D,Blast-Furnace-1,MEDIUM,Personnel Injury,0.495,1,180
+2024-01-20 08:00,Plant-B,Coke-Oven,MEDIUM,Gas Leak,0.267,0,160
+2024-01-20 11:00,Plant-A,BOF-Converter,MEDIUM,Gas Leak,0.467,1,211
+2024-01-20 13:00,Plant-A,Blast-Furnace-1,MEDIUM,Electrical Fault,0.483,0,148
+2024-01-20 15:00,Plant-C,Blast-Furnace-1,CRITICAL,Chemical Spill,0.941,0,124
+2024-01-20 20:00,Plant-C,Sinter-Plant,MEDIUM,Fire Hazard,0.468,1,54
+2024-01-20 22:00,Plant-D,BOF-Converter,MEDIUM,Fire Hazard,0.271,1,82
+2024-01-21 00:00,Plant-B,Coke-Oven,LOW,Gas Leak,0.201,1,163
+2024-01-21 04:00,Plant-D,BOF-Converter,LOW,Personnel Injury,0.054,1,76
+2024-01-21 06:00,Plant-C,BOF-Converter,MEDIUM,Equipment Failure,0.397,1,142
+2024-01-21 10:00,Plant-C,Coke-Oven,LOW,Fire Hazard,0.152,1,92
+2024-01-21 14:00,Plant-A,Blast-Furnace-2,MEDIUM,Electrical Fault,0.48,1,211
+2024-01-21 17:00,Plant-C,Sinter-Plant,MEDIUM,Chemical Spill,0.39,1,145
+2024-01-21 19:00,Plant-D,Blast-Furnace-1,MEDIUM,Near Miss,0.305,1,155
+2024-01-21 23:00,Plant-B,Blast-Furnace-2,HIGH,Near Miss,0.585,1,47
+2024-01-22 01:00,Plant-A,Blast-Furnace-1,HIGH,Chemical Spill,0.566,0,190
+2024-01-22 04:00,Plant-D,Rolling-Mill,LOW,Near Miss,0.206,1,179
+2024-01-22 06:00,Plant-C,Coke-Oven,LOW,Equipment Failure,0.143,1,199
+2024-01-22 10:00,Plant-D,Rolling-Mill,LOW,Fire Hazard,0.057,1,134
+2024-01-22 12:00,Plant-A,Sinter-Plant,LOW,Equipment Failure,0.13,1,53
+2024-01-22 15:00,Plant-D,BOF-Converter,MEDIUM,Chemical Spill,0.288,1,142
+2024-01-22 20:00,Plant-A,Coke-Oven,LOW,Chemical Spill,0.073,1,110
+2024-01-22 23:00,Plant-A,Sinter-Plant,LOW,Fire Hazard,0.075,1,134
+2024-01-23 02:00,Plant-D,Coke-Oven,LOW,Equipment Failure,0.108,1,40
+2024-01-23 05:00,Plant-A,Blast-Furnace-1,HIGH,Equipment Failure,0.607,1,137
+2024-01-23 08:00,Plant-D,Coke-Oven,CRITICAL,Chemical Spill,0.9,1,193
+2024-01-23 10:00,Plant-D,BOF-Converter,MEDIUM,Fire Hazard,0.365,1,21
+2024-01-23 12:00,Plant-B,Rolling-Mill,HIGH,Chemical Spill,0.707,1,21
+2024-01-23 16:00,Plant-B,BOF-Converter,LOW,Fire Hazard,0.249,1,192
+2024-01-23 19:00,Plant-A,Sinter-Plant,CRITICAL,Equipment Failure,0.885,1,230
+2024-01-23 21:00,Plant-C,Rolling-Mill,CRITICAL,Equipment Failure,0.84,1,201
+2024-01-24 01:00,Plant-C,Coke-Oven,LOW,Structural,0.167,1,78
+2024-01-24 03:00,Plant-B,Sinter-Plant,HIGH,Chemical Spill,0.641,1,50
+2024-01-24 07:00,Plant-D,Coke-Oven,MEDIUM,Gas Leak,0.463,0,194
+2024-01-24 11:00,Plant-B,Rolling-Mill,LOW,Equipment Failure,0.069,1,177
+2024-01-24 12:00,Plant-D,Blast-Furnace-2,HIGH,Fire Hazard,0.703,1,233
+2024-01-24 15:00,Plant-B,Sinter-Plant,LOW,Electrical Fault,0.249,1,219
+2024-01-24 19:00,Plant-D,Sinter-Plant,HIGH,Chemical Spill,0.655,1,113
+2024-01-24 22:00,Plant-B,Blast-Furnace-2,LOW,Gas Leak,0.125,1,143
+2024-01-25 01:00,Plant-C,Rolling-Mill,LOW,Near Miss,0.076,1,135
+2024-01-25 03:00,Plant-C,BOF-Converter,HIGH,Fire Hazard,0.557,1,41
+2024-01-25 08:00,Plant-D,Coke-Oven,LOW,Personnel Injury,0.176,1,13
+2024-01-25 09:00,Plant-C,Blast-Furnace-1,MEDIUM,Electrical Fault,0.323,1,206
+2024-01-25 13:00,Plant-B,BOF-Converter,HIGH,Electrical Fault,0.715,0,218
+2024-01-25 15:00,Plant-C,Rolling-Mill,LOW,Electrical Fault,0.155,0,100
+2024-01-25 19:00,Plant-B,Coke-Oven,LOW,Equipment Failure,0.11,1,16
+2024-01-25 22:00,Plant-A,BOF-Converter,MEDIUM,Gas Leak,0.439,1,179
+2024-01-26 02:00,Plant-A,Rolling-Mill,LOW,Equipment Failure,0.109,1,205
+2024-01-26 03:00,Plant-C,Blast-Furnace-2,LOW,Personnel Injury,0.18,0,29
+2024-01-26 08:00,Plant-C,Rolling-Mill,MEDIUM,Electrical Fault,0.349,1,211
+2024-01-26 09:00,Plant-D,Sinter-Plant,LOW,Electrical Fault,0.064,1,182
+2024-01-26 12:00,Plant-B,Rolling-Mill,CRITICAL,Structural,0.916,0,73
+2024-01-26 15:00,Plant-C,BOF-Converter,LOW,Gas Leak,0.075,1,186
+2024-01-26 20:00,Plant-A,Blast-Furnace-1,HIGH,Structural,0.754,1,177
+2024-01-26 22:00,Plant-C,Blast-Furnace-1,HIGH,Near Miss,0.599,1,220
+2024-01-27 00:00,Plant-C,Coke-Oven,LOW,Structural,0.197,1,149
+2024-01-27 03:00,Plant-A,Blast-Furnace-2,LOW,Structural,0.132,1,231
+2024-01-27 06:00,Plant-C,Blast-Furnace-2,MEDIUM,Fire Hazard,0.329,1,141
+2024-01-27 09:00,Plant-A,Blast-Furnace-2,LOW,Fire Hazard,0.222,1,81
+2024-01-27 14:00,Plant-B,Sinter-Plant,LOW,Equipment Failure,0.15,0,115
+2024-01-27 15:00,Plant-B,Blast-Furnace-2,LOW,Near Miss,0.196,1,206
+2024-01-27 19:00,Plant-C,Sinter-Plant,LOW,Fire Hazard,0.102,1,31
+2024-01-27 21:00,Plant-D,Coke-Oven,LOW,Personnel Injury,0.216,1,125
+2024-01-28 02:00,Plant-A,Blast-Furnace-1,LOW,Chemical Spill,0.13,0,188
+2024-01-28 03:00,Plant-A,BOF-Converter,LOW,Personnel Injury,0.191,1,227
+2024-01-28 08:00,Plant-C,Rolling-Mill,MEDIUM,Fire Hazard,0.35,1,65
+2024-01-28 09:00,Plant-C,Blast-Furnace-1,LOW,Near Miss,0.208,1,160
+2024-01-28 12:00,Plant-C,Rolling-Mill,LOW,Structural,0.096,1,217
+2024-01-28 15:00,Plant-A,Sinter-Plant,LOW,Near Miss,0.109,1,172
+2024-01-28 20:00,Plant-B,Sinter-Plant,LOW,Equipment Failure,0.247,1,194
+2024-01-28 22:00,Plant-C,Blast-Furnace-1,MEDIUM,Fire Hazard,0.25,1,35
+2024-01-29 01:00,Plant-B,Blast-Furnace-2,LOW,Equipment Failure,0.098,1,16
+2024-01-29 04:00,Plant-A,Coke-Oven,LOW,Structural,0.111,1,13
+2024-01-29 06:00,Plant-D,BOF-Converter,LOW,Structural,0.148,1,219
+2024-01-29 10:00,Plant-A,Coke-Oven,LOW,Equipment Failure,0.097,1,6
+2024-01-29 14:00,Plant-A,BOF-Converter,MEDIUM,Structural,0.459,1,226
+2024-01-29 15:00,Plant-B,Blast-Furnace-1,CRITICAL,Electrical Fault,0.873,1,191
+2024-01-29 20:00,Plant-D,Sinter-Plant,CRITICAL,Near Miss,0.879,1,49
+2024-01-29 23:00,Plant-D,Coke-Oven,MEDIUM,Equipment Failure,0.333,1,156
+2024-01-30 02:00,Plant-D,Rolling-Mill,LOW,Gas Leak,0.054,1,130
+2024-01-30 03:00,Plant-B,BOF-Converter,LOW,Personnel Injury,0.063,1,199
+2024-01-30 07:00,Plant-B,Coke-Oven,HIGH,Personnel Injury,0.703,0,94
+2024-01-30 09:00,Plant-D,Coke-Oven,HIGH,Gas Leak,0.684,1,219
+2024-01-30 13:00,Plant-C,Blast-Furnace-1,CRITICAL,Chemical Spill,0.849,0,52
+2024-01-30 15:00,Plant-C,Coke-Oven,CRITICAL,Near Miss,0.817,1,192
+2024-01-30 20:00,Plant-D,Rolling-Mill,MEDIUM,Fire Hazard,0.344,1,42
+2024-01-30 23:00,Plant-B,Blast-Furnace-1,LOW,Near Miss,0.099,1,39
+2024-01-31 00:00,Plant-C,Rolling-Mill,LOW,Gas Leak,0.231,1,188
+2024-01-31 04:00,Plant-D,Coke-Oven,HIGH,Gas Leak,0.559,1,127
+2024-01-31 08:00,Plant-C,Sinter-Plant,MEDIUM,Equipment Failure,0.516,0,59
+2024-01-31 09:00,Plant-D,Sinter-Plant,CRITICAL,Chemical Spill,0.857,1,102
+2024-01-31 14:00,Plant-D,BOF-Converter,LOW,Near Miss,0.082,1,180
+2024-01-31 15:00,Plant-B,Sinter-Plant,CRITICAL,Gas Leak,0.975,1,50
+2024-01-31 20:00,Plant-C,Blast-Furnace-2,LOW,Equipment Failure,0.075,1,64
+2024-01-31 22:00,Plant-C,Blast-Furnace-1,MEDIUM,Gas Leak,0.474,1,189
+2024-02-01 00:00,Plant-A,Rolling-Mill,HIGH,Fire Hazard,0.663,1,124
+2024-02-01 03:00,Plant-A,Sinter-Plant,LOW,Electrical Fault,0.244,1,87
+2024-02-01 07:00,Plant-A,Coke-Oven,MEDIUM,Fire Hazard,0.359,1,207
+2024-02-01 11:00,Plant-C,Coke-Oven,LOW,Fire Hazard,0.211,0,129
+2024-02-01 12:00,Plant-B,BOF-Converter,LOW,Near Miss,0.05,1,8
+2024-02-01 15:00,Plant-B,Rolling-Mill,MEDIUM,Gas Leak,0.391,1,15
+2024-02-01 18:00,Plant-D,BOF-Converter,CRITICAL,Electrical Fault,0.879,1,102
+2024-02-01 22:00,Plant-B,BOF-Converter,LOW,Gas Leak,0.186,1,160
+2024-02-02 01:00,Plant-B,Blast-Furnace-1,HIGH,Personnel Injury,0.786,1,235
+2024-02-02 03:00,Plant-C,Blast-Furnace-1,HIGH,Electrical Fault,0.57,1,132
+2024-02-02 07:00,Plant-B,Blast-Furnace-2,MEDIUM,Personnel Injury,0.263,1,91
+2024-02-02 10:00,Plant-C,Rolling-Mill,HIGH,Personnel Injury,0.636,1,97
+2024-02-02 14:00,Plant-C,Blast-Furnace-2,CRITICAL,Electrical Fault,0.969,1,26
+2024-02-02 17:00,Plant-B,Blast-Furnace-2,CRITICAL,Chemical Spill,0.94,0,230
+2024-02-02 18:00,Plant-B,Coke-Oven,MEDIUM,Chemical Spill,0.311,1,17
+2024-02-02 23:00,Plant-A,Blast-Furnace-1,MEDIUM,Near Miss,0.4,0,163
+2024-02-03 01:00,Plant-B,Rolling-Mill,CRITICAL,Structural,0.965,1,69
+2024-02-03 03:00,Plant-D,Rolling-Mill,HIGH,Structural,0.627,1,96
+2024-02-03 06:00,Plant-B,Rolling-Mill,LOW,Near Miss,0.21,1,186
+2024-02-03 11:00,Plant-D,BOF-Converter,MEDIUM,Structural,0.403,1,13
+2024-02-03 13:00,Plant-C,Sinter-Plant,LOW,Near Miss,0.249,1,186
+2024-02-03 17:00,Plant-D,Blast-Furnace-2,LOW,Chemical Spill,0.159,1,27
+2024-02-03 19:00,Plant-B,Sinter-Plant,HIGH,Electrical Fault,0.788,0,135
+2024-02-03 23:00,Plant-D,Sinter-Plant,MEDIUM,Personnel Injury,0.35,1,79
+2024-02-04 01:00,Plant-A,Coke-Oven,LOW,Chemical Spill,0.233,1,58
+2024-02-04 03:00,Plant-A,Blast-Furnace-2,MEDIUM,Structural,0.404,1,79
+2024-02-04 06:00,Plant-D,Rolling-Mill,LOW,Structural,0.124,1,103
+2024-02-04 09:00,Plant-B,Sinter-Plant,MEDIUM,Gas Leak,0.498,1,222
+2024-02-04 13:00,Plant-A,Sinter-Plant,MEDIUM,Structural,0.315,1,227
+2024-02-04 15:00,Plant-C,Coke-Oven,HIGH,Equipment Failure,0.691,1,38
+2024-02-04 19:00,Plant-A,Blast-Furnace-2,LOW,Equipment Failure,0.189,1,164
+2024-02-04 23:00,Plant-C,BOF-Converter,CRITICAL,Structural,0.958,1,153
+2024-02-05 02:00,Plant-D,Coke-Oven,MEDIUM,Gas Leak,0.453,1,115
+2024-02-05 04:00,Plant-D,Blast-Furnace-2,LOW,Structural,0.096,1,39
+2024-02-05 07:00,Plant-A,Blast-Furnace-2,LOW,Personnel Injury,0.24,1,81
+2024-02-05 10:00,Plant-A,Rolling-Mill,MEDIUM,Near Miss,0.469,1,76
+2024-02-05 13:00,Plant-B,BOF-Converter,MEDIUM,Equipment Failure,0.287,1,21
+2024-02-05 15:00,Plant-B,Rolling-Mill,MEDIUM,Electrical Fault,0.478,0,50
+2024-02-05 18:00,Plant-A,Rolling-Mill,HIGH,Gas Leak,0.552,1,148
+2024-02-05 22:00,Plant-D,Blast-Furnace-1,CRITICAL,Equipment Failure,0.938,1,25
+2024-02-06 01:00,Plant-C,Rolling-Mill,LOW,Chemical Spill,0.241,1,74
+2024-02-06 05:00,Plant-D,BOF-Converter,MEDIUM,Fire Hazard,0.498,1,14
+2024-02-06 08:00,Plant-B,Blast-Furnace-2,LOW,Gas Leak,0.063,1,50
+2024-02-06 09:00,Plant-B,Blast-Furnace-2,CRITICAL,Near Miss,0.808,1,98
+2024-02-06 14:00,Plant-D,BOF-Converter,CRITICAL,Near Miss,0.815,0,200
+2024-02-06 15:00,Plant-B,Sinter-Plant,MEDIUM,Chemical Spill,0.523,1,204
+2024-02-06 20:00,Plant-D,Blast-Furnace-2,HIGH,Structural,0.758,1,23
+2024-02-06 22:00,Plant-A,Coke-Oven,MEDIUM,Gas Leak,0.463,0,231
+2024-02-07 02:00,Plant-D,Blast-Furnace-1,HIGH,Gas Leak,0.654,0,164
+2024-02-07 04:00,Plant-C,Blast-Furnace-1,MEDIUM,Chemical Spill,0.382,1,71
+2024-02-07 08:00,Plant-C,Blast-Furnace-2,CRITICAL,Near Miss,0.816,1,25
+2024-02-07 11:00,Plant-A,Blast-Furnace-2,LOW,Gas Leak,0.172,0,37
+2024-02-07 13:00,Plant-D,Coke-Oven,CRITICAL,Gas Leak,0.814,1,180
+2024-02-07 15:00,Plant-B,Rolling-Mill,MEDIUM,Structural,0.413,1,144
+2024-02-07 18:00,Plant-A,Coke-Oven,LOW,Fire Hazard,0.143,1,185
+2024-02-07 21:00,Plant-A,Blast-Furnace-2,MEDIUM,Personnel Injury,0.523,1,62
+2024-02-08 00:00,Plant-A,Blast-Furnace-2,LOW,Near Miss,0.155,1,97
+2024-02-08 04:00,Plant-B,Blast-Furnace-2,MEDIUM,Equipment Failure,0.394,1,31
+2024-02-08 07:00,Plant-B,BOF-Converter,MEDIUM,Personnel Injury,0.304,1,147
+2024-02-08 09:00,Plant-A,Blast-Furnace-2,LOW,Chemical Spill,0.222,1,40
+2024-02-08 13:00,Plant-C,Blast-Furnace-2,MEDIUM,Personnel Injury,0.264,1,91
+2024-02-08 15:00,Plant-A,Coke-Oven,LOW,Personnel Injury,0.162,1,94
+2024-02-08 20:00,Plant-D,BOF-Converter,LOW,Personnel Injury,0.12,1,136
+2024-02-08 22:00,Plant-C,Coke-Oven,MEDIUM,Electrical Fault,0.369,1,157
+2024-02-09 02:00,Plant-C,Rolling-Mill,MEDIUM,Near Miss,0.498,1,11
+2024-02-09 05:00,Plant-D,Sinter-Plant,HIGH,Gas Leak,0.692,1,69
+2024-02-09 08:00,Plant-C,Coke-Oven,HIGH,Electrical Fault,0.74,0,166
+2024-02-09 11:00,Plant-A,Blast-Furnace-1,MEDIUM,Fire Hazard,0.5,1,233
+2024-02-09 13:00,Plant-A,Coke-Oven,MEDIUM,Fire Hazard,0.253,1,67
+2024-02-09 15:00,Plant-D,Blast-Furnace-1,LOW,Electrical Fault,0.122,1,168
+2024-02-09 19:00,Plant-A,Blast-Furnace-1,HIGH,Electrical Fault,0.692,0,98
+2024-02-09 23:00,Plant-C,Blast-Furnace-1,LOW,Near Miss,0.179,1,37
+2024-02-10 02:00,Plant-A,Coke-Oven,LOW,Chemical Spill,0.108,1,102
+2024-02-10 05:00,Plant-C,Coke-Oven,LOW,Fire Hazard,0.236,1,42
+2024-02-10 08:00,Plant-D,Blast-Furnace-2,MEDIUM,Gas Leak,0.303,1,230
+2024-02-10 11:00,Plant-D,Blast-Furnace-2,LOW,Equipment Failure,0.119,0,36
+2024-02-10 13:00,Plant-C,Blast-Furnace-1,CRITICAL,Chemical Spill,0.949,0,99
+2024-02-10 15:00,Plant-D,Blast-Furnace-1,LOW,Fire Hazard,0.225,1,97
+2024-02-10 20:00,Plant-A,Rolling-Mill,MEDIUM,Near Miss,0.457,1,26
+2024-02-10 22:00,Plant-B,Sinter-Plant,LOW,Electrical Fault,0.125,1,224
+2024-02-11 00:00,Plant-B,Coke-Oven,HIGH,Structural,0.65,0,172
+2024-02-11 04:00,Plant-A,Blast-Furnace-2,LOW,Gas Leak,0.122,1,79
+2024-02-11 07:00,Plant-D,BOF-Converter,LOW,Near Miss,0.066,0,46
+2024-02-11 11:00,Plant-A,Rolling-Mill,MEDIUM,Equipment Failure,0.265,1,75
+2024-02-11 12:00,Plant-A,Rolling-Mill,LOW,Structural,0.155,0,152
+2024-02-11 16:00,Plant-D,Sinter-Plant,LOW,Structural,0.137,1,25
+2024-02-11 19:00,Plant-C,Blast-Furnace-2,MEDIUM,Personnel Injury,0.433,0,222
+2024-02-11 22:00,Plant-A,BOF-Converter,MEDIUM,Structural,0.334,1,46
+2024-02-12 01:00,Plant-C,Sinter-Plant,LOW,Equipment Failure,0.166,1,109
+2024-02-12 05:00,Plant-A,Rolling-Mill,LOW,Chemical Spill,0.207,0,89
+2024-02-12 06:00,Plant-D,BOF-Converter,MEDIUM,Gas Leak,0.493,1,137
+2024-02-12 09:00,Plant-A,BOF-Converter,LOW,Gas Leak,0.167,1,12
+2024-02-12 12:00,Plant-B,Coke-Oven,CRITICAL,Electrical Fault,0.943,1,61
+2024-02-12 17:00,Plant-B,BOF-Converter,LOW,Equipment Failure,0.247,1,90
+2024-02-12 20:00,Plant-A,Sinter-Plant,LOW,Electrical Fault,0.078,1,240
+2024-02-12 23:00,Plant-D,Coke-Oven,CRITICAL,Personnel Injury,0.899,1,181
+2024-02-13 02:00,Plant-D,BOF-Converter,MEDIUM,Personnel Injury,0.305,1,184
+2024-02-13 04:00,Plant-B,Sinter-Plant,CRITICAL,Structural,0.897,0,7
+2024-02-13 08:00,Plant-B,Blast-Furnace-2,LOW,Electrical Fault,0.24,1,76
+2024-02-13 10:00,Plant-A,BOF-Converter,MEDIUM,Equipment Failure,0.417,1,65
+2024-02-13 14:00,Plant-A,BOF-Converter,LOW,Fire Hazard,0.213,1,5
+2024-02-13 16:00,Plant-B,Rolling-Mill,LOW,Personnel Injury,0.079,1,49
+2024-02-13 19:00,Plant-C,Blast-Furnace-2,MEDIUM,Near Miss,0.524,1,13
+2024-02-13 21:00,Plant-B,BOF-Converter,LOW,Personnel Injury,0.235,1,88
+2024-02-14 01:00,Plant-A,Rolling-Mill,LOW,Fire Hazard,0.099,0,187
+2024-02-14 05:00,Plant-C,Rolling-Mill,HIGH,Fire Hazard,0.612,1,101
+2024-02-14 07:00,Plant-D,BOF-Converter,LOW,Electrical Fault,0.058,0,225
+2024-02-14 11:00,Plant-C,Sinter-Plant,HIGH,Chemical Spill,0.682,1,185
+2024-02-14 12:00,Plant-C,Coke-Oven,LOW,Gas Leak,0.234,1,107
+2024-02-14 16:00,Plant-A,BOF-Converter,MEDIUM,Near Miss,0.535,1,207
+2024-02-14 20:00,Plant-D,Blast-Furnace-1,MEDIUM,Equipment Failure,0.524,1,70
+2024-02-14 22:00,Plant-B,BOF-Converter,MEDIUM,Structural,0.275,1,214
+2024-02-15 01:00,Plant-A,Blast-Furnace-1,HIGH,Electrical Fault,0.715,1,106
+2024-02-15 03:00,Plant-B,Blast-Furnace-2,MEDIUM,Gas Leak,0.26,1,25
+2024-02-15 08:00,Plant-B,Coke-Oven,MEDIUM,Gas Leak,0.4,1,219
+2024-02-15 10:00,Plant-C,BOF-Converter,LOW,Gas Leak,0.162,0,35
+2024-02-15 12:00,Plant-C,Sinter-Plant,CRITICAL,Equipment Failure,0.852,1,123
+2024-02-15 15:00,Plant-B,Blast-Furnace-2,HIGH,Electrical Fault,0.644,1,180
+2024-02-15 20:00,Plant-D,BOF-Converter,MEDIUM,Structural,0.539,1,164
+2024-02-15 21:00,Plant-D,Blast-Furnace-2,LOW,Equipment Failure,0.208,1,74
+2024-02-16 01:00,Plant-D,BOF-Converter,MEDIUM,Personnel Injury,0.438,1,36
+2024-02-16 03:00,Plant-D,Blast-Furnace-1,HIGH,Electrical Fault,0.584,1,216
+2024-02-16 08:00,Plant-D,Sinter-Plant,HIGH,Gas Leak,0.607,1,164
+2024-02-16 10:00,Plant-D,Coke-Oven,MEDIUM,Structural,0.488,1,37
+2024-02-16 14:00,Plant-A,Coke-Oven,LOW,Gas Leak,0.173,1,59
+2024-02-16 17:00,Plant-B,BOF-Converter,LOW,Fire Hazard,0.154,1,182
+2024-02-16 19:00,Plant-C,Coke-Oven,MEDIUM,Gas Leak,0.534,1,203
+2024-02-16 22:00,Plant-A,Blast-Furnace-1,HIGH,Structural,0.671,1,45
+2024-02-17 02:00,Plant-A,Coke-Oven,LOW,Structural,0.144,1,164
+2024-02-17 03:00,Plant-D,Rolling-Mill,LOW,Equipment Failure,0.162,1,12
+2024-02-17 06:00,Plant-D,Rolling-Mill,MEDIUM,Structural,0.414,1,143
+2024-02-17 09:00,Plant-C,Rolling-Mill,LOW,Personnel Injury,0.167,0,53
+2024-02-17 13:00,Plant-C,Sinter-Plant,MEDIUM,Gas Leak,0.32,1,202
+2024-02-17 16:00,Plant-C,Rolling-Mill,LOW,Near Miss,0.131,1,227
+2024-02-17 19:00,Plant-B,Blast-Furnace-2,HIGH,Gas Leak,0.749,1,104
+2024-02-17 22:00,Plant-B,Blast-Furnace-2,HIGH,Fire Hazard,0.65,1,202
+2024-02-18 01:00,Plant-B,Rolling-Mill,CRITICAL,Structural,0.906,1,176
+2024-02-18 04:00,Plant-C,Blast-Furnace-1,HIGH,Personnel Injury,0.794,1,120
+2024-02-18 07:00,Plant-D,Blast-Furnace-2,MEDIUM,Electrical Fault,0.502,0,13
+2024-02-18 09:00,Plant-B,Rolling-Mill,LOW,Structural,0.214,0,119
+2024-02-18 14:00,Plant-D,Coke-Oven,LOW,Fire Hazard,0.057,1,161
+2024-02-18 15:00,Plant-C,Blast-Furnace-1,LOW,Near Miss,0.188,1,167
+2024-02-18 19:00,Plant-B,Blast-Furnace-2,LOW,Personnel Injury,0.227,0,60
+2024-02-18 21:00,Plant-A,Rolling-Mill,LOW,Fire Hazard,0.172,1,76
+2024-02-19 00:00,Plant-A,Coke-Oven,LOW,Equipment Failure,0.245,1,102
+2024-02-19 05:00,Plant-A,Coke-Oven,LOW,Equipment Failure,0.079,1,228
+2024-02-19 06:00,Plant-D,Sinter-Plant,MEDIUM,Gas Leak,0.466,1,119
+2024-02-19 10:00,Plant-B,Sinter-Plant,HIGH,Electrical Fault,0.743,1,188
+2024-02-19 14:00,Plant-D,Coke-Oven,LOW,Equipment Failure,0.125,0,15
+2024-02-19 15:00,Plant-A,BOF-Converter,HIGH,Personnel Injury,0.569,1,203
+2024-02-19 20:00,Plant-A,Blast-Furnace-1,LOW,Gas Leak,0.189,1,195
+2024-02-19 22:00,Plant-A,Blast-Furnace-2,MEDIUM,Gas Leak,0.391,1,206
+2024-02-20 02:00,Plant-D,Blast-Furnace-2,LOW,Personnel Injury,0.241,1,181
+2024-02-20 05:00,Plant-A,Coke-Oven,LOW,Gas Leak,0.174,1,93
+2024-02-20 06:00,Plant-A,Blast-Furnace-1,MEDIUM,Chemical Spill,0.412,1,160
+2024-02-20 10:00,Plant-A,Blast-Furnace-2,HIGH,Equipment Failure,0.668,1,13
+2024-02-20 13:00,Plant-A,Rolling-Mill,HIGH,Gas Leak,0.791,1,71
+2024-02-20 15:00,Plant-A,Rolling-Mill,LOW,Electrical Fault,0.196,0,60
+2024-02-20 20:00,Plant-B,Blast-Furnace-1,LOW,Personnel Injury,0.192,1,17
+2024-02-20 22:00,Plant-A,Sinter-Plant,LOW,Chemical Spill,0.164,1,39
+2024-02-21 02:00,Plant-A,Coke-Oven,LOW,Personnel Injury,0.067,1,221
+2024-02-21 04:00,Plant-A,Sinter-Plant,HIGH,Fire Hazard,0.577,1,230
+2024-02-21 08:00,Plant-A,Rolling-Mill,HIGH,Gas Leak,0.582,1,54
+2024-02-21 11:00,Plant-A,Blast-Furnace-1,MEDIUM,Near Miss,0.467,1,161
+2024-02-21 13:00,Plant-C,Sinter-Plant,LOW,Personnel Injury,0.122,1,202
+2024-02-21 17:00,Plant-A,Blast-Furnace-2,CRITICAL,Fire Hazard,0.903,1,141
+2024-02-21 18:00,Plant-C,Blast-Furnace-2,HIGH,Fire Hazard,0.686,1,189
+2024-02-21 22:00,Plant-B,Rolling-Mill,CRITICAL,Personnel Injury,0.81,1,34
+2024-02-22 01:00,Plant-C,Rolling-Mill,MEDIUM,Gas Leak,0.386,1,44
+2024-02-22 04:00,Plant-C,Blast-Furnace-2,LOW,Equipment Failure,0.209,1,21
+2024-02-22 07:00,Plant-D,Rolling-Mill,LOW,Equipment Failure,0.066,1,34
+2024-02-22 10:00,Plant-A,Sinter-Plant,LOW,Near Miss,0.218,1,12
+2024-02-22 12:00,Plant-A,Blast-Furnace-1,MEDIUM,Gas Leak,0.47,1,214
+2024-02-22 15:00,Plant-D,Blast-Furnace-2,LOW,Personnel Injury,0.204,1,152
+2024-02-22 20:00,Plant-A,Blast-Furnace-1,CRITICAL,Gas Leak,0.857,0,165
+2024-02-22 23:00,Plant-C,Blast-Furnace-1,HIGH,Near Miss,0.68,0,234
+2024-02-23 00:00,Plant-D,Coke-Oven,MEDIUM,Fire Hazard,0.319,1,131
+2024-02-23 05:00,Plant-C,Blast-Furnace-1,MEDIUM,Equipment Failure,0.426,1,233
+2024-02-23 06:00,Plant-D,BOF-Converter,HIGH,Equipment Failure,0.663,1,67
+2024-02-23 11:00,Plant-A,Coke-Oven,LOW,Equipment Failure,0.221,1,96
+2024-02-23 12:00,Plant-B,Blast-Furnace-2,LOW,Fire Hazard,0.064,0,208
+2024-02-23 16:00,Plant-D,Coke-Oven,LOW,Fire Hazard,0.216,1,22
+2024-02-23 18:00,Plant-B,BOF-Converter,LOW,Equipment Failure,0.081,1,236
+2024-02-23 21:00,Plant-D,Coke-Oven,LOW,Electrical Fault,0.145,1,62
+2024-02-24 00:00,Plant-D,Coke-Oven,LOW,Near Miss,0.152,1,82
+2024-02-24 04:00,Plant-A,Coke-Oven,MEDIUM,Personnel Injury,0.546,1,116
+2024-02-24 07:00,Plant-B,Blast-Furnace-2,LOW,Gas Leak,0.247,1,22
+2024-02-24 10:00,Plant-B,BOF-Converter,LOW,Fire Hazard,0.234,1,222
+2024-02-24 14:00,Plant-C,Blast-Furnace-1,LOW,Equipment Failure,0.151,1,81
+2024-02-24 15:00,Plant-D,Blast-Furnace-2,MEDIUM,Equipment Failure,0.404,1,52
+2024-02-24 20:00,Plant-C,Coke-Oven,LOW,Equipment Failure,0.074,0,77
+2024-02-24 23:00,Plant-B,Coke-Oven,LOW,Personnel Injury,0.058,1,175
+2024-02-25 01:00,Plant-B,BOF-Converter,LOW,Chemical Spill,0.209,1,150
+2024-02-25 04:00,Plant-A,Rolling-Mill,MEDIUM,Gas Leak,0.338,0,61
+2024-02-25 08:00,Plant-D,Sinter-Plant,LOW,Fire Hazard,0.123,1,36
+2024-02-25 09:00,Plant-D,Sinter-Plant,LOW,Structural,0.059,1,125
+2024-02-25 12:00,Plant-A,Blast-Furnace-1,LOW,Equipment Failure,0.177,1,220
+2024-02-25 15:00,Plant-D,Sinter-Plant,MEDIUM,Equipment Failure,0.437,1,202
+2024-02-25 20:00,Plant-D,Blast-Furnace-2,LOW,Gas Leak,0.069,0,173
+2024-02-25 23:00,Plant-B,BOF-Converter,CRITICAL,Chemical Spill,0.878,1,110
+2024-02-26 00:00,Plant-A,Coke-Oven,MEDIUM,Structural,0.321,1,235
+2024-02-26 03:00,Plant-D,Blast-Furnace-2,HIGH,Electrical Fault,0.685,1,118
+2024-02-26 06:00,Plant-D,Coke-Oven,LOW,Equipment Failure,0.056,0,185
+2024-02-26 10:00,Plant-B,Blast-Furnace-1,LOW,Personnel Injury,0.215,1,187
+2024-02-26 12:00,Plant-A,Rolling-Mill,LOW,Equipment Failure,0.198,1,166
+2024-02-26 17:00,Plant-D,BOF-Converter,HIGH,Equipment Failure,0.721,1,69
+2024-02-26 18:00,Plant-C,Blast-Furnace-1,MEDIUM,Gas Leak,0.542,1,144
+2024-02-26 22:00,Plant-D,Sinter-Plant,HIGH,Structural,0.665,1,122
+2024-02-27 01:00,Plant-B,Coke-Oven,LOW,Personnel Injury,0.226,1,136
+2024-02-27 05:00,Plant-A,Blast-Furnace-2,HIGH,Gas Leak,0.796,1,46
+2024-02-27 07:00,Plant-A,Blast-Furnace-1,LOW,Equipment Failure,0.153,1,136
+2024-02-27 10:00,Plant-D,Rolling-Mill,LOW,Electrical Fault,0.076,1,84
+2024-02-27 14:00,Plant-C,Sinter-Plant,HIGH,Near Miss,0.574,1,148
+2024-02-27 16:00,Plant-D,Sinter-Plant,MEDIUM,Structural,0.374,1,60
+2024-02-27 19:00,Plant-B,Rolling-Mill,LOW,Gas Leak,0.231,0,163
+2024-02-27 23:00,Plant-A,Sinter-Plant,LOW,Electrical Fault,0.118,1,219
+2024-02-28 01:00,Plant-C,Sinter-Plant,MEDIUM,Near Miss,0.443,0,23
+2024-02-28 04:00,Plant-B,BOF-Converter,LOW,Gas Leak,0.234,0,27
+2024-02-28 06:00,Plant-C,Blast-Furnace-2,HIGH,Fire Hazard,0.596,1,159
+2024-02-28 11:00,Plant-C,Coke-Oven,LOW,Equipment Failure,0.089,1,228
+2024-02-28 12:00,Plant-A,Blast-Furnace-2,LOW,Chemical Spill,0.17,1,112
+2024-02-28 17:00,Plant-A,Blast-Furnace-1,MEDIUM,Equipment Failure,0.292,1,175
+2024-02-28 18:00,Plant-D,BOF-Converter,LOW,Chemical Spill,0.208,1,175
+2024-02-28 22:00,Plant-D,Coke-Oven,MEDIUM,Fire Hazard,0.372,0,103
+2024-02-29 01:00,Plant-B,Blast-Furnace-1,CRITICAL,Equipment Failure,0.909,0,39
+2024-02-29 05:00,Plant-C,Blast-Furnace-2,HIGH,Electrical Fault,0.788,1,10
+2024-02-29 07:00,Plant-B,Blast-Furnace-2,LOW,Equipment Failure,0.079,1,224
+2024-02-29 11:00,Plant-C,Blast-Furnace-1,MEDIUM,Near Miss,0.34,1,218
+2024-02-29 12:00,Plant-B,Rolling-Mill,LOW,Structural,0.116,1,79
+2024-02-29 16:00,Plant-C,BOF-Converter,LOW,Structural,0.187,1,138
+2024-02-29 19:00,Plant-D,Blast-Furnace-2,LOW,Structural,0.18,1,163
+2024-02-29 22:00,Plant-C,Blast-Furnace-1,LOW,Electrical Fault,0.057,0,192
+2024-03-01 01:00,Plant-D,Sinter-Plant,LOW,Chemical Spill,0.196,1,67
+2024-03-01 05:00,Plant-B,Coke-Oven,LOW,Fire Hazard,0.115,1,99
+2024-03-01 06:00,Plant-C,Coke-Oven,CRITICAL,Electrical Fault,0.894,1,36
+2024-03-01 11:00,Plant-D,Blast-Furnace-2,MEDIUM,Chemical Spill,0.5,1,198
+2024-03-01 13:00,Plant-B,BOF-Converter,MEDIUM,Personnel Injury,0.267,0,61
+2024-03-01 15:00,Plant-D,Blast-Furnace-1,MEDIUM,Near Miss,0.514,1,84
+2024-03-01 20:00,Plant-B,Blast-Furnace-2,MEDIUM,Personnel Injury,0.265,1,202
+2024-03-01 21:00,Plant-C,Blast-Furnace-1,LOW,Equipment Failure,0.217,1,59
+2024-03-02 01:00,Plant-C,Coke-Oven,HIGH,Structural,0.71,0,211
+2024-03-02 05:00,Plant-B,Blast-Furnace-2,CRITICAL,Structural,0.819,0,179
+2024-03-02 08:00,Plant-B,Blast-Furnace-2,HIGH,Personnel Injury,0.758,1,96
+2024-03-02 09:00,Plant-A,Blast-Furnace-1,LOW,Structural,0.127,1,181
+2024-03-02 12:00,Plant-C,Rolling-Mill,MEDIUM,Near Miss,0.401,1,232
+2024-03-02 16:00,Plant-A,Blast-Furnace-1,MEDIUM,Gas Leak,0.454,1,117
+2024-03-02 19:00,Plant-B,BOF-Converter,LOW,Gas Leak,0.055,1,7
+2024-03-02 22:00,Plant-B,Rolling-Mill,LOW,Electrical Fault,0.16,1,155
+2024-03-03 02:00,Plant-B,BOF-Converter,MEDIUM,Equipment Failure,0.311,1,86
+2024-03-03 05:00,Plant-A,Blast-Furnace-2,MEDIUM,Near Miss,0.295,1,235
+2024-03-03 07:00,Plant-B,BOF-Converter,LOW,Near Miss,0.221,1,95
+2024-03-03 09:00,Plant-C,Rolling-Mill,MEDIUM,Gas Leak,0.305,1,213
+2024-03-03 12:00,Plant-D,Blast-Furnace-2,LOW,Electrical Fault,0.197,0,13
+2024-03-03 16:00,Plant-A,Rolling-Mill,CRITICAL,Fire Hazard,0.909,1,177
+2024-03-03 19:00,Plant-C,Sinter-Plant,MEDIUM,Fire Hazard,0.516,0,122
+2024-03-03 23:00,Plant-C,Sinter-Plant,LOW,Near Miss,0.245,1,143
+2024-03-04 02:00,Plant-D,Blast-Furnace-1,LOW,Chemical Spill,0.163,1,72
+2024-03-04 05:00,Plant-A,BOF-Converter,LOW,Personnel Injury,0.059,1,44
+2024-03-04 06:00,Plant-C,BOF-Converter,LOW,Fire Hazard,0.143,1,225
+2024-03-04 10:00,Plant-C,Rolling-Mill,CRITICAL,Equipment Failure,0.842,1,121
+2024-03-04 12:00,Plant-A,BOF-Converter,LOW,Gas Leak,0.208,1,47
+2024-03-04 16:00,Plant-D,Blast-Furnace-1,LOW,Electrical Fault,0.17,1,182
+2024-03-04 19:00,Plant-B,Sinter-Plant,LOW,Near Miss,0.178,0,9
+2024-03-04 23:00,Plant-A,Sinter-Plant,LOW,Structural,0.065,0,148
+2024-03-05 02:00,Plant-C,Rolling-Mill,HIGH,Personnel Injury,0.589,1,20
+2024-03-05 05:00,Plant-B,Coke-Oven,HIGH,Near Miss,0.773,0,202
+2024-03-05 07:00,Plant-A,Blast-Furnace-2,LOW,Personnel Injury,0.051,0,216
+2024-03-05 10:00,Plant-B,Coke-Oven,LOW,Personnel Injury,0.063,1,100
+2024-03-05 12:00,Plant-C,Sinter-Plant,MEDIUM,Fire Hazard,0.468,1,53
+2024-03-05 16:00,Plant-C,Sinter-Plant,LOW,Equipment Failure,0.134,1,225
+2024-03-05 19:00,Plant-C,Sinter-Plant,HIGH,Equipment Failure,0.789,1,158
+2024-03-05 22:00,Plant-C,Blast-Furnace-1,HIGH,Electrical Fault,0.714,1,14
+2024-03-06 00:00,Plant-C,Coke-Oven,MEDIUM,Gas Leak,0.352,1,46
+2024-03-06 04:00,Plant-A,Rolling-Mill,LOW,Personnel Injury,0.081,1,71
+2024-03-06 06:00,Plant-A,BOF-Converter,MEDIUM,Fire Hazard,0.514,1,107
+2024-03-06 09:00,Plant-B,Blast-Furnace-1,MEDIUM,Personnel Injury,0.41,0,229
+2024-03-06 14:00,Plant-B,Blast-Furnace-2,LOW,Fire Hazard,0.162,0,206
+2024-03-06 16:00,Plant-B,Rolling-Mill,CRITICAL,Electrical Fault,0.834,1,223
+2024-03-06 18:00,Plant-A,Rolling-Mill,LOW,Gas Leak,0.109,0,142
+2024-03-06 23:00,Plant-A,Sinter-Plant,MEDIUM,Electrical Fault,0.525,1,141
+2024-03-07 02:00,Plant-A,Coke-Oven,MEDIUM,Chemical Spill,0.475,0,117
+2024-03-07 05:00,Plant-C,Blast-Furnace-1,LOW,Near Miss,0.218,1,221
+2024-03-07 08:00,Plant-B,BOF-Converter,LOW,Equipment Failure,0.148,1,21
+2024-03-07 10:00,Plant-C,Blast-Furnace-2,LOW,Structural,0.208,1,153
+2024-03-07 13:00,Plant-B,Coke-Oven,LOW,Electrical Fault,0.121,1,84
+2024-03-07 17:00,Plant-A,Sinter-Plant,LOW,Near Miss,0.156,0,236
+2024-03-07 20:00,Plant-C,Blast-Furnace-1,MEDIUM,Chemical Spill,0.454,1,206
+2024-03-07 21:00,Plant-D,Sinter-Plant,MEDIUM,Chemical Spill,0.352,1,204
+2024-03-08 02:00,Plant-C,Rolling-Mill,CRITICAL,Near Miss,0.894,1,114
+2024-03-08 03:00,Plant-C,Coke-Oven,HIGH,Chemical Spill,0.751,1,157
+2024-03-08 08:00,Plant-C,Rolling-Mill,LOW,Equipment Failure,0.096,1,49
+2024-03-08 11:00,Plant-C,Rolling-Mill,MEDIUM,Gas Leak,0.547,1,171
+2024-03-08 12:00,Plant-D,Blast-Furnace-2,LOW,Personnel Injury,0.09,1,149
+2024-03-08 15:00,Plant-A,Sinter-Plant,HIGH,Equipment Failure,0.654,1,215
+2024-03-08 19:00,Plant-D,Blast-Furnace-2,MEDIUM,Personnel Injury,0.377,0,164
+2024-03-08 22:00,Plant-A,Coke-Oven,LOW,Near Miss,0.071,0,70
+2024-03-09 01:00,Plant-C,Rolling-Mill,MEDIUM,Gas Leak,0.5,1,144
+2024-03-09 05:00,Plant-D,Blast-Furnace-1,LOW,Chemical Spill,0.176,1,107
+2024-03-09 07:00,Plant-A,BOF-Converter,HIGH,Fire Hazard,0.745,1,210
+2024-03-09 09:00,Plant-B,Rolling-Mill,LOW,Structural,0.154,0,211
+2024-03-09 13:00,Plant-D,Blast-Furnace-1,CRITICAL,Structural,0.834,0,171
+2024-03-09 16:00,Plant-A,Blast-Furnace-1,LOW,Structural,0.243,0,129
