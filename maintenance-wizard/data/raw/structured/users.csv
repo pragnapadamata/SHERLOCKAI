@@ -1,0 +1,8 @@
+user_id,name,role,area,email,can_write_logbook,can_acknowledge_alerts
+U-ENG-01,R. Mahato,engineer,Finishing,r.mahato@example-hsm.local,True,True
+U-ENG-02,S. Iyer,engineer,Coiling,s.iyer@example-hsm.local,True,True
+U-SUP-01,A. Bose,supervisor,Finishing,a.bose@example-hsm.local,True,True
+U-SUP-02,P. Singh,supervisor,Roughing,p.singh@example-hsm.local,True,True
+U-PM-01,K. Nair,plant_manager,Hot Strip Mill,k.nair@example-hsm.local,True,True
+U-AN-01,T. Das,analyst,AMDC,t.das@example-hsm.local,False,False
+U-SYS-AMDC,Maintenance Wizard (autonomous),system,AMDC,amdc-system@example-hsm.local,True,False

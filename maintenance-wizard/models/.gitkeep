@@ -1,0 +1,2 @@
+# Reserved for trained ML model artifacts (Phase: ML predictive layer):
+# anomaly detection, RUL / degradation, early-warning. Binary artifacts are gitignored.

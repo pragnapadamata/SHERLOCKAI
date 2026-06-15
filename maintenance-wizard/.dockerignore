@@ -1,0 +1,15 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.env
+frontend/node_modules
+frontend/dist
+data/sqlite
+data/vector_store
+data/processed
+models
+docs

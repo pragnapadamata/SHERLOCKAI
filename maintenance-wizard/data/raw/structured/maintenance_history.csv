@@ -1,0 +1,86 @@
+work_order_id,equipment_id,date,type,description,technician,fault_code,parts_used,downtime_min,outcome
+WO-GEN-0056,HSM-AGC-HYD,2025-07-16,oil_sample,Routine oil sample on Hydraulic Automatic Gauge Control (AGC) system.,U-ENG-02,,,0,normal
+WO-GEN-0055,HSM-AGC-HYD,2025-08-04,inspection,Routine inspection on Hydraulic Automatic Gauge Control (AGC) system.,U-ENG-02,,,0,normal
+WO-GEN-0053,HSM-AGC-HYD,2025-08-29,oil_sample,Routine oil sample on Hydraulic Automatic Gauge Control (AGC) system.,U-SUP-02,,,0,normal
+WO-GEN-0051,HSM-AGC-HYD,2025-10-15,preventive,Routine preventive on Hydraulic Automatic Gauge Control (AGC) system.,U-SUP-01,,,0,normal
+WO-GEN-0054,HSM-AGC-HYD,2025-12-21,preventive,Routine preventive on Hydraulic Automatic Gauge Control (AGC) system.,U-SUP-02,,,0,normal
+WO-GEN-0052,HSM-AGC-HYD,2026-04-14,inspection,Routine inspection on Hydraulic Automatic Gauge Control (AGC) system.,U-ENG-02,,,0,normal
+WO-GEN-0026,HSM-DC-MND,2025-07-20,inspection,Routine inspection on Down-coiler mandrel and wrapper-roll assembly.,U-ENG-01,,,0,normal
+WO-GEN-0027,HSM-DC-MND,2025-07-30,oil_sample,Routine oil sample on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-02,,,0,normal
+WO-GEN-0030,HSM-DC-MND,2025-09-21,oil_sample,Routine oil sample on Down-coiler mandrel and wrapper-roll assembly.,U-ENG-02,,,0,normal
+WO-2025-0815,HSM-DC-MND,2025-09-30,corrective,Wrapper-roll bearing degradation and Alpha-defect cluster review.,U-ENG-02,DC-MND-002,DC-WRAP-BRG-01,180,replaced; see FR-2025-002
+WO-GEN-0032,HSM-DC-MND,2025-12-17,inspection,Routine inspection on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-02,,,0,normal
+WO-GEN-0028,HSM-DC-MND,2026-02-12,preventive,Routine preventive on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-01,,,0,normal
+WO-GEN-0029,HSM-DC-MND,2026-03-22,inspection,Routine inspection on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-02,,,0,normal
+WO-GEN-0025,HSM-DC-MND,2026-04-16,preventive,Routine preventive on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-01,,,0,normal
+WO-GEN-0031,HSM-DC-MND,2026-04-24,preventive,Routine preventive on Down-coiler mandrel and wrapper-roll assembly.,U-SUP-02,,,0,normal
+WO-GEN-0075,HSM-DC-MND,2026-05-12,inspection,Coil quality investigation for Alpha-defect coil 1015.,U-ENG-02,DC-PROC-001,,0,logged for Phase 3 defect-risk analysis
+WO-GEN-0076,HSM-DC-MND,2026-05-12,inspection,Coil quality investigation for Alpha-defect coil 1080.,U-ENG-02,DC-PROC-001,,0,logged for Phase 3 defect-risk analysis
+WO-GEN-0077,HSM-DC-MND,2026-05-12,inspection,Coil quality investigation for Alpha-defect coil 1083.,U-ENG-02,DC-PROC-001,,0,logged for Phase 3 defect-risk analysis
+WO-2025-0307,HSM-DSC-PMP,2025-04-22,corrective,Descaling pressure loss; seal kit replaced.,U-SUP-02,DSC-PMP-001,DSC-PMP-SEAL-01,120,replaced; see FR-2025-001
+WO-GEN-0034,HSM-DSC-PMP,2025-09-01,inspection,Routine inspection on Descaler high-pressure pump.,U-ENG-01,,,0,normal
+WO-GEN-0038,HSM-DSC-PMP,2025-09-07,oil_sample,Routine oil sample on Descaler high-pressure pump.,U-SUP-01,,,0,normal
+WO-GEN-0033,HSM-DSC-PMP,2025-09-29,preventive,Routine preventive on Descaler high-pressure pump.,U-SUP-02,,,0,normal
+WO-GEN-0037,HSM-DSC-PMP,2025-11-13,inspection,Routine inspection on Descaler high-pressure pump.,U-ENG-01,,,0,normal
+WO-GEN-0036,HSM-DSC-PMP,2025-11-29,preventive,Routine preventive on Descaler high-pressure pump.,U-ENG-01,,,0,normal
+WO-GEN-0035,HSM-DSC-PMP,2026-01-14,oil_sample,Routine oil sample on Descaler high-pressure pump.,U-ENG-02,,,0,normal
+WO-2024-0233,HSM-F1-WRB,2024-03-05,corrective,Inner-race spalling after lubrication starvation; bearing replaced.,U-ENG-01,F1-WRB-001,BRG-F1-TRB-01,210,replaced; see FR-2024-001
+WO-GEN-0059,HSM-F1-WRB,2025-08-07,oil_sample,Routine oil sample on F1 finishing stand work-roll bearing.,U-ENG-01,,,0,normal
+WO-GEN-0060,HSM-F1-WRB,2025-08-17,preventive,Routine preventive on F1 finishing stand work-roll bearing.,U-ENG-01,,,0,normal
+WO-GEN-0061,HSM-F1-WRB,2025-08-20,inspection,Routine inspection on F1 finishing stand work-roll bearing.,U-SUP-02,,,0,normal
+WO-GEN-0062,HSM-F1-WRB,2025-08-25,oil_sample,Routine oil sample on F1 finishing stand work-roll bearing.,U-SUP-01,,,0,normal
+WO-GEN-0058,HSM-F1-WRB,2025-10-13,inspection,Routine inspection on F1 finishing stand work-roll bearing.,U-ENG-01,,,0,normal
+WO-GEN-0057,HSM-F1-WRB,2026-02-25,preventive,Routine preventive on F1 finishing stand work-roll bearing.,U-SUP-01,,,0,normal
+WO-GEN-0015,HSM-F2-WRB,2025-09-09,preventive,Routine preventive on F2 finishing stand work-roll bearing (drive side).,U-SUP-02,,,0,normal
+WO-GEN-0016,HSM-F2-WRB,2025-09-16,inspection,Routine inspection on F2 finishing stand work-roll bearing (drive side).,U-SUP-02,,,0,normal
+WO-GEN-0010,HSM-F2-WRB,2025-10-07,inspection,Routine inspection on F2 finishing stand work-roll bearing (drive side).,U-ENG-02,,,0,normal
+WO-GEN-0014,HSM-F2-WRB,2025-11-19,oil_sample,Routine oil sample on F2 finishing stand work-roll bearing (drive side).,U-SUP-02,,,0,normal
+WO-GEN-0011,HSM-F2-WRB,2025-12-21,oil_sample,Routine oil sample on F2 finishing stand work-roll bearing (drive side).,U-SUP-02,,,0,normal
+WO-GEN-0001,HSM-F2-WRB,2026-02-14,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0002,HSM-F2-WRB,2026-02-28,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0013,HSM-F2-WRB,2026-03-10,inspection,Routine inspection on F2 finishing stand work-roll bearing (drive side).,U-ENG-01,,,0,normal
+WO-GEN-0003,HSM-F2-WRB,2026-03-14,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0004,HSM-F2-WRB,2026-03-28,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0005,HSM-F2-WRB,2026-04-11,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0009,HSM-F2-WRB,2026-04-17,preventive,Routine preventive on F2 finishing stand work-roll bearing (drive side).,U-SUP-02,,,0,normal
+WO-GEN-0012,HSM-F2-WRB,2026-04-18,preventive,Routine preventive on F2 finishing stand work-roll bearing (drive side).,U-SUP-01,,,0,normal
+WO-GEN-0006,HSM-F2-WRB,2026-05-09,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-GEN-0007,HSM-F2-WRB,2026-05-23,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-2026-0540,HSM-F2-WRB,2026-06-02,corrective,Auto-alert on sudden bearing vibration step; lubrication check.,U-ENG-01,F2-WRB-001,GREASE-EP2-DRUM,45,root cause: missed lubrication cycle week of 2026-04-20
+WO-GEN-0008,HSM-F2-WRB,2026-06-06,lubrication,Scheduled work-roll bearing lubrication.,U-ENG-01,,GREASE-EP2-DRUM,0,completed
+WO-2024-0902,HSM-F3-GBX,2024-09-18,corrective,Stage-2 gear-tooth fracture; emergency gear set replacement.,U-ENG-01,F3-GBX-002,GBX-GEAR-SET-01,540,replaced; see FR-2024-002
+WO-GEN-0018,HSM-F3-GBX,2025-08-05,inspection,Routine inspection on F3 main drive gearbox (herringbone / planetary).,U-ENG-02,,,0,normal
+WO-GEN-0021,HSM-F3-GBX,2025-08-25,inspection,Routine inspection on F3 main drive gearbox (herringbone / planetary).,U-SUP-01,,,0,normal
+WO-GEN-0023,HSM-F3-GBX,2025-11-13,preventive,Routine preventive on F3 main drive gearbox (herringbone / planetary).,U-ENG-02,,,0,normal
+WO-GEN-0017,HSM-F3-GBX,2025-11-24,preventive,Routine preventive on F3 main drive gearbox (herringbone / planetary).,U-ENG-01,,,0,normal
+WO-GEN-0019,HSM-F3-GBX,2025-11-28,oil_sample,Routine oil sample on F3 main drive gearbox (herringbone / planetary).,U-ENG-02,,,0,normal
+WO-2025-1180,HSM-F3-GBX,2025-12-15,oil_sample,"Routine gearbox oil sample; Fe = 16 ppm, within limits.",U-ENG-01,,,0,normal
+WO-GEN-0024,HSM-F3-GBX,2025-12-15,inspection,Routine inspection on F3 main drive gearbox (herringbone / planetary).,U-ENG-01,,,0,normal
+WO-GEN-0022,HSM-F3-GBX,2026-01-01,oil_sample,Routine oil sample on F3 main drive gearbox (herringbone / planetary).,U-SUP-02,,,0,normal
+WO-2026-0142,HSM-F3-GBX,2026-02-10,inspection,"Routine vibration check; overall RMS 1.3 mm/s, normal.",U-ENG-01,,,0,normal
+WO-GEN-0020,HSM-F3-GBX,2026-03-16,preventive,Routine preventive on F3 main drive gearbox (herringbone / planetary).,U-SUP-02,,,0,normal
+WO-2026-0511,HSM-F3-GBX,2026-05-22,alert,Vibration sidebands and oil Fe trending up; flagged Stage-2 pitting.,U-AN-01,F3-GBX-002,,0,spare query raised for GBX-GEAR-SET-01
+WO-GEN-0065,HSM-F4-F7-BRG,2025-11-10,oil_sample,Routine oil sample on F4-F7 finishing stand bearings (group).,U-ENG-02,,,0,normal
+WO-GEN-0066,HSM-F4-F7-BRG,2025-11-27,preventive,Routine preventive on F4-F7 finishing stand bearings (group).,U-SUP-01,,,0,normal
+WO-GEN-0063,HSM-F4-F7-BRG,2025-12-08,preventive,Routine preventive on F4-F7 finishing stand bearings (group).,U-SUP-01,,,0,normal
+WO-GEN-0064,HSM-F4-F7-BRG,2026-02-12,inspection,Routine inspection on F4-F7 finishing stand bearings (group).,U-SUP-02,,,0,normal
+WO-GEN-0068,HSM-F4-F7-BRG,2026-02-23,oil_sample,Routine oil sample on F4-F7 finishing stand bearings (group).,U-ENG-01,,,0,normal
+WO-GEN-0067,HSM-F4-F7-BRG,2026-05-05,inspection,Routine inspection on F4-F7 finishing stand bearings (group).,U-ENG-01,,,0,normal
+WO-GEN-0071,HSM-LUB-UNIT,2025-07-31,oil_sample,Routine oil sample on Mill central lubrication unit.,U-SUP-01,,,0,normal
+WO-GEN-0070,HSM-LUB-UNIT,2025-10-07,inspection,Routine inspection on Mill central lubrication unit.,U-ENG-02,,,0,normal
+WO-GEN-0073,HSM-LUB-UNIT,2025-11-03,inspection,Routine inspection on Mill central lubrication unit.,U-SUP-01,,,0,normal
+WO-GEN-0074,HSM-LUB-UNIT,2025-11-06,oil_sample,Routine oil sample on Mill central lubrication unit.,U-SUP-01,,,0,normal
+WO-GEN-0069,HSM-LUB-UNIT,2025-12-19,preventive,Routine preventive on Mill central lubrication unit.,U-SUP-01,,,0,normal
+WO-GEN-0072,HSM-LUB-UNIT,2026-04-21,preventive,Routine preventive on Mill central lubrication unit.,U-SUP-02,,,0,normal
+WO-GEN-0039,HSM-RM-MOT,2025-07-08,preventive,Routine preventive on Roughing-mill main drive motor.,U-SUP-01,,,0,normal
+WO-GEN-0042,HSM-RM-MOT,2025-07-14,preventive,Routine preventive on Roughing-mill main drive motor.,U-ENG-02,,,0,normal
+WO-GEN-0044,HSM-RM-MOT,2025-08-20,oil_sample,Routine oil sample on Roughing-mill main drive motor.,U-ENG-01,,,0,normal
+WO-GEN-0041,HSM-RM-MOT,2025-12-29,oil_sample,Routine oil sample on Roughing-mill main drive motor.,U-ENG-02,,,0,normal
+WO-GEN-0040,HSM-RM-MOT,2026-01-13,inspection,Routine inspection on Roughing-mill main drive motor.,U-SUP-02,,,0,normal
+WO-GEN-0043,HSM-RM-MOT,2026-04-22,inspection,Routine inspection on Roughing-mill main drive motor.,U-ENG-02,,,0,normal
+WO-GEN-0049,HSM-ROT-PMP,2025-07-02,inspection,Routine inspection on Run-out-table cooling pump group.,U-ENG-02,,,0,normal
+WO-GEN-0046,HSM-ROT-PMP,2025-09-26,inspection,Routine inspection on Run-out-table cooling pump group.,U-ENG-02,,,0,normal
+WO-GEN-0048,HSM-ROT-PMP,2025-11-07,preventive,Routine preventive on Run-out-table cooling pump group.,U-SUP-01,,,0,normal
+WO-GEN-0045,HSM-ROT-PMP,2025-12-11,preventive,Routine preventive on Run-out-table cooling pump group.,U-ENG-01,,,0,normal
+WO-GEN-0047,HSM-ROT-PMP,2026-01-25,oil_sample,Routine oil sample on Run-out-table cooling pump group.,U-ENG-01,,,0,normal
+WO-GEN-0050,HSM-ROT-PMP,2026-03-24,oil_sample,Routine oil sample on Run-out-table cooling pump group.,U-SUP-02,,,0,normal

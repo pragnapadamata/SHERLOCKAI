@@ -1,0 +1,19 @@
+part_id,description,equipment_id,on_hand_qty,spare_availability,procurement_lead_time_weeks,supplier_code,unit_cost_inr
+GBX-GEAR-SET-01,F3 gearbox Stage-2 gear set (pinion + wheel),HSM-F3-GBX,0,on_order,8,OEM-B,4200000
+GBX-BRG-SET-01,F3 gearbox input-shaft bearing set,HSM-F3-GBX,1,in_stock,6,OEM-B,850000
+GBX-OIL-FILT-01,F3 gearbox oil filter element,HSM-F3-GBX,4,in_stock,1,OEM-B,12000
+BRG-F2-TRB-01,F2 work-roll four-row tapered roller bearing,HSM-F2-WRB,1,in_stock,2,OEM-A,680000
+BRG-F1-TRB-01,F1 work-roll four-row tapered roller bearing,HSM-F1-WRB,1,in_stock,2,OEM-A,680000
+BRG-F4F7-TRB-01,F4-F7 work-roll bearing (group stock),HSM-F4-F7-BRG,2,in_stock,3,OEM-A,680000
+DC-MND-SEG-01,Down-coiler mandrel segment set,HSM-DC-MND,0,on_order,6,OEM-C,1500000
+DC-WRAP-BRG-01,Down-coiler wrapper-roll bearing,HSM-DC-MND,2,in_stock,3,OEM-A,240000
+DSC-PMP-SEAL-01,Descaler pump high-pressure seal kit,HSM-DSC-PMP,3,in_stock,2,OEM-C,85000
+DSC-PMP-PLUNGER-01,Descaler pump plunger assembly,HSM-DSC-PMP,1,in_stock,4,OEM-C,210000
+RM-MOT-BRG-01,Roughing motor drive-end bearing,HSM-RM-MOT,1,in_stock,4,OEM-A,320000
+RM-MOT-WIND-01,Roughing motor stator rewind kit,HSM-RM-MOT,0,on_order,12,OEM-B,3800000
+ROT-PMP-IMP-01,Run-out-table pump impeller,HSM-ROT-PMP,2,in_stock,3,OEM-C,95000
+AGC-SERVO-VALVE-01,AGC servo valve,HSM-AGC-HYD,1,in_stock,5,OEM-B,540000
+AGC-SEAL-KIT-01,AGC cylinder seal kit,HSM-AGC-HYD,4,in_stock,1,OEM-B,45000
+LUB-FILT-01,Central lubrication unit filter element,HSM-LUB-UNIT,8,in_stock,1,OEM-C,9000
+LUB-PUMP-01,Central lubrication transfer pump,HSM-LUB-UNIT,1,in_stock,4,OEM-C,180000
+GREASE-EP2-DRUM,EP2 lithium-complex grease (drum),HSM-LUB-UNIT,10,in_stock,1,OEM-C,22000

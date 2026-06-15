@@ -1,0 +1,84 @@
+[project]
+name = "maintenance-wizard"
+version = "0.1.0"
+description = "Agentic AI Maintenance Wizard -- decision support for steel-plant maintenance engineers."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "structlog>=24.1",
+    "groq>=0.11",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=16.0",
+    "chromadb>=0.5",
+    "fastembed>=0.4",
+    "scikit-learn>=1.4",
+    "authlib>=1.3",
+    "itsdangerous>=2.1",
+    "openai>=1.40",
+]
+
+# Dev dependencies are installed by `uv sync` by default (PEP 735 group).
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+# The importable package lives in `backend/`. Installing it editable means
+# `import backend...` works the same from tests, scripts, and uvicorn,
+# regardless of the current working directory.
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+asyncio_mode = "auto"
+addopts = "-q -m 'not slow'"
+markers = [
+    "slow: tests that download or run the real local models (deselected by default)",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI's dependency-injection idiom puts callables in argument defaults
+# (Depends/Query/Path/Header/Body). That is the framework's intended pattern,
+# not the mutable-default bug B008 guards against, so mark these as immutable.
+extend-immutable-calls = [
+    "fastapi.Depends",
+    "fastapi.Query",
+    "fastapi.Path",
+    "fastapi.Header",
+    "fastapi.Body",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The data-substrate package is dense data literals and Markdown templating where
+# a hard 100-column limit fights readability. E501 stays enforced for app code.
+"backend/scripts/data_substrate/*" = ["E501"]
+# Prompts are verbatim natural-language instructions; wrapping a line would change
+# the exact text the model reads, so E501 does not apply here.
+"backend/app/agents/prompts.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_ignores = false

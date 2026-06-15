@@ -1,0 +1,78 @@
+delay_id,equipment_id,date,duration_min,category,description,shift
+DL-GEN-0051,HSM-AGC-HYD,2025-11-28,35,electrical,Electrical delay on Hydraulic Automatic Gauge Control (AGC) system.,C
+DL-GEN-0052,HSM-AGC-HYD,2025-12-29,69,inspection,Inspection delay on Hydraulic Automatic Gauge Control (AGC) system.,A
+DL-GEN-0054,HSM-AGC-HYD,2026-01-10,87,electrical,Electrical delay on Hydraulic Automatic Gauge Control (AGC) system.,C
+DL-GEN-0050,HSM-AGC-HYD,2026-01-30,48,process,Process delay on Hydraulic Automatic Gauge Control (AGC) system.,C
+DL-GEN-0053,HSM-AGC-HYD,2026-02-10,36,process,Process delay on Hydraulic Automatic Gauge Control (AGC) system.,A
+DL-GEN-0049,HSM-AGC-HYD,2026-04-10,52,process,Process delay on Hydraulic Automatic Gauge Control (AGC) system.,A
+DL-GEN-0022,HSM-DC-MND,2026-01-17,50,hydraulic,Hydraulic delay on Down-coiler mandrel and wrapper-roll assembly.,A
+DL-GEN-0030,HSM-DC-MND,2026-01-18,60,inspection,Inspection delay on Down-coiler mandrel and wrapper-roll assembly.,C
+DL-GEN-0023,HSM-DC-MND,2026-01-22,73,hydraulic,Hydraulic delay on Down-coiler mandrel and wrapper-roll assembly.,A
+DL-GEN-0027,HSM-DC-MND,2026-01-28,78,process,Process delay on Down-coiler mandrel and wrapper-roll assembly.,A
+DL-GEN-0028,HSM-DC-MND,2026-01-28,5,mechanical,Mechanical delay on Down-coiler mandrel and wrapper-roll assembly.,C
+DL-GEN-0029,HSM-DC-MND,2026-03-20,79,hydraulic,Hydraulic delay on Down-coiler mandrel and wrapper-roll assembly.,B
+DL-GEN-0024,HSM-DC-MND,2026-03-30,16,hydraulic,Hydraulic delay on Down-coiler mandrel and wrapper-roll assembly.,C
+DL-GEN-0021,HSM-DC-MND,2026-04-10,32,hydraulic,Hydraulic delay on Down-coiler mandrel and wrapper-roll assembly.,A
+DL-GEN-0025,HSM-DC-MND,2026-04-15,38,electrical,Electrical delay on Down-coiler mandrel and wrapper-roll assembly.,A
+DL-GEN-0026,HSM-DC-MND,2026-04-28,22,electrical,Electrical delay on Down-coiler mandrel and wrapper-roll assembly.,B
+DL-GEN-0035,HSM-DSC-PMP,2025-12-08,64,inspection,Inspection delay on Descaler high-pressure pump.,B
+DL-GEN-0034,HSM-DSC-PMP,2026-01-04,73,hydraulic,Hydraulic delay on Descaler high-pressure pump.,C
+DL-GEN-0033,HSM-DSC-PMP,2026-04-08,85,electrical,Electrical delay on Descaler high-pressure pump.,B
+DL-GEN-0036,HSM-DSC-PMP,2026-04-29,84,mechanical,Mechanical delay on Descaler high-pressure pump.,B
+DL-GEN-0032,HSM-DSC-PMP,2026-04-30,18,mechanical,Mechanical delay on Descaler high-pressure pump.,A
+DL-GEN-0031,HSM-DSC-PMP,2026-05-08,40,inspection,Inspection delay on Descaler high-pressure pump.,A
+DL-GEN-0055,HSM-F1-WRB,2025-12-27,83,inspection,Inspection delay on F1 finishing stand work-roll bearing.,B
+DL-GEN-0057,HSM-F1-WRB,2026-01-16,24,hydraulic,Hydraulic delay on F1 finishing stand work-roll bearing.,B
+DL-GEN-0059,HSM-F1-WRB,2026-02-12,68,inspection,Inspection delay on F1 finishing stand work-roll bearing.,C
+DL-GEN-0060,HSM-F1-WRB,2026-02-17,13,hydraulic,Hydraulic delay on F1 finishing stand work-roll bearing.,C
+DL-GEN-0056,HSM-F1-WRB,2026-03-22,66,electrical,Electrical delay on F1 finishing stand work-roll bearing.,A
+DL-GEN-0058,HSM-F1-WRB,2026-05-03,29,inspection,Inspection delay on F1 finishing stand work-roll bearing.,C
+DL-GEN-0008,HSM-F2-WRB,2025-12-09,43,hydraulic,Hydraulic delay on F2 finishing stand work-roll bearing (drive side).,A
+DL-GEN-0004,HSM-F2-WRB,2025-12-18,37,process,Process delay on F2 finishing stand work-roll bearing (drive side).,A
+DL-GEN-0002,HSM-F2-WRB,2026-02-09,28,mechanical,Mechanical delay on F2 finishing stand work-roll bearing (drive side).,C
+DL-GEN-0001,HSM-F2-WRB,2026-02-23,39,process,Process delay on F2 finishing stand work-roll bearing (drive side).,A
+DL-GEN-0003,HSM-F2-WRB,2026-03-03,87,hydraulic,Hydraulic delay on F2 finishing stand work-roll bearing (drive side).,A
+DL-GEN-0009,HSM-F2-WRB,2026-03-11,51,electrical,Electrical delay on F2 finishing stand work-roll bearing (drive side).,C
+DL-GEN-0005,HSM-F2-WRB,2026-04-09,59,hydraulic,Hydraulic delay on F2 finishing stand work-roll bearing (drive side).,B
+DL-GEN-0007,HSM-F2-WRB,2026-04-26,71,electrical,Electrical delay on F2 finishing stand work-roll bearing (drive side).,A
+DL-GEN-0006,HSM-F2-WRB,2026-05-04,38,inspection,Inspection delay on F2 finishing stand work-roll bearing (drive side).,C
+DL-GEN-0010,HSM-F2-WRB,2026-05-30,38,inspection,Inspection delay on F2 finishing stand work-roll bearing (drive side).,B
+DL-2026-0631,HSM-F2-WRB,2026-06-01,10,mechanical,Minor F2 vibration alarm acknowledged.,C
+DL-2026-0634,HSM-F2-WRB,2026-06-02,45,mechanical,F2 bearing step-change auto-alert; lubrication check.,C
+DL-GEN-0012,HSM-F3-GBX,2025-11-20,64,hydraulic,Hydraulic delay on F3 main drive gearbox (herringbone / planetary).,C
+DL-GEN-0013,HSM-F3-GBX,2025-12-02,8,inspection,Inspection delay on F3 main drive gearbox (herringbone / planetary).,A
+DL-GEN-0016,HSM-F3-GBX,2025-12-19,64,electrical,Electrical delay on F3 main drive gearbox (herringbone / planetary).,B
+DL-GEN-0017,HSM-F3-GBX,2026-02-04,62,mechanical,Mechanical delay on F3 main drive gearbox (herringbone / planetary).,B
+DL-GEN-0014,HSM-F3-GBX,2026-02-08,78,mechanical,Mechanical delay on F3 main drive gearbox (herringbone / planetary).,C
+DL-GEN-0019,HSM-F3-GBX,2026-02-24,68,electrical,Electrical delay on F3 main drive gearbox (herringbone / planetary).,B
+DL-GEN-0011,HSM-F3-GBX,2026-03-02,75,hydraulic,Hydraulic delay on F3 main drive gearbox (herringbone / planetary).,C
+DL-GEN-0018,HSM-F3-GBX,2026-05-05,56,hydraulic,Hydraulic delay on F3 main drive gearbox (herringbone / planetary).,A
+DL-GEN-0015,HSM-F3-GBX,2026-05-08,13,mechanical,Mechanical delay on F3 main drive gearbox (herringbone / planetary).,B
+DL-2026-0610,HSM-F3-GBX,2026-05-25,20,inspection,Operator-requested F3 vibration inspection.,A
+DL-GEN-0020,HSM-F3-GBX,2026-05-26,52,electrical,Electrical delay on F3 main drive gearbox (herringbone / planetary).,B
+DL-2026-0617,HSM-F3-GBX,2026-05-29,35,inspection,F3 gearbox oil sampling stop.,B
+DL-2026-0625,HSM-F3-GBX,2026-06-03,15,inspection,F3 vibration re-check after trend alert.,A
+DL-GEN-0063,HSM-F4-F7-BRG,2026-01-20,40,hydraulic,Hydraulic delay on F4-F7 finishing stand bearings (group).,B
+DL-GEN-0066,HSM-F4-F7-BRG,2026-02-09,10,inspection,Inspection delay on F4-F7 finishing stand bearings (group).,B
+DL-GEN-0061,HSM-F4-F7-BRG,2026-02-14,81,process,Process delay on F4-F7 finishing stand bearings (group).,B
+DL-GEN-0064,HSM-F4-F7-BRG,2026-04-26,27,inspection,Inspection delay on F4-F7 finishing stand bearings (group).,B
+DL-GEN-0065,HSM-F4-F7-BRG,2026-05-15,82,hydraulic,Hydraulic delay on F4-F7 finishing stand bearings (group).,C
+DL-GEN-0062,HSM-F4-F7-BRG,2026-05-24,19,process,Process delay on F4-F7 finishing stand bearings (group).,C
+DL-GEN-0067,HSM-LUB-UNIT,2025-12-29,47,hydraulic,Hydraulic delay on Mill central lubrication unit.,A
+DL-GEN-0068,HSM-LUB-UNIT,2026-02-28,78,mechanical,Mechanical delay on Mill central lubrication unit.,A
+DL-GEN-0070,HSM-LUB-UNIT,2026-03-21,88,electrical,Electrical delay on Mill central lubrication unit.,A
+DL-GEN-0069,HSM-LUB-UNIT,2026-04-10,8,mechanical,Mechanical delay on Mill central lubrication unit.,C
+DL-GEN-0072,HSM-LUB-UNIT,2026-05-03,81,mechanical,Mechanical delay on Mill central lubrication unit.,A
+DL-GEN-0071,HSM-LUB-UNIT,2026-05-13,6,hydraulic,Hydraulic delay on Mill central lubrication unit.,B
+DL-GEN-0042,HSM-RM-MOT,2025-12-12,24,inspection,Inspection delay on Roughing-mill main drive motor.,B
+DL-GEN-0037,HSM-RM-MOT,2025-12-26,11,inspection,Inspection delay on Roughing-mill main drive motor.,C
+DL-GEN-0041,HSM-RM-MOT,2026-01-08,89,electrical,Electrical delay on Roughing-mill main drive motor.,B
+DL-GEN-0039,HSM-RM-MOT,2026-02-26,85,inspection,Inspection delay on Roughing-mill main drive motor.,C
+DL-GEN-0040,HSM-RM-MOT,2026-03-13,19,process,Process delay on Roughing-mill main drive motor.,B
+DL-GEN-0038,HSM-RM-MOT,2026-04-07,44,process,Process delay on Roughing-mill main drive motor.,B
+DL-GEN-0045,HSM-ROT-PMP,2025-11-21,47,process,Process delay on Run-out-table cooling pump group.,A
+DL-GEN-0043,HSM-ROT-PMP,2025-11-28,46,inspection,Inspection delay on Run-out-table cooling pump group.,B
+DL-GEN-0044,HSM-ROT-PMP,2025-12-28,51,hydraulic,Hydraulic delay on Run-out-table cooling pump group.,C
+DL-GEN-0048,HSM-ROT-PMP,2026-01-15,81,electrical,Electrical delay on Run-out-table cooling pump group.,C
+DL-GEN-0047,HSM-ROT-PMP,2026-03-24,59,process,Process delay on Run-out-table cooling pump group.,B
+DL-GEN-0046,HSM-ROT-PMP,2026-04-06,76,inspection,Inspection delay on Run-out-table cooling pump group.,A

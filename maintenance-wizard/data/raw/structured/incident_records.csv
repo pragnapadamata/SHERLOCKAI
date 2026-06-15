@@ -1,0 +1,40 @@
+incident_id,equipment_id,date,severity,description,fault_code,resolved,related_failure_report
+INC-GEN-0022,HSM-AGC-HYD,2024-12-27,high,High breakdown summary for Hydraulic Automatic Gauge Control (AGC) system.,,True,
+INC-GEN-0024,HSM-AGC-HYD,2025-01-29,medium,Medium breakdown summary for Hydraulic Automatic Gauge Control (AGC) system.,,True,
+INC-GEN-0023,HSM-AGC-HYD,2025-02-24,low,Low breakdown summary for Hydraulic Automatic Gauge Control (AGC) system.,,True,
+INC-GEN-0010,HSM-DC-MND,2025-01-01,medium,Medium breakdown summary for Down-coiler mandrel and wrapper-roll assembly.,,True,
+INC-GEN-0011,HSM-DC-MND,2025-07-15,high,High breakdown summary for Down-coiler mandrel and wrapper-roll assembly.,,True,
+INC-GEN-0009,HSM-DC-MND,2025-08-11,high,High breakdown summary for Down-coiler mandrel and wrapper-roll assembly.,,True,
+INC-GEN-0012,HSM-DC-MND,2025-08-30,medium,Medium breakdown summary for Down-coiler mandrel and wrapper-roll assembly.,,True,
+INC-2025-028,HSM-DC-MND,2025-09-30,medium,Wrapper-roll bearing degradation with defect cluster.,DC-MND-002,True,FR-2025-002
+INC-GEN-0014,HSM-DSC-PMP,2024-07-15,high,High breakdown summary for Descaler high-pressure pump.,,True,
+INC-GEN-0015,HSM-DSC-PMP,2025-04-10,high,High breakdown summary for Descaler high-pressure pump.,,True,
+INC-2025-014,HSM-DSC-PMP,2025-04-22,medium,Descaling pressure loss event.,DSC-PMP-001,True,FR-2025-001
+INC-GEN-0013,HSM-DSC-PMP,2025-08-12,high,High breakdown summary for Descaler high-pressure pump.,,True,
+INC-2024-009,HSM-F1-WRB,2024-03-05,high,F1 work-roll bearing inner-race spalling.,F1-WRB-001,True,FR-2024-001
+INC-GEN-0025,HSM-F1-WRB,2024-07-12,low,Low breakdown summary for F1 finishing stand work-roll bearing.,,True,
+INC-GEN-0027,HSM-F1-WRB,2024-10-23,high,High breakdown summary for F1 finishing stand work-roll bearing.,,True,
+INC-GEN-0026,HSM-F1-WRB,2025-12-11,low,Low breakdown summary for F1 finishing stand work-roll bearing.,,True,
+INC-GEN-0002,HSM-F2-WRB,2024-11-05,low,Low breakdown summary for F2 finishing stand work-roll bearing (drive side).,,True,
+INC-GEN-0001,HSM-F2-WRB,2025-02-15,low,Low breakdown summary for F2 finishing stand work-roll bearing (drive side).,,True,
+INC-GEN-0003,HSM-F2-WRB,2025-02-15,medium,Medium breakdown summary for F2 finishing stand work-roll bearing (drive side).,,True,
+INC-GEN-0004,HSM-F2-WRB,2026-03-09,high,High breakdown summary for F2 finishing stand work-roll bearing (drive side).,,True,
+INC-2026-024,HSM-F2-WRB,2026-06-02,high,Sudden F2 bearing vibration step detected by AMDC.,F2-WRB-001,False,FR-2024-001
+INC-GEN-0006,HSM-F3-GBX,2024-07-10,high,High breakdown summary for F3 main drive gearbox (herringbone / planetary).,,True,
+INC-2024-031,HSM-F3-GBX,2024-09-18,critical,"Stage-2 gear-tooth fracture, 9-hour outage.",F3-GBX-002,True,FR-2024-002
+INC-GEN-0005,HSM-F3-GBX,2025-05-14,low,Low breakdown summary for F3 main drive gearbox (herringbone / planetary).,,True,
+INC-GEN-0008,HSM-F3-GBX,2026-03-01,medium,Medium breakdown summary for F3 main drive gearbox (herringbone / planetary).,,True,
+INC-GEN-0007,HSM-F3-GBX,2026-04-26,low,Low breakdown summary for F3 main drive gearbox (herringbone / planetary).,,True,
+INC-2026-019,HSM-F3-GBX,2026-05-22,high,Stage-2 pitting trend detected; replacement planned.,F3-GBX-002,False,FR-2024-002
+INC-GEN-0028,HSM-F4-F7-BRG,2024-07-28,low,Low breakdown summary for F4-F7 finishing stand bearings (group).,,True,
+INC-GEN-0029,HSM-F4-F7-BRG,2025-01-14,high,High breakdown summary for F4-F7 finishing stand bearings (group).,,True,
+INC-GEN-0030,HSM-F4-F7-BRG,2025-10-07,high,High breakdown summary for F4-F7 finishing stand bearings (group).,,True,
+INC-GEN-0031,HSM-LUB-UNIT,2025-02-22,low,Low breakdown summary for Mill central lubrication unit.,,True,
+INC-GEN-0033,HSM-LUB-UNIT,2025-08-13,high,High breakdown summary for Mill central lubrication unit.,,True,
+INC-GEN-0032,HSM-LUB-UNIT,2025-09-19,low,Low breakdown summary for Mill central lubrication unit.,,True,
+INC-GEN-0017,HSM-RM-MOT,2025-04-06,high,High breakdown summary for Roughing-mill main drive motor.,,True,
+INC-GEN-0016,HSM-RM-MOT,2025-08-05,low,Low breakdown summary for Roughing-mill main drive motor.,,True,
+INC-GEN-0018,HSM-RM-MOT,2026-02-24,high,High breakdown summary for Roughing-mill main drive motor.,,True,
+INC-GEN-0021,HSM-ROT-PMP,2024-07-27,low,Low breakdown summary for Run-out-table cooling pump group.,,True,
+INC-GEN-0020,HSM-ROT-PMP,2024-10-13,low,Low breakdown summary for Run-out-table cooling pump group.,,True,
+INC-GEN-0019,HSM-ROT-PMP,2025-05-08,medium,Medium breakdown summary for Run-out-table cooling pump group.,,True,

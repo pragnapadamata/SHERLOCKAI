@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-sm text-ink;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink-heading;
+  }
+}
+
+@layer utilities {
+  /* Restrained, thin scrollbars for the console feel. */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-line;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* Intro splash: the wordmarks form, then the motto rises in. */
+@keyframes intro-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-2.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes intro-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(2.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.intro-tata {
+  animation: intro-from-left 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.intro-steel {
+  animation: intro-from-right 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.intro-motto {
+  animation: intro-rise 0.5s ease-out 0.85s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro-tata,
+  .intro-steel,
+  .intro-motto {
+    animation: none;
+  }
+}
+
+/* Alert flash: a brief, restrained pulse when a new alert fires. */
+@keyframes alert-flash {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.alert-flash {
+  animation: alert-flash 0.9s ease-out forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .alert-flash {
+    animation-duration: 0.3s;
+  }
+}
+
+/* Rendered LLM markdown -- clean, structured, enterprise look (see MarkdownView). */
+@layer components {
+  .mw-markdown {
+    @apply text-sm leading-relaxed text-ink;
+  }
+  .mw-markdown > :first-child {
+    @apply mt-0;
+  }
+  .mw-markdown > :last-child {
+    @apply mb-0;
+  }
+  .mw-markdown h1 {
+    @apply mb-2 mt-6 text-lg font-semibold tracking-tight text-ink-heading;
+  }
+  .mw-markdown h2 {
+    @apply mb-2 mt-6 text-[0.9375rem] font-semibold tracking-tight text-ink-heading;
+  }
+  .mw-markdown h3 {
+    @apply mb-1.5 mt-5 text-sm font-semibold text-ink-heading;
+  }
+  .mw-markdown h4 {
+    @apply mb-1 mt-4 text-sm font-semibold text-ink-secondary;
+  }
+  .mw-markdown p {
+    @apply my-2;
+  }
+  .mw-markdown strong {
+    @apply font-semibold text-ink-heading;
+  }
+  .mw-markdown em {
+    @apply italic;
+  }
+  .mw-markdown ul {
+    @apply my-2 list-disc space-y-1 pl-5 marker:text-ink-subtle;
+  }
+  .mw-markdown ol {
+    @apply my-2 list-decimal space-y-1 pl-5 marker:text-ink-subtle;
+  }
+  .mw-markdown li > ul,
+  .mw-markdown li > ol {
+    @apply my-1;
+  }
+  .mw-markdown hr {
+    @apply my-5 border-0 border-t border-hairline;
+  }
+  .mw-markdown blockquote {
+    @apply my-3 border-l-2 border-line pl-3 text-ink-muted;
+  }
+  /* Inline code reads as a polished technical/provenance reference, not a raw dev code box. */
+  .mw-markdown code {
+    @apply font-mono text-[0.9em] font-medium text-ink-secondary;
+  }
+  .mw-markdown pre {
+    @apply my-3 overflow-x-auto rounded-lg border border-hairline bg-canvas p-3 text-xs;
+  }
+  .mw-markdown pre code {
+    @apply bg-transparent p-0 font-normal text-ink;
+  }
+  /* Tables: horizontal rules only, a subtle header row, comfortable cell padding. */
+  .mw-markdown table {
+    @apply my-3 block w-full overflow-x-auto border-collapse text-[0.8125rem];
+  }
+  .mw-markdown th {
+    @apply border-b border-line bg-canvas px-3.5 py-2 text-left text-[11px] font-semibold uppercase tracking-wide text-ink-muted;
+  }
+  .mw-markdown td {
+    @apply border-b border-hairline px-3.5 py-2 align-top text-ink-secondary;
+  }
+  .mw-markdown-compact {
+    @apply text-xs leading-relaxed;
+  }
+  .mw-markdown-compact p,
+  .mw-markdown-compact ul,
+  .mw-markdown-compact ol {
+    @apply my-1;
+  }
+  .mw-markdown-compact h1,
+  .mw-markdown-compact h2,
+  .mw-markdown-compact h3,
+  .mw-markdown-compact h4 {
+    @apply mt-3;
+  }
+}

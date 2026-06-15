@@ -1,0 +1,16 @@
+entry_id,timestamp,equipment_id,author_user_id,entry_type,text,related_fault_code
+LB-0001,2026-05-22T09:15:00,HSM-F3-GBX,U-ENG-01,observation,F3 gearbox vibration sidebands rising; oil Fe up to ~30 ppm on last sample.,F3-GBX-002
+LB-0002,2026-05-22T16:40:00,HSM-F3-GBX,U-SUP-01,confirmation,Confirmed F3-GBX-002 trend with AMDC. Raising spare query for gear set.,F3-GBX-002
+LB-0003,2026-05-30T22:05:00,HSM-F2-WRB,U-ENG-01,observation,F2 bearing sudden vibration step on night shift; temperature climbing.,F2-WRB-001
+LB-0004,2026-05-31T07:30:00,HSM-F2-WRB,U-SUP-01,action,Lubrication check ordered on F2 work-roll bearing; spare confirmed in stock.,F2-WRB-001
+LB-0005,2026-04-20T11:00:00,HSM-LUB-UNIT,U-ENG-01,observation,Central lubrication route to F-stands disrupted during shift; manual top-up partial.,LUB-UNIT-001
+LB-0006,2026-03-10T13:20:00,HSM-DC-MND,U-ENG-02,observation,Wrapper-roll vibration tick during coil build; no action needed yet.,DC-MND-002
+LB-0007,2026-02-15T08:45:00,HSM-DSC-PMP,U-SUP-02,observation,Descaling pressure slightly low at start of campaign; monitoring.,DSC-PMP-001
+LB-0008,2026-05-05T10:10:00,HSM-AGC-HYD,U-ENG-01,observation,Minor gauge variation on thin gauges; suspect servo-valve response.,AGC-HYD-001
+LB-0009,2026-05-23T09:00:00,HSM-F3-GBX,U-AN-01,observation,AMDC: F3 sideband trend consistent with Stage-2 pitting; RUL estimate pending.,F3-GBX-002
+LB-0010,2026-06-01T15:30:00,HSM-F3-GBX,U-PM-01,confirmation,Approved spare-procurement query for F3 gear set given lead time concern.,F3-GBX-002
+LB-0011,2026-04-02T12:00:00,HSM-RM-MOT,U-SUP-02,observation,Roughing motor winding temperature a few degrees above usual under load.,RM-MOT-001
+LB-0012,2026-03-28T18:25:00,HSM-ROT-PMP,U-ENG-02,action,Cleaned suction strainer on ROT pump group after flow dip.,ROT-PMP-001
+LB-0013,2026-05-12T14:50:00,HSM-DC-MND,U-ENG-02,observation,Coil quality review flagged a small Alpha-defect cluster; logged for analysis.,DC-PROC-001
+LB-0014,2026-02-20T09:35:00,HSM-LUB-UNIT,U-ENG-01,action,Replaced central lubrication filter element; differential pressure back to normal.,LUB-UNIT-001
+LB-0015,2026-06-02T06:15:00,HSM-F2-WRB,U-AN-01,observation,AMDC alert raised automatically on F2 bearing step change overnight.,F2-WRB-001

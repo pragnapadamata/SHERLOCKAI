@@ -101,8 +101,10 @@ const AGENT_META: Record<string, { icon: React.ElementType; color: string; label
 };
 
 const SUGGESTED = [
-  "Analyze gearbox vibration trend for wear prediction.",
-  "Identify safety risks on Blast Furnace Hearth #2.",
+  "Diagnose the F3 main drive gearbox and recommend actions.",
+  "What is the status of the F2 work-roll bearing?",
+  "What's driving the surface defects on the hot rolling line?",
+  "Which assets should I prioritise this week and why?",
 ];
 
 const PLANTS = ["ALL", "Plant-A", "Plant-B", "Plant-C", "Plant-D"];
@@ -180,6 +182,97 @@ function RoutingScores({ scores }: { scores: Record<string, number> }) {
   );
 }
 
+function renderMessageContent(content: string) {
+  const lines = content.split("\n");
+  const elements: React.ReactNode[] = [];
+  let currentParagraph: string[] = [];
+
+  const isTableRow = (l: string) => l.trim().startsWith("|") && l.trim().endsWith("|");
+  const isSeparatorRow = (l: string) => {
+    const trimmed = l.trim();
+    return trimmed.startsWith("|") && trimmed.endsWith("|") && /^\|[|:\-\s]+$/.test(trimmed);
+  };
+
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+
+    if (isTableRow(line) && i + 1 < lines.length && isSeparatorRow(lines[i + 1])) {
+      // Flush current paragraph
+      if (currentParagraph.length > 0) {
+        elements.push(
+          <p key={`p-${i}`} className="text-sm leading-relaxed whitespace-pre-wrap text-white mb-4">
+            {currentParagraph.join("\n").replace(/\*/g, "")}
+          </p>
+        );
+        currentParagraph = [];
+      }
+
+      // Parse table
+      const headerRow = line;
+      const dataRows: string[] = [];
+
+      let j = i + 2;
+      while (j < lines.length && isTableRow(lines[j])) {
+        dataRows.push(lines[j]);
+        j++;
+      }
+
+      const splitRow = (row: string) => {
+        const cells = row.split("|");
+        if (cells[0].trim() === "") cells.shift();
+        if (cells[cells.length - 1].trim() === "") cells.pop();
+        return cells.map(c => c.trim().replace(/\*/g, ""));
+      };
+
+      const headers = splitRow(headerRow);
+      const rows = dataRows.map(splitRow);
+
+      elements.push(
+        <div key={`table-${i}`} className="my-4 overflow-x-auto rounded-xl border border-steel-600/30 bg-[#0e1726]/40 backdrop-blur-md shadow-lg max-w-full">
+          <table className="min-w-full divide-y divide-steel-600/20 table-auto border-collapse">
+            <thead className="bg-steel-600/20">
+              <tr>
+                {headers.map((h, idx) => (
+                  <th key={`th-${idx}`} className="px-4 py-2.5 text-left text-xs font-semibold text-steel-300 uppercase tracking-wider">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-steel-600/25 bg-transparent">
+              {rows.map((row, rIdx) => (
+                <tr key={`tr-${rIdx}`} className="hover:bg-steel-600/10 transition-colors">
+                  {row.map((cell, cIdx) => (
+                    <td key={`td-${cIdx}`} className="px-4 py-2.5 text-sm text-gray-200">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
+      i = j;
+    } else {
+      currentParagraph.push(line);
+      i++;
+    }
+  }
+
+  if (currentParagraph.length > 0) {
+    elements.push(
+      <p key={`p-end`} className="text-sm leading-relaxed whitespace-pre-wrap text-white">
+        {currentParagraph.join("\n").replace(/\*/g, "")}
+      </p>
+    );
+  }
+
+  return <div className="space-y-1">{elements}</div>;
+}
+
 function MessageBubble({ msg }: { msg: ChatMessage }) {
   const [expanded, setExpanded] = useState(false);
   const [copied, setCopied]     = useState(false);
@@ -213,7 +306,11 @@ function MessageBubble({ msg }: { msg: ChatMessage }) {
             ? "bg-steel-600 text-white rounded-br-sm"
             : "card-glass border border-card-border rounded-bl-sm"
         }`}>
-          <p className="text-sm leading-relaxed whitespace-pre-wrap text-white">{msg.content.replace(/\*/g, "")}</p>
+          {isUser ? (
+            <p className="text-sm leading-relaxed whitespace-pre-wrap text-white">{msg.content.replace(/\*/g, "")}</p>
+          ) : (
+            renderMessageContent(msg.content)
+          )}
 
           {/* Copy button */}
           <button onClick={handleCopy}

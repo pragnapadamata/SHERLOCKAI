@@ -1,0 +1,11 @@
+equipment_id,name,area,type,manufacturer_code,model_no,install_date,service_hours,mtbf_hours,monitored,process_criticality,typical_delay_severity_min,spare_availability,procurement_lead_time_weeks,notes
+HSM-F2-WRB,F2 finishing stand work-roll bearing (drive side),Finishing,Bearing,OEM-A,A-TRB-4R-220,2019-03-12,58200,52000,True,high,180,in_stock,2,Four-row tapered roller bearing; lubrication-sensitive: vulnerable to bearing distress if a lubrication cycle is missed.
+HSM-F3-GBX,F3 main drive gearbox (herringbone / planetary),Finishing,Gearbox,OEM-B,B-HGX-900,2017-08-01,71500,80000,True,critical,420,on_order,8,Stage-2 gear set is the wear-critical element: historically the first part to show gear-mesh wear.
+HSM-DC-MND,Down-coiler mandrel and wrapper-roll assembly,Coiling,Mandrel,OEM-C,C-MND-1600,2018-11-20,64300,70000,True,high,240,on_order,6,Coils are produced through this asset; surface-defect clusters on coiled product originate here.
+HSM-DSC-PMP,Descaler high-pressure pump,Roughing,Pump,OEM-C,C-HPP-450,2020-05-30,44100,40000,False,medium,90,in_stock,2,Plunger-seal wear drives descaling pressure loss.
+HSM-RM-MOT,Roughing-mill main drive motor,Roughing,Motor,OEM-B,B-MOT-5000,2016-02-18,88600,95000,False,high,300,on_order,12,Stator rewind is a long-lead item; insulation degradation is the main risk.
+HSM-ROT-PMP,Run-out-table cooling pump group,Run-out Table,Pump,OEM-C,C-CWP-300,2021-01-10,33800,45000,False,medium,60,in_stock,3,Cavitation leads to impeller wear; redundant group softens impact.
+HSM-AGC-HYD,Hydraulic Automatic Gauge Control (AGC) system,Finishing,Hydraulic,OEM-B,B-AGC-HYD-12,2018-06-05,66200,60000,False,high,150,in_stock,5,Servo-valve contamination causes strip-gauge variation.
+HSM-F1-WRB,F1 finishing stand work-roll bearing,Finishing,Bearing,OEM-A,A-TRB-4R-220,2019-03-12,58200,52000,False,medium,120,in_stock,2,Same family as F2; lighter monitoring. Precedent failure in FR-2024-001.
+HSM-F4-F7-BRG,F4-F7 finishing stand bearings (group),Finishing,Bearing,OEM-A,A-TRB-4R-220,2019-04-01,57000,52000,False,high,200,in_stock,3,Grouped entry for plant-level prioritization breadth.
+HSM-LUB-UNIT,Mill central lubrication unit,Utilities,Lubrication,OEM-C,C-LUB-CENT-8,2017-09-15,72100,85000,False,critical,360,in_stock,1,Single point of supply to multiple stands; filter clogging is the main risk.

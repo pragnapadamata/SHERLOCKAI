@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environment / tooling caches
+.venv/
+.uv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Secrets and local config (never commit real keys)
+.env
+.env.local
+*.local.env
+
+# Runtime data artifacts (regenerated, not source of truth)
+data/sqlite/
+data/vector_store/
+# processed/ is a cache, except the committed deterministic Round 1 profile
+data/processed/*
+!data/processed/round1_profile.json
+# Trained ML artifacts are rebuilt by backend.scripts.train_models
+models/*
+!models/.gitkeep
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Frontend build output and dependencies
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+
+# Local scratch and backup snapshots (never committed)
+*.bak
+*.bak/
+
+# Assistant / editor tool directories and config (never committed)
+.claude/
+.cursor/
+.cursorrules
+.aider*
+.github/copilot*

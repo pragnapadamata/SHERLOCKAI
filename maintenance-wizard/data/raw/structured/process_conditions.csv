@@ -1,0 +1,15 @@
+equipment_id,indicator,nominal_value,alert_value,action_value,unit,reference
+HSM-F2-WRB,vibration_rms,1.0,1.4,2.8,mm/s,ISO 10816-3 Class III/IV
+HSM-F2-WRB,bearing_temp,45.0,55.0,65.0,degC,OEM-A manual
+HSM-F3-GBX,vibration_rms,1.2,1.4,2.8,mm/s,ISO 10816-3 Class III/IV
+HSM-F3-GBX,oil_fe,18.0,30.0,40.0,ppm,OEM-B manual
+HSM-F3-GBX,oil_temp,52.0,60.0,70.0,degC,OEM-B manual
+HSM-DC-MND,vibration_rms,1.1,1.4,2.8,mm/s,ISO 10816-3 Class III/IV
+HSM-DC-MND,hydraulic_pressure,180.0,160.0,150.0,bar,OEM-C manual
+HSM-DSC-PMP,header_pressure,380.0,340.0,300.0,bar,OEM-C manual
+HSM-RM-MOT,winding_temp,95.0,120.0,140.0,degC,OEM-B manual
+HSM-ROT-PMP,flow,100.0,85.0,70.0,pct,OEM-C manual
+HSM-AGC-HYD,supply_pressure,210.0,190.0,175.0,bar,OEM-B manual
+HSM-F1-WRB,vibration_rms,1.0,1.4,2.8,mm/s,ISO 10816-3 Class III/IV
+HSM-F4-F7-BRG,vibration_rms,1.0,1.4,2.8,mm/s,ISO 10816-3 Class III/IV
+HSM-LUB-UNIT,downstream_flow,100.0,80.0,65.0,pct,OEM-C manual

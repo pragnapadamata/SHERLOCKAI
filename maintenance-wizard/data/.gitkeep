@@ -1,0 +1,3 @@
+# Reserved for the synthetic steel-plant dataset (Phase: Data substrate).
+# Subfolders created in later phases: raw/, processed/, vector_store/, sqlite/, synthetic/.
+# Generated artifacts (sqlite/, vector_store/, processed/) are gitignored.
