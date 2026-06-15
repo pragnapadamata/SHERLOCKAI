@@ -22,6 +22,7 @@ class Settings(BaseSettings):
         "http://localhost:3000",
         "http://localhost:3001",
         "https://tata-steel-sherlock.vercel.app",
+        "https://sherlockai-beta.vercel.app",
         "https://*.vercel.app",
     ]
 
