@@ -259,27 +259,93 @@ tata-steel-apis/
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation & Running the Project
 
-## Backend
+You can run the project either locally (recommended for development) or using Docker Compose.
 
-```bash
-cd backend
+---
 
-pip install -r requirements.txt
+## Prerequisites
 
-uvicorn app.main:app --reload --port 8000
-```
+- **Python 3.9+** (if running locally)
+- **Node.js 18+** (if running locally)
+- **Docker & Docker Compose** (if running via Docker)
+- **Gemini API Key**: An active Gemini API key is required for the LLM agents to function.
 
-## Frontend
+### 🔑 Environment Setup
 
-```bash
-cd frontend
+1. **Backend Env Setup**:
+   - Navigate to the `backend/` directory.
+   - Copy the template file to `.env` (e.g., `cp .env.example .env`).
+   - Open `.env` and fill in your **`GEMINI_API_KEY`**:
+     ```env
+     GEMINI_API_KEY=your_actual_gemini_api_key_here
+     ```
+2. **Frontend Env Setup** (Optional):
+   - Navigate to the `frontend/` directory.
+   - Create a `.env.local` file with the backend API URL (already defaulted to `http://localhost:8000`):
+     ```env
+     NEXT_PUBLIC_API_URL=http://localhost:8000
+     ```
 
-npm install
+---
 
-npm run dev
-```
+## Option A: Run Locally (Recommended)
+
+### 1. Start the Backend
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. (Optional but recommended) Create and activate a virtual environment:
+   ```bash
+   python -m venv .venv
+   # On Windows:
+   .venv\Scripts\activate
+   # On macOS/Linux:
+   source .venv/bin/activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Start the FastAPI server:
+   ```bash
+   uvicorn app.main:app --reload --port 8000
+   ```
+The backend API will be running at [http://localhost:8000](http://localhost:8000).
+
+### 2. Start the Frontend
+
+1. Open a new terminal and navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the Next.js development server:
+   ```bash
+   npm run dev
+   ```
+The frontend will be running at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Option B: Run with Docker Compose
+
+If you prefer to run both backend and frontend in containerized environments:
+
+1. Make sure you have created the `backend/.env` file with your `GEMINI_API_KEY`.
+2. In the root directory of the project, run:
+   ```bash
+   docker compose up --build
+   ```
+3. Once the containers are built and running:
+   - **Frontend**: Accessible at [http://localhost:3001](http://localhost:3001) (mapped from port 3000 inside the container).
+   - **Backend**: Accessible at [http://localhost:8000](http://localhost:8000).
 
 ---
 

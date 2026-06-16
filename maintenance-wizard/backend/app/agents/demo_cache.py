@@ -121,6 +121,24 @@ class CachedOrchestrator:
 
     def _lookup(self, query: str) -> dict | None:
         """Exact key first, then a tolerant alias match, before any live fallback."""
+        norm = normalize_key(query)
+        if norm in ("hi", "hello", "hey", "greetings", "good morning", "good afternoon", "good evening", "help", "who are you", "what can you do"):
+            return {
+                "query": query,
+                "events": [],
+                "final": {
+                    "answer": "Hello! I am Sherlock, your multi-agent industrial maintenance assistant. How can I help you today?\n\nYou can ask me about at-risk assets, safety hazards, energy efficiency, production scheduling, or request an executive report.",
+                    "provenance": [],
+                    "specialists_used": [],
+                    "findings": [],
+                    "plan": [],
+                    "session_id": "default",
+                    "iterations": 0,
+                    "stop_reason": "completed",
+                    "tokens_in": 0,
+                    "tokens_out": 0
+                }
+            }
         entry = self.cache.get(derive_key(query))
         if entry is not None:
             return entry
