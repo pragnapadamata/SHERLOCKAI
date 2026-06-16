@@ -276,8 +276,9 @@ async def send_chat_message(request: ChatRequest):
         if request.plant_id.lower() not in query.lower():
             query = f"{query} [Context: {request.plant_id}]"
 
-    # Try communicating with maintenance-wizard assistant backend (running on port 8002)
-    url = "http://127.0.0.1:8002/api/chat"
+    # Try communicating with maintenance-wizard assistant backend
+    import os
+    url = os.getenv("MAINTENANCE_WIZARD_URL", "http://127.0.0.1:8002/api/chat")
     session_id = f"chat-sherlock-{request.plant_id}"
     payload = {"query": query, "session_id": session_id}
 
