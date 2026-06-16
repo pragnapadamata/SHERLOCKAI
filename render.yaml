@@ -1,16 +1,56 @@
 services:
+  # Service 1: Maintenance Wizard Engine
+  - type: web
+    name: maintenance-wizard-engine
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: maintenance-wizard
+    plan: free # Note: Can be upgraded to starter/standard if 512MB RAM is exceeded during ML training.
+    envVars:
+      - key: APP_ENV
+        value: prod
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DEMO_MODE
+        value: "true"
+      - key: LLM_REQUEST_TIMEOUT
+        value: "180"
+      - key: LLM_SMALL_PROVIDER
+        value: openai
+      - key: LLM_SMALL_MODEL
+        value: google/gemini-2.5-flash
+      - key: LLM_SMALL_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: LLM_SMALL_API_KEY
+        sync: false # Set this in Render UI
+      - key: LLM_LARGE_PROVIDER
+        value: openai
+      - key: LLM_LARGE_MODEL
+        value: meta-llama/llama-3.3-70b-instruct
+      - key: LLM_LARGE_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: LLM_LARGE_API_KEY
+        sync: false # Set this in Render UI
+
+  # Service 2: Sherlock Backend API
   - type: web
     name: sherlock-backend
     env: docker
-    dockerfilePath: backend/Dockerfile
+    dockerfilePath: Dockerfile
     dockerContext: backend
     plan: free
     envVars:
       - key: DEBUG
         value: "false"
       - key: SECRET_KEY
-        generateValue: true
+        generateValue: true # Automatically generates a random key
       - key: OPENROUTER_API_KEY
-        sync: false
+        sync: false # Set this in Render UI
       - key: ALLOWED_ORIGINS
-        value: '["*"]'
+        value: '["*"]' # Allow all origins by default, update with Vercel URL later
+      - key: MAINTENANCE_WIZARD_URL
+        fromService:
+          type: web
+          name: maintenance-wizard-engine
+          property: host
+          # Note: We append "/api/chat" manually in the dashboard or config, but we can set it to the base URL first

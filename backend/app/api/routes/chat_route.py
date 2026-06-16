@@ -2,6 +2,7 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
 import io
+import os
 import pypdf
 import httpx
 import json
