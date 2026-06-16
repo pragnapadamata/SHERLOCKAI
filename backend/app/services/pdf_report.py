@@ -31,17 +31,20 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-# ── Colour palette matching the dark UI theme ─────────────────────────────────
-_STEEL_BLUE  = colors.HexColor("#4f46e5")   # primary brand
-_DARK_BG     = colors.HexColor("#0f1117")
-_CARD_BG     = colors.HexColor("#1a1d2e")
+# ── Colour palette: industrial steel-navy + cyan accent (SherlockAI brand) ─────
+_STEEL_BLUE  = colors.HexColor("#0E2A47")   # deep steel navy — headers & tables
+_ACCENT      = colors.HexColor("#16B8CE")   # cyan accent — rules & highlights
+_ACCENT_LT   = colors.HexColor("#8FE3EE")   # light cyan — header subtitle
+_DARK_BG     = colors.HexColor("#0B1B2B")
+_CARD_BG     = colors.HexColor("#13314F")
 _WHITE       = colors.white
-_LIGHT_GREY  = colors.HexColor("#9ca3af")
-_GREEN       = colors.HexColor("#10b981")
-_AMBER       = colors.HexColor("#f59e0b")
-_RED         = colors.HexColor("#ef4444")
-_BORDER      = colors.HexColor("#2d3154")
-_TEXT_DARK   = colors.HexColor("#1f2937")
+_LIGHT_GREY  = colors.HexColor("#6B7280")
+_GREEN       = colors.HexColor("#15A66A")
+_AMBER       = colors.HexColor("#E08A1E")
+_RED         = colors.HexColor("#D83A34")
+_BORDER      = colors.HexColor("#C9D6E3")   # light grid for tables on white
+_ROW_ALT     = colors.HexColor("#EEF3F8")   # soft steel row shading
+_TEXT_DARK   = colors.HexColor("#16243A")
 
 
 def _status_colour(status: str) -> colors.Color:
@@ -93,19 +96,32 @@ def generate_board_pdf(
     ts = datetime.now(timezone.utc)
     ts_str = ts.strftime("%d %B %Y, %H:%M UTC")
 
-    # ─── HEADER ───────────────────────────────────────────────────────────────
-    story.append(Paragraph("Tata Steel Group", h1))
+    # ─── HEADER (branded steel-navy band) ──────────────────────────────────────
+    brand = Paragraph(
+        'SHERLOCK<font color="#34D7E6">AI</font>',
+        ParagraphStyle("Brand", fontSize=26, fontName="Helvetica-Bold",
+                       textColor=_WHITE, leading=28, spaceAfter=3),
+    )
+    tagline = Paragraph(
+        "Industrial Maintenance Intelligence &nbsp;&middot;&nbsp; Board Report",
+        ParagraphStyle("Tag", fontSize=10.5, fontName="Helvetica",
+                       textColor=_ACCENT_LT, leading=14),
+    )
+    band = Table([[[brand, tagline]]], colWidths=[174*mm])
+    band.setStyle(TableStyle([
+        ("BACKGROUND",   (0,0), (-1,-1), _STEEL_BLUE),
+        ("LEFTPADDING",  (0,0), (-1,-1), 16),
+        ("RIGHTPADDING", (0,0), (-1,-1), 16),
+        ("TOPPADDING",   (0,0), (-1,-1), 15),
+        ("BOTTOMPADDING",(0,0), (-1,-1), 15),
+    ]))
+    story.append(band)
+    story.append(HRFlowable(width="100%", thickness=3, color=_ACCENT, spaceBefore=0, spaceAfter=7))
     story.append(Paragraph(
-        "Autonomous Plant Intelligence System (Sherlock) — Board Intelligence Report",
-        ParagraphStyle("Sub", fontSize=11, fontName="Helvetica",
-                       textColor=_LIGHT_GREY, spaceAfter=2),
-    ))
-    story.append(Paragraph(
-        f"Generated: {ts_str}  |  Classification: CONFIDENTIAL",
+        f"Generated: {ts_str} &nbsp;|&nbsp; Classification: CONFIDENTIAL &nbsp;|&nbsp; Steel Hot Strip Mill",
         ParagraphStyle("Meta", fontSize=8, fontName="Helvetica",
-                       textColor=_LIGHT_GREY, spaceAfter=6),
+                       textColor=_LIGHT_GREY, spaceAfter=16),
     ))
-    story.append(HRFlowable(width="100%", thickness=2, color=_STEEL_BLUE, spaceAfter=16))
 
     # ─── EXECUTIVE SUMMARY ────────────────────────────────────────────────────
     story.append(Paragraph("1. Executive Summary", h2))
@@ -117,6 +133,8 @@ def generate_board_pdf(
         .replace("**", "")
         .replace("──────────────────────────────────────────────────────────", "")
         .replace("─", "")
+        .replace("₹", "Rs ")   # rupee sign -> "Rs " (not in the PDF base font)
+        .replace("₂", "2")     # subscript two (CO2)
         .strip()
     )
     # Split into paragraphs; skip blank lines
@@ -151,7 +169,7 @@ def generate_board_pdf(
          "HIGH" if summary.get('active_alerts', 0) > 5 else "NORMAL",    "0"],
         ["Overdue Maintenance",   str(summary.get('overdue_maintenance', 0)),
          "HIGH" if summary.get('overdue_maintenance', 0) > 3 else "NORMAL","0"],
-        ["CO₂ Emissions",         f"{summary.get('total_co2_tonnes', 0):.0f} tonnes",
+        ["CO2 Emissions",         f"{summary.get('total_co2_tonnes', 0):.0f} tonnes",
          "MONITOR", "Baseline"],
         ["Energy Savings Potential",
          f"{summary.get('potential_savings_kwh', 0) / 1000:.0f} MWh",
@@ -164,7 +182,7 @@ def generate_board_pdf(
         ("TEXTCOLOR",   (0,0), (-1,0),  _WHITE),
         ("FONTNAME",    (0,0), (-1,0),  "Helvetica-Bold"),
         ("FONTSIZE",    (0,0), (-1,-1), 8.5),
-        ("ROWBACKGROUNDS", (0,1), (-1,-1), [colors.HexColor("#f9fafb"), _WHITE]),
+        ("ROWBACKGROUNDS", (0,1), (-1,-1), [_ROW_ALT, _WHITE]),
         ("GRID",        (0,0), (-1,-1), 0.4, _BORDER),
         ("TOPPADDING",  (0,0), (-1,-1), 4),
         ("BOTTOMPADDING",(0,0),(-1,-1), 4),
@@ -199,7 +217,7 @@ def generate_board_pdf(
             ("TEXTCOLOR",    (0,0), (-1,0),  _WHITE),
             ("FONTNAME",     (0,0), (-1,0),  "Helvetica-Bold"),
             ("FONTSIZE",     (0,0), (-1,-1), 8),
-            ("ROWBACKGROUNDS",(0,1),(-1,-1), [colors.HexColor("#f9fafb"), _WHITE]),
+            ("ROWBACKGROUNDS",(0,1),(-1,-1), [_ROW_ALT, _WHITE]),
             ("GRID",         (0,0), (-1,-1), 0.4, _BORDER),
             ("TOPPADDING",   (0,0), (-1,-1), 4),
             ("BOTTOMPADDING",(0,0), (-1,-1), 4),
@@ -221,10 +239,12 @@ def generate_board_pdf(
     story.append(HRFlowable(width="100%", thickness=0.5, color=_BORDER, spaceAfter=8))
 
     actions = _derive_priority_actions(summary, plant_summaries)
+    act_style = ParagraphStyle("Act", fontSize=7.5, fontName="Helvetica",
+                               textColor=_TEXT_DARK, leading=9.5)
     action_rows = [["#", "Priority", "Action", "Domain", "Impact (INR)", "Timeline"]]
     for a in actions:
         action_rows.append([
-            str(a["rank"]), a["priority"], a["action"],
+            str(a["rank"]), a["priority"], Paragraph(a["action"], act_style),
             a["domain"], a["impact"], a["timeline"],
         ])
 
@@ -234,7 +254,7 @@ def generate_board_pdf(
         ("TEXTCOLOR",    (0,0), (-1,0),  _WHITE),
         ("FONTNAME",     (0,0), (-1,0),  "Helvetica-Bold"),
         ("FONTSIZE",     (0,0), (-1,-1), 7.5),
-        ("ROWBACKGROUNDS",(0,1),(-1,-1), [colors.HexColor("#f9fafb"), _WHITE]),
+        ("ROWBACKGROUNDS",(0,1),(-1,-1), [_ROW_ALT, _WHITE]),
         ("GRID",         (0,0), (-1,-1), 0.4, _BORDER),
         ("TOPPADDING",   (0,0), (-1,-1), 5),
         ("BOTTOMPADDING",(0,0), (-1,-1), 5),
@@ -274,8 +294,8 @@ def generate_board_pdf(
         highlights.append(("Energy", [
             f"Average efficiency: {energy_data.get('avg_efficiency', 0)*100:.1f}%",
             f"Total consumption: {energy_data.get('total_consumption_kwh', 0)/1000:.0f} MWh",
-            f"CO₂ emissions: {energy_data.get('total_co2_tonnes', 0):.0f} tonnes",
-            f"Savings potential: ₹{energy_data.get('estimated_savings_inr', 0):.0f}L",
+            f"CO2 emissions: {energy_data.get('total_co2_tonnes', 0):.0f} tonnes",
+            f"Savings potential: Rs {energy_data.get('estimated_savings_inr', 0):.0f}L",
         ]))
 
     for domain, bullets in highlights:
@@ -289,8 +309,8 @@ def generate_board_pdf(
     story.append(HRFlowable(width="100%", thickness=0.5, color=_BORDER))
     story.append(Spacer(1, 6))
     story.append(Paragraph(
-        f"CONFIDENTIAL — Tata Steel Group Internal Use Only  |  "
-        f"Generated by Sherlock v1.0 on {ts_str}  |  "
+        f"CONFIDENTIAL — Internal Use Only  |  "
+        f"Generated by SherlockAI on {ts_str}  |  "
         f"Do not distribute without authorisation from the Plant Director.",
         centre,
     ))
@@ -324,7 +344,7 @@ def _derive_priority_actions(summary: dict, plant_summaries: list) -> list[dict]
             "rank": 1, "priority": "CRITICAL",
             "action": f"Address {overdue} overdue maintenance tasks — risk of unplanned failure",
             "domain": "Maintenance",
-            "impact": f"₹{overdue * 4.5:.0f}L saved",
+            "impact": f"Rs {overdue * 4.5:.0f}L saved",
             "timeline": "24 hours",
         })
 
@@ -344,7 +364,7 @@ def _derive_priority_actions(summary: dict, plant_summaries: list) -> list[dict]
             "rank": 3, "priority": "HIGH",
             "action": "Implement off-peak load-shifting and BOF heat recovery programme",
             "domain": "Energy",
-            "impact": f"₹{savings_kwh*0.008/100000:.1f}L/month",
+            "impact": f"Rs {savings_kwh*0.008/100000:.1f}L/month",
             "timeline": "1 week",
         })
 
