@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: List[str] = [
         "http://localhost:3000",
         "http://localhost:3001",
+        "https://tata-steel-sherlock.vercel.app",
+        "https://sherlockai-beta.vercel.app",
     ]
 
     DATA_DIR: str = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data")
