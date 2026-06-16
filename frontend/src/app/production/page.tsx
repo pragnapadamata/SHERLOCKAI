@@ -127,8 +127,8 @@ export default function ProductionPage() {
   return (
     <AppShell>
       <Header
-        title="Production Planning"
-        subtitle="Throughput analysis, scheduling, and bottleneck identification"
+        title="Production & Operations"
+        subtitle="Throughput analysis, scheduling, and bottleneck management"
         onRefresh={handleRefresh}
         isRefreshing={refreshing}
       />

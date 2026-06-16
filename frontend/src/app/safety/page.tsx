@@ -222,8 +222,8 @@ export default function SafetyPage() {
   return (
     <AppShell>
       <Header
-        title="Safety Monitoring"
-        subtitle="Incident tracking, risk scoring, and preventive action management"
+        title="Safety & Risk Management"
+        subtitle="Incident tracking, risk assessment, and preventive actions"
         onRefresh={handleRefresh}
         isRefreshing={refreshing}
       />

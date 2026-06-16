@@ -143,8 +143,8 @@ export default function MaintenancePage() {
   return (
     <AppShell>
       <Header
-        title="Predictive Maintenance"
-        subtitle="Sensor-driven failure forecasting and work order management"
+        title="Maintenance & Reliability"
+        subtitle="Equipment health, failure prediction, and work order management"
         onRefresh={handleRefresh}
         isRefreshing={refreshing}
       />

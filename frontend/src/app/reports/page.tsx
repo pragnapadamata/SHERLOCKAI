@@ -173,8 +173,8 @@ export default function ReportsPage() {
   return (
     <AppShell>
       <Header
-        title="Reports & Analytics"
-        subtitle="Executive summaries, operational KPIs, and trend analysis"
+        title="Reports & Insights"
+        subtitle="Executive summaries, plant KPIs, and trend analysis"
         onRefresh={handleRefresh}
         isRefreshing={refreshing}
       />
