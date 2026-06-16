@@ -1,181 +1,79 @@
-# 🏭 Tata Steel Autonomous Plant Intelligence System (Sherlock)
+# 🏭 Sherlock – Autonomous Plant Intelligence System
 
 ## 🚀 Overview
 
-Sherlock (Autonomous Plant Intelligence System) is a multi-agent AI platform designed to help steel plants reduce downtime, improve safety, optimize energy consumption, and support executive decision-making.
+Sherlock is an AI-powered Autonomous Plant Intelligence System designed to help steel manufacturing facilities improve operational efficiency, enhance workplace safety, reduce downtime, and optimize energy consumption. Modern industrial plants generate massive volumes of data from equipment sensors, maintenance systems, safety monitoring infrastructure, production lines, and energy management platforms. While this data contains valuable insights, extracting actionable intelligence from it remains a significant challenge.
 
-The system leverages LangGraph-based AI agents, live operational simulations, and an enterprise-grade dashboard to transform raw plant data into actionable intelligence.
-
-Built as a hackathon solution for Tata Steel.
+Built as a Tata Steel hackathon solution, Sherlock transforms raw operational data into meaningful recommendations through a multi-agent AI architecture powered by LangGraph and Gemini. The platform enables engineers, plant operators, and executives to make faster and more informed decisions by providing predictive insights, operational intelligence, and automated reporting through a unified dashboard experience.
 
 ---
 
-# 🎯 Problem Statement
+## 🎯 Problem Statement
 
-Modern steel plants generate enormous amounts of operational data from:
+Steel manufacturing plants operate in highly complex environments where unexpected equipment failures, safety incidents, energy inefficiencies, and production bottlenecks can lead to significant operational and financial losses. Traditional monitoring systems often provide large amounts of data but lack the intelligence required to proactively identify risks and recommend corrective actions.
 
-* Equipment sensors
-* Safety monitoring systems
-* Maintenance logs
-* Production systems
-* Energy consumption trackers
-
-Organizations face challenges such as:
-
-* Unexpected equipment failures
-* Worker safety incidents
-* Rising energy costs
-* Production bottlenecks
-* Slow management reporting
-
-Sherlock addresses these challenges using AI-powered autonomous agents and intelligent analytics.
+Sherlock addresses these challenges by leveraging autonomous AI agents that continuously analyze plant operations, detect anomalies, assess risks, and generate actionable recommendations. By shifting organizations from reactive problem-solving to proactive decision-making, the platform helps improve reliability, productivity, and overall plant performance.
 
 ---
 
-# ✨ Key Features
+## ✨ Key Features
 
-## Multi-Agent AI Architecture
-
-### Supervisor Agent
-
-Routes queries to the most relevant expert agents.
-
-### Maintenance Agent
-
-Predictive maintenance recommendations and failure analysis.
-
-### Safety Agent
-
-Risk assessment and safety incident analysis.
-
-### Energy Agent
-
-Energy optimization and efficiency recommendations.
-
-### Production Agent
-
-Production planning and bottleneck identification.
-
-### Reporting Agent
-
-Executive summaries and automated reporting.
+* Multi-agent AI architecture for specialized operational intelligence
+* Predictive maintenance and equipment failure analysis
+* Safety monitoring and risk assessment
+* Energy optimization and efficiency recommendations
+* Production planning and bottleneck detection
+* Executive dashboard with real-time KPIs
+* Conversational AI assistant for natural language queries
+* Live operational and industrial event simulation
+* Automated executive PDF report generation
 
 ---
 
-## Predictive Maintenance
+## 🤖 Multi-Agent Intelligence
 
-### Inputs
+At the core of Sherlock is a LangGraph-powered multi-agent system. A Supervisor Agent coordinates interactions between specialized agents responsible for maintenance, safety, energy, production, and reporting functions. Each agent focuses on a specific operational domain, enabling deeper analysis and more accurate recommendations than a traditional single-model approach.
 
-* Vibration
-* Temperature
-* Pressure
-
-### Outputs
-
-* Failure probability
-* Recommended actions
-* Confidence score
-* Expected impact
+This architecture allows users to interact with the platform naturally while receiving expert-level insights tailored to different areas of plant operations.
 
 ---
 
-## Safety Monitoring
+## 📊 Executive Dashboard
 
-### Inputs
+Sherlock provides a centralized operational dashboard that offers complete visibility into plant performance. The dashboard consolidates critical metrics such as active alerts, downtime predictions, safety indicators, energy efficiency scores, production KPIs, and overall plant health into a single interface.
 
-* Incident reports
-* Sensor alerts
-
-### Outputs
-
-* Risk score
-* Preventive actions
-* Safety recommendations
+By presenting operational intelligence in real time, the platform enables stakeholders to quickly identify emerging issues and make informed decisions before problems impact production.
 
 ---
 
-## Energy Optimization
+## 💬 AI Assistant
 
-### Inputs
-
-* Plant energy consumption
-
-### Outputs
-
-* Optimization recommendations
-* Estimated savings
-* Efficiency metrics
-
----
-
-## Production Planning
-
-### Outputs
-
-* Scheduling suggestions
-* Bottleneck detection
-* Production KPIs
-
----
-
-## Executive Dashboard
-
-The dashboard provides:
-
-* Active Alerts
-* Downtime Prediction
-* Safety Score
-* Energy Score
-* Production KPIs
-* Plant Health Monitoring
-* Live Operational Metrics
-
----
-
-## AI Assistant
-
-Users can interact with the system using natural language.
-
-### Example Queries
+The platform includes a conversational AI assistant that allows users to interact with operational data using natural language. Engineers and managers can ask questions such as:
 
 * Why is Plant B at risk?
 * How can we reduce energy consumption?
-* Show production bottlenecks.
-* Generate executive report.
+* Show current production bottlenecks.
+* Generate an executive report.
 
-Each response includes:
-
-* Recommendation
-* Confidence Score
-* Reasoning
-* Expected Impact
+Each response includes AI-generated recommendations, supporting reasoning, confidence scores, and expected business impact, making complex operational analysis accessible to both technical and non-technical users.
 
 ---
 
-## Live Sensor Simulation
+## 📡 Operational Simulation
 
-Features include:
+To demonstrate real-world industrial scenarios, Sherlock includes a live simulation environment capable of generating operational events and sensor updates. Users can simulate equipment failures, gas leaks, and energy surges while observing how the system detects issues, generates alerts, and updates key performance indicators in real time.
 
-* Real-time sensor updates
-* Alert generation
-* Live KPI changes
-* Industrial event simulation
+This simulation layer showcases the platform's ability to respond intelligently to dynamic plant conditions and provides a realistic representation of production environments.
 
 ---
 
-## PDF Executive Reports
+## 📄 Automated Reporting
 
-Generate board-ready reports containing:
-
-* KPI Summary
-* Executive Insights
-* Recommendations
-* Plant Status Overview
-* Timestamped Reports
+Sherlock simplifies executive communication by automatically generating professional PDF reports containing KPI summaries, operational insights, strategic recommendations, and plant status overviews. These reports are designed for management reviews and board-level presentations, significantly reducing the effort required to prepare operational updates.
 
 ---
 
-# 🏗 Architecture
+## 🏗 Architecture
 
 ```text
 User
@@ -204,37 +102,37 @@ Recommendations & Insights
 
 ---
 
-# 🛠 Technology Stack
+## 🛠 Technology Stack
 
-## Frontend
+### Frontend
 
 * Next.js 15
 * TypeScript
-* TailwindCSS
+* Tailwind CSS
 * ShadCN UI
 * Recharts
 
-## Backend
+### Backend
 
 * FastAPI
 * Python
 
-## AI
+### AI & Agents
 
 * LangGraph
 * Gemini API
 
-## Database
+### Database
 
 * PostgreSQL Ready Architecture
 
-## Reporting
+### Reporting
 
 * ReportLab
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 tata-steel-apis/
@@ -259,143 +157,44 @@ tata-steel-apis/
 
 ---
 
-# ⚙️ Installation & Running the Project
+## ⚙️ Installation
 
-You can run the project either locally (recommended for development) or using Docker Compose.
+### Backend
 
----
+```bash
+cd backend
 
-## Prerequisites
+pip install -r requirements.txt
 
-- **Python 3.9+** (if running locally)
-- **Node.js 18+** (if running locally)
-- **Docker & Docker Compose** (if running via Docker)
-- **Gemini API Key**: An active Gemini API key is required for the LLM agents to function.
-
-### 🔑 Environment Setup
-
-1. **Backend Env Setup**:
-   - Navigate to the `backend/` directory.
-   - Copy the template file to `.env` (e.g., `cp .env.example .env`).
-   - Open `.env` and fill in your **`GEMINI_API_KEY`**:
-     ```env
-     GEMINI_API_KEY=your_actual_gemini_api_key_here
-     ```
-2. **Frontend Env Setup** (Optional):
-   - Navigate to the `frontend/` directory.
-   - Create a `.env.local` file with the backend API URL (already defaulted to `http://localhost:8000`):
-     ```env
-     NEXT_PUBLIC_API_URL=http://localhost:8000
-     ```
-
----
-
-## Option A: Run Locally (Recommended)
-
-### 1. Start the Backend
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. (Optional but recommended) Create and activate a virtual environment:
-   ```bash
-   python -m venv .venv
-   # On Windows:
-   .venv\Scripts\activate
-   # On macOS/Linux:
-   source .venv/bin/activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Start the FastAPI server:
-   ```bash
-   uvicorn app.main:app --reload --port 8000
-   ```
-The backend API will be running at [http://localhost:8000](http://localhost:8000).
-
-### 2. Start the Frontend
-
-1. Open a new terminal and navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the Next.js development server:
-   ```bash
-   npm run dev
-   ```
-The frontend will be running at [http://localhost:3000](http://localhost:3000).
-
----
-
-## Option B: Run with Docker Compose
-
-If you prefer to run both backend and frontend in containerized environments:
-
-1. Make sure you have created the `backend/.env` file with your `GEMINI_API_KEY`.
-2. In the root directory of the project, run:
-   ```bash
-   docker compose up --build
-   ```
-3. Once the containers are built and running:
-   - **Frontend**: Accessible at [http://localhost:3001](http://localhost:3001) (mapped from port 3000 inside the container).
-   - **Backend**: Accessible at [http://localhost:8000](http://localhost:8000).
-
----
-
-# 🔐 Demo Login
-
-Email:
-
-```text
-admin@tatasteel.com
+uvicorn app.main:app --reload --port 8000
 ```
 
-Password:
+### Frontend
 
-```text
-TataSteel@2025
+```bash
+cd frontend
+
+npm install
+
+npm run dev
 ```
 
 ---
 
-# 📊 Demo Workflow
+## 🌟 Future Scope
 
-1. Login to Sherlock
-2. Open Dashboard
-3. Trigger a live event using:
-
-   * Equipment Failure
-   * Gas Leak
-   * Energy Surge
-4. Open AI Assistant
-5. Ask operational questions
-6. Generate Executive PDF Report
+* Real-time IoT integration
+* SAP and ERP connectivity
+* Mobile application support
+* Advanced predictive analytics
+* Cloud-native deployment
+* Digital twin integration
+* Multi-plant operational intelligence
 
 ---
 
-# 🌟 Future Scope
+## 👨‍💻 Team
 
-* Real IoT Integration
-* SAP/ERP Connectivity
-* Mobile Application
-* Advanced Predictive Analytics
-* Cloud Deployment
-* Digital Twin Integration
+Developed as a submission for the Tata Steel Hackathon.
 
----
-
-# 👨‍💻 Team
-
-Tata Steel Hackathon Submission
-
-Autonomous Plant Intelligence System (Sherlock)
-
-Built using AI, LangGraph, FastAPI, Next.js, and Gemini.
-
+Sherlock demonstrates how multi-agent AI systems can transform industrial operations by combining predictive maintenance, safety intelligence, energy optimization, production analytics, and executive reporting into a single intelligent platform for modern manufacturing environments.
