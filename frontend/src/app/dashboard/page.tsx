@@ -428,6 +428,22 @@ export default function DashboardPage() {
     try {
       const res = await liveAPI.injectAlert(plant, alertType);
       setDemoMsg(`🚨 ${res.data.event?.severity} alert injected into ${plant}`);
+      // Reflect the injected fault in the live metrics so the dashboard visibly reacts:
+      // bump critical alerts + downtime risk and flip the targeted plant to CRITICAL.
+      setKpis(prev => {
+        if (!prev) return prev;
+        const summary = {
+          ...prev.summary,
+          active_alerts: (prev.summary?.active_alerts || 0) + 1,
+          downtime_prediction_pct: Math.min(99, (prev.summary?.downtime_prediction_pct || 0) + 6),
+        };
+        const plant_summaries = (prev.plant_summaries || []).map(p =>
+          p.plant_id === plant
+            ? { ...p, status: "CRITICAL" as const, failure_probability: Math.max(p.failure_probability || 0, 0.92) }
+            : p
+        );
+        return { ...prev, summary, plant_summaries };
+      });
       setTimeout(() => fetchLive(), 500);
       setTimeout(() => setDemoMsg(""), 6000);
     } catch {
